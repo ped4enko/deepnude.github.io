@@ -1,0 +1,16 @@
+#
+# Archivarix Loader rules
+#
+
+# disable directory listing for security reasons
+Options -Indexes
+
+# redirect all requests to index.php loader
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.php$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.php [L]
+</IfModule>
