@@ -1,0 +1,1739 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/ai_solutions_Favicon_32x32.png">
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:300,700,400|Muli' rel='stylesheet' type='text/css'>
+  <link href="/wp-content/themes/ai/style.css" rel="stylesheet">
+  <style>
+                        html, * html body {margin: 0}
+                        body {margin: 0 !important;padding: 0 !important;}
+  </style>
+  <title>FreeFlyer® Software | ai-solutions.com</title>
+  <link rel="canonical" href="/freeflyer/">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="FreeFlyer® Software | ai-solutions.com">
+  <meta property="og:description" content="Welcome to FreeFlyer. Your guide to the best, most reliable astrodynamics software begins here. FreeFlyer Capabilities FreeFlyer Login FreeFlyer University FreeFlyer Blog FreeFlyer Astrodynamics Software FreeFlyer is a commercial off-the-shelf (COTS) software application for space mission design, analysis, and operations. FreeFlyer stands out as the most powerful tool of its kind by providing users with &hellip;">
+  <meta property="og:url" content="https://ai-solutions.com/freeflyer/">
+  <meta property="og:site_name" content="ai-solutions.com">
+  <meta property="og:image" content="https://ai-solutions.com/wp-content/uploads/2018/04/cap1-image.png">
+  <meta property="og:image:secure_url" content="https://ai-solutions.com/wp-content/uploads/2018/04/cap1-image.png">
+  <meta property="og:image:width" content="865">
+  <meta property="og:image:height" content="268">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:description" content="Welcome to FreeFlyer. Your guide to the best, most reliable astrodynamics software begins here. FreeFlyer Capabilities FreeFlyer Login FreeFlyer University FreeFlyer Blog FreeFlyer Astrodynamics Software FreeFlyer is a commercial off-the-shelf (COTS) software application for space mission design, analysis, and operations. FreeFlyer stands out as the most powerful tool of its kind by providing users with [&hellip;]">
+  <meta name="twitter:title" content="FreeFlyer® Software | ai-solutions.com">
+  <meta name="twitter:image" content="https://ai-solutions.com/wp-content/uploads/2018/05/capabilities-icon.png">
+  <link rel='dns-prefetch' href='//s.w.org'>
+  <script type="text/javascript">
+                        window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/ai-solutions.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.9"}};
+                        !function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+  </script>
+  <style type="text/css">
+  img.wp-smiley,
+  img.emoji {
+        display: inline !important;
+        border: none !important;
+        box-shadow: none !important;
+        height: 1em !important;
+        width: 1em !important;
+        margin: 0 .07em !important;
+        vertical-align: -0.1em !important;
+        background: none !important;
+        padding: 0 !important;
+  }
+  </style>
+  <script type='text/javascript' src='/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+  <script type='text/javascript' src='/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+  <link rel='https://api.w.org/' href='/wp-json/'>
+  <link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+  <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml">
+  <link rel='shortlink' href='/?p=7459'>
+  <link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fai-solutions.com%2Ffreeflyer%2F">
+  <link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fai-solutions.com%2Ffreeflyer%2F&#038;format=xml">
+  <style type="text/css" id="wp-custom-css">
+                        #swap-border .stemQLeft {
+        width: 44%;
+        margin-right: 0;
+        padding-right: 0;
+        border-right: none !important;
+  }
+
+  #swap-border .stemQRight {
+        width: calc(56% - 40px);
+        padding-left: 100px;
+        border-left: 1px solid #77777B;
+  }
+
+  @media (max-width: 1200px) {
+        #swap-border .stemQLeft {
+                width: 100%;
+        }
+        
+        #swap-border .stemQRight {
+                width: 100%;
+                border-left: none;
+                padding-left: 0;
+        }
+  }
+
+  @media (max-width: 1440px) {
+    .case-study-col-left {
+         display: none !important;
+    }
+
+    .case-study-col-right {
+        min-width: 100% !important;
+        padding-left: 15px !important;
+    }
+  }
+
+  .single-article {
+        text-align: justify;
+  }               
+  </style>
+  <style>
+  .gray-banner h1.title {
+    font-family: centuryb;
+    color: #ffffff !important;
+    font-size: 32px;
+  }
+
+  .clear{
+     clear:both;
+  }
+
+  html{
+     margin-top: 0px important!;
+  }
+
+  .centered-content{
+     width:100% !important;
+  }
+
+  @font-face {
+        font-family: 'century';
+    src: url('/wp-content/themes/ai/fonts/CenturyGothic.eot');
+    src: url('/wp-content/themes/ai/fonts/CenturyGothic.eot?#iefix') format('embedded-opentype'),
+         url('/wp-content/themes/ai/fonts/CenturyGothic.woff') format('woff'),
+         url('/wp-content/themes/ai/fonts/CenturyGothic.ttf') format('truetype'),
+         url('/wp-content/themes/ai/fonts/CenturyGothic.svg#linux') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'centuryb';
+    src: url('/wp-content/themes/ai/fonts/CenturyGothic-Bold.eot');
+    src: url('/wp-content/themes/ai/fonts/CenturyGothic-Bold.eot?#iefix') format('embedded-opentype'),
+         url('/wp-content/themes/ai/fonts/CenturyGothic-Bold.woff') format('woff'),
+         url('/wp-content/themes/ai/fonts/CenturyGothic-Bold.ttf') format('truetype'),
+         url('/wp-content/themes/ai/fonts/CenturyGothic-Bold.svg#linuxb') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'centuryi';
+    src: url('/wp-content/themes/ai/fonts/CenturyGothic-Italic.eot');
+    src: url('/wp-content/themes/ai/fonts/CenturyGothic-Italic.eot?#iefix') format('embedded-opentype'),
+         url('/wp-content/themes/ai/fonts/CenturyGothic-Italic.woff') format('woff'),
+         url('/wp-content/themes/ai/fonts/CenturyGothic-Italic.ttf') format('truetype'),
+         url('/wp-content/themes/ai/fonts/CenturyGothic-Italic.svg#linuxi') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'centurybi';
+    src: url('/wp-content/themes/ai/fonts/CenturyGothic-BoldItalic.eot');
+    src: url('/wp-content/themes/ai/fonts/CenturyGothic-BoldItalic.eot?#iefix') format('embedded-opentype'),
+         url('/wp-content/themes/ai/fonts/CenturyGothic-BoldItalic.woff') format('woff'),
+         url('/wp-content/themes/ai/fonts/CenturyGothic-BoldItalic.ttf') format('truetype'),
+         url('/wp-content/themes/ai/fonts/CenturyGothic-BoldItalic.svg#linuxbi') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  body{
+     background-color:#000;
+     background-position: center top;
+     background-size: auto;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+  }
+
+  .ffContent li {
+    list-style: disc;
+    font-family: century;
+    line-height: 32px;
+  }
+
+  /*--Header-------------------------------------------------------------------------------------------------------------------*/
+
+  .header-bg::before{
+     background: none !important
+  }
+
+  .header-bg::after{
+     background: none !important
+  }
+
+  .header-bg{
+     background: url('/wp-content/uploads/2018/04/freeflyer-bg.png');
+     box-shadow:none !important;
+     height:912px;
+     margin:0 auto;
+  }
+  .header-banner{
+     margin: 20px auto 0;
+     background-color: rgba(30,30,30,0.5);
+     border-top: 1px solid #d12029;
+     border-bottom: 1px solid #d12029;
+  }
+
+  .header-bannerTitle{
+     margin: 40px auto 0;
+     max-width:1200px;
+  }
+
+  .header-bannerContainer{
+     margin: 0 auto;
+     max-width:1200px;
+  }
+
+  .header-bannerTitle h1{
+     font-family:centuryb;
+     color: #FFFFFF;
+     font-size:48px;
+     text-shadow: 0px 4px 5px #000000;
+  }
+
+  .header-bannerTitle h3{
+     font-family:century;
+     color: #FFFFFF;
+     font-size:30px;
+     text-shadow: 0px 4px 5px #000000;
+  }
+
+  .header-bannerContainer p{
+     font-family:centuryb;
+     color: #FFFFFF;
+     font-size: 32px;
+     text-shadow: 0px 4px 5px #000000;
+  }
+
+  .bannerBTNs a{
+     color: #FFFFFF;
+     background-color: rgba(0,0,0,0.4);
+     border: 1px solid #d12029;
+     padding: 6px 20px 8px;
+     margin-right: 20px;
+     font-family: centuryb;
+     font-size: 22px;
+  }
+
+  .bannerBTNs a:hover{
+     background-color: rgba(209,32,41,0.4);
+  }
+
+  /*-----------------------------------------------------------------------------------------------------------------------------*/
+  /*-Video Header--------------------------------------------------------------------------------------------------------------*/
+
+  #ffVideo {
+    position: fixed;
+    right: 0;
+    top: -100px;
+    min-width: 100%;
+    min-height: 111%;
+  }
+
+  /*-----------------------------------------------------------------------------------------------------------------------------*/
+  /*-Content--------------------------------------------------------------------------------------------------------------------*/
+
+  .content-wrapper{
+     margin: 0 auto !important;
+     background-color: #FFFFFF;
+     padding: 40px 0;
+  }
+
+  .ffNav{
+     max-width: 1200px;
+     margin: 0 auto 40px;
+     border-bottom: 1px solid #D12029;
+     padding-bottom: 40px;
+  }
+
+  .ffNav h1{
+     font-size: 40px;
+     font-family: centuryb;
+     text-align-last: center;
+  }
+
+  .ffNav p{
+     text-align-last: center;
+     font-size: 22px;
+     color: #77777B;
+     font-family: century;
+  }
+
+  .capabilities, .help, .blog, .university, .training, .login, .evaluate{
+  /*    width: 16.6%;
+     float: left; */
+  }
+
+  .capabilities p, .help p, .blog p, .university p, .training p, .login p, .evaluate p{
+     text-align: center;
+     color: #77777B;
+     font-size 20px;
+     font-family: century;
+  }
+
+  .capabilities a, .help a, .blog a, .university a, .training a, .login a, .evaluate a{
+     color: #77777B;
+  }
+
+  .capabilities a:hover, .help a:hover, .blog a:hover, .university a:hover, .training a:hover, .login a:hover, .evaluate a:hover{
+     color: #D12029;
+  }
+
+  .ffContent{
+     max-width: 1200px;
+     margin: 0 auto;
+  }
+
+  /*-----------------------------------------------------------------------------------------------------------------------------*/
+  /*--Tabbed Div--------------------------------------------------------------------------------------------------------------------*/
+
+  .tabsContainer{
+    margin: 20px 0px 40px;
+    box-shadow: 0px 0px 4px #77777B;
+  }
+
+  .tab {
+    float: left;
+    border: 1px solid #77777B;
+    background-color: #f1f1f1;
+    width: 24%;
+  }
+
+  .tab button {
+    display: block;
+    background-color: inherit;
+    color: #77777B;
+    padding: 30px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+
+  .tab button:hover {
+    background-color: #dddddd;
+  }
+
+  .tab button.active {
+    background-color: #D12029;
+    color: #FFFFFF;
+  }
+
+  .tabcontent-con{
+    width: 76%;
+    float: right;}
+
+  .tabcontent {
+    float: left;
+    padding: 20px;
+    border: 0px solid #77777B;
+    width: 100%;
+    border-left: none;
+    height: 608px;
+  }
+
+  .tabcontent li{
+    list-style: disc;
+    line-height: 32px;
+  }
+
+
+
+  /* aci tab style for mobile. ----------------------------------------------------------------------------------------*/
+
+  @media all and (max-width:768px){
+
+  h1{text-align:center;}
+  .ffNav p {text-align:center;}
+
+  .header-bg{
+  height:auto;
+  padding-bottom:40px;}
+
+  .tab {
+    border: 1px solid #77777B;
+    background-color: #f1f1f1;
+    width: 100%;
+  float:none;
+  }
+
+  .tabcontent-con{
+    width: 100%;
+    float: none;}
+
+  .tabcontent {
+    padding: 20px;
+    border: 0px solid #77777B;
+    width: 100%;
+    border-left: none;
+  float:none;
+  height:auto;
+  }
+
+  .tab button{
+  padding-top:10px;
+  padding-bottom:10px;
+  }
+
+
+  }
+
+  /*--Slider---------------------------------------------------------------------------------------------------------------------*/
+
+        /*jssor slider loading skin spin css*/
+        .jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-009-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /*jssor slider bullet skin 051 css*/
+        .jssorb051 .i {position:absolute;cursor:pointer;}
+        .jssorb051 .i .b {fill:#fff;fill-opacity:0.5;}
+        .jssorb051 .i:hover .b {fill-opacity:.7;}
+        .jssorb051 .iav .b {fill-opacity: 1;}
+        .jssorb051 .i.idn {opacity:.3;}
+
+        /*jssor slider arrow skin 051 css*/
+        .jssora051 {display:block;position:absolute;cursor:pointer;}
+        .jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
+        .jssora051:hover {opacity:.8;}
+        .jssora051.jssora051dn {opacity:.5;}
+        .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
+
+  /*-----------------------------------------------------------------------------------------------------------------------------*/
+  /*--Footer--------------------------------------------------------------------------------------------------------------------*/
+
+  .footer{
+     background-color:#FFFFFF;
+  }
+
+  /*-----------------------------------------------------------------------------------------------------------------------------*/
+  </style>
+  <style>
+
+
+  .html{
+  scroll-behavior: smooth;
+  }
+
+  .freeflyer-login-button{
+    background-color: #D12029;
+    color: #FFFFFF !important;
+    padding:1rem;
+    margin-top:10px;
+    width:100%;
+    display:inline-block;
+  }
+
+
+  .freeflyer-con{
+    min-height: 270px;
+    padding: 20px 40px;
+    background-image: linear-gradient(#fff, #DDD);
+    margin-bottom:5rem;
+  }
+
+  .login-banner{
+    background-color: #77777B;
+    width:100%;
+    padding:5rem 0px 0rem 0px;
+    margin-top:-40px;
+    margin-bottom:40px;
+  }
+
+  .gray-banner{
+    background-color: #77777B;
+    width:100%;
+    padding:5rem 0px 0px 0px;
+    margin-top:5rem;
+    margin-bottom:5rem;
+  }
+
+  .gray-banner h1.title{
+  color:#ccc !important;
+  text-align-last: center !important;
+  text-align: center !important;}
+
+  .tabsContainer{
+  border:1px solid #333;
+  background:#fff;
+  margin-bottom:5rem;
+  }
+
+  .tabsContainer .tab{
+  border-top:0px;
+  border-bottom:0px;
+  }
+
+  @media only screen and (max-width: 768px) {
+  .tabsContainer .tab{
+  border-bottom:1px solid #000;}
+  }
+
+  .contact-form-title{
+  font-size:2em !important;
+  }
+
+
+  @media only screen and (min-width: 769px) {
+  .freeflyer-left-col p{
+  font-size: 1.25em;
+  }
+  }
+
+  /* form */
+  .evaluation-col, .contact-col{
+
+  }
+
+  #evaluation-form, .contact-con{
+  background:#eee;
+  margin-bottom:20px;
+  padding:20px;
+  font-size: .8em;
+  }
+
+  #evaluation-form h1.title, .contact-con h1.title{
+  padding-bottom:0px;
+  }
+
+  #evaluation-form textarea, .contact-con textarea{
+  height:80px;
+  }
+
+  form div{margin-bottom:0px;}
+
+  </style>
+  <style>
+                .header .logo a, .menu-item a, .subs a {color:#ffffff}
+                .subs>ul {-webkit-margin-after: 0; -webkit-margin-before: 0;}
+                .subs ul, .subs ul ul li {list-style: none; }
+                .subs>ul>li {display: inline-block; position: relative;}
+                .subs>ul>li>ul {display: none;position: absolute;}
+                .subs>ul>li:hover>ul{display: block;}
+  </style>
+  <style>
+
+
+        /* FIELDS STYLES */
+    
+        .nf-form-content .nf-field-container #nf-field-136-wrap {
+                    }
+        .nf-form-content .nf-field-container #nf-field-136-wrap .nf-field-label label {
+                    }
+        .nf-form-content .nf-field-container #nf-field-136-wrap .nf-field-element .ninja-forms-field {
+                    }
+  </style>
+  <style>
+  label, .ninja-forms-form .label-above label, .ninja-forms-form .label-below label {font-size: 14px;
+    font-weight: 400;}
+    .field-wrap li {list-style: none !important;}
+  </style>
+</head>
+<body style="z-index: 0" class="type-page">
+  <noscript></noscript>
+  <div id="privacy-opt">
+    <span><a class="dismiss-privacy-opt" href='/cookie-opt?opt=in'>X</a></span>
+    <div>
+      This site uses cookies & other tracking technologies to improve your experience. By using this site you agree to our <a href='/about-us/privacy-policy'>Privacy Policy</a>.
+    </div>
+    <div>
+      <a class="dismiss-privacy-opt btn" href='/cookie-opt?opt=in'>I Agree</a> <a class="btn" title="Opt Out" href='/cookie-opt?opt=out'>I Wish to Opt Out</a>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" media="all" href="/wp-content/themes/ai/css/aci.css">
+  <link rel="stylesheet" type="text/css" media="all" href="/wp-content/themes/ai/css/boostrap/bootstrap.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script> 
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <script src="/js/jssor.slider-27.1.0.min.js" type="text/javascript"></script> 
+  <script type="text/javascript">
+
+
+        jssor_1_slider_init = function() {
+
+                var jssor_1_SlideshowTransitions = [
+                  {$Duration:800,$Opacity:2}
+                ];
+
+                var jssor_1_options = {
+                  $AutoPlay: 1,
+                  $SlideshowOptions: {
+                        $Class: $JssorSlideshowRunner$,
+                        $Transitions: jssor_1_SlideshowTransitions,
+                        $TransitionsOrder: 1
+                  },
+                  $ArrowNavigatorOptions: {
+                        $Class: $JssorArrowNavigator$
+                  },
+                  $BulletNavigatorOptions: {
+                        $Class: $JssorBulletNavigator$
+                  }
+                };
+
+                var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+                /*#region responsive code begin*/
+
+                var MAX_WIDTH = 1200;
+
+                function ScaleSlider() {
+                        var containerElement = jssor_1_slider.$Elmt.parentNode;
+                        var containerWidth = containerElement.clientWidth;
+
+                        if (containerWidth) {
+
+                                var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                                jssor_1_slider.$ScaleWidth(expectedWidth);
+                        }
+                        else {
+                                window.setTimeout(ScaleSlider, 30);
+                        }
+                }
+
+                ScaleSlider();
+
+                $Jssor$.$AddEvent(window, "load", ScaleSlider);
+                $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+                $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+                /*#endregion responsive code end*/
+        };
+
+
+  </script> 
+  <script type="text/javascript">
+
+
+  $( document ).ready(function() { console.log('ready');
+
+  // Select all links with hashes
+  $('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) { console.log('click');
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top - 30
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            //$target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            //$target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+
+
+
+
+  });
+  </script>
+  <div class="content">
+    <div id="ffVideo">
+      <div class="wistia_responsive_padding" style="width:2131px;height:1198px">
+        <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"></div>
+      </div>
+      <script src="https://fast.wistia.net/assets/external/E-v1.js" async></script>
+    </div>
+    <div class="header-bg" style="background:none;">
+      <div class="header centered-content">
+        <div style="width: 100%; margin-left: 0%">
+          <div class="subs">
+            <ul>
+              <li>employee login</li>
+              <li>
+                <a href="/freeflyer-login/">freeflyer<sup>®</sup> login</a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu">
+            <a class="icon icon-navicon"></a>
+            <div class="logo">
+              <a href='/'><img src="/img/global/logo-text.png"></a>
+            </div>
+            <div class="menu-wrap">
+              <div class="menu-main-navigation-container">
+                <ul id="menu-main-navigation" class="menu">
+                  <li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-20">
+                    <a href="/about-us/">Who We Are</a>
+                    <ul class="sub-menu">
+                      <li id="menu-item-4996" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4996">
+                        <a href="/about-us/">About Us</a>
+                      </li>
+                      <li id="menu-item-8372" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8372">
+                        <a href="/about-us/careers/">Careers</a>
+                      </li>
+                      <li id="menu-item-23" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23">
+                        <a href="/about-us/news-multimedia/">Newsroom</a>
+                      </li>
+                      <li id="menu-item-4997" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4997">
+                        <a href="/about-us/events/">Events</a>
+                      </li>
+                      <li id="menu-item-7642" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7642">
+                        <a href="/about-us/spot-on-spotlight/">SPOT ON Spotlight</a>
+                      </li>
+                      <li id="menu-item-5636" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5636">
+                        <a href="/about-us/stem-women-of-space/">STEM Women of Space</a>
+                      </li>
+                      <li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22">
+                        <a href="/contact-us/">Contact Us</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li id="menu-item-4999" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4999">
+                    <a href="/space-mission-engineering/">Capabilities</a>
+                    <ul class="sub-menu">
+                      <li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26">
+                        <a href="/space-mission-engineering/">Space Mission Engineering</a>
+                      </li>
+                      <li id="menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24">
+                        <a href="/mission-systems-assurance/">Mission Systems Assurance</a>
+                      </li>
+                      <li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25">
+                        <a href="/launch-vehicle-services/">Launch Services</a>
+                      </li>
+                      <li id="menu-item-6432" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6432">
+                        <a href="/emergency-management/">Emergency Management</a>
+                      </li>
+                      <li id="menu-item-7645" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7645">
+                        <a href="/spacesoftware/">Space Software Applications</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li id="menu-item-7581" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-7459 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-7581">
+                    <a href="/freeflyer/">FreeFlyer<sup>®</sup></a>
+                    <ul class="sub-menu">
+                      <li id="menu-item-6892" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6892">
+                        <a href="/freeflyer/freeflyer-university/">FreeFlyer<sup>®</sup> University</a>
+                      </li>
+                      <li id="menu-item-7477" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-7459 current_page_item menu-item-7477">
+                        <a href="/freeflyer/">FreeFlyer<sup>®</sup> Software</a>
+                      </li>
+                      <li id="menu-item-6250" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6250">
+                        <a href="/freeflyer/freeflyer-software-help-desk/">FreeFlyer<sup>®</sup> Help Desk</a>
+                      </li>
+                      <li id="menu-item-5000" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5000">
+                        <a href="/about-us/news-multimedia/?c=freeFlyer-blog">FreeFlyer<sup>®</sup> Blog</a>
+                      </li>
+                      <li id="menu-item-9021" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9021">
+                        <a href="/freeflyer/freeflyer-certification/">FreeFlyer<sup>®</sup> Certification</a>
+                      </li>
+                      <li id="menu-item-5001" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5001">
+                        <a href="/freeflyer-login/">FreeFlyer<sup>®</sup> Login</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-bannerTitle">
+        <p><img src="/wp-content/uploads/2018/04/freeflyer-logo.png" alt="FreeFlyer Software"></p>
+      </div>
+      <div class="header-banner">
+        <div class="header-bannerContainer">
+          <p>Leverage the power and flexibility of FreeFlyer<sup>&reg;</sup> Astrodynamics Software in your next mission. Offering full mission lifecycle capabilities in planning, analysis and operations.</p>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="content-wrapper">
+      <div class="ffNav container">
+        <h1>Welcome to FreeFlyer.</h1>
+        <p>Your guide to the best, most reliable astrodynamics software begins here.</p>
+        <div class="row">
+          <div class="col-xs-6 col-md-3 col-lg-3">
+            <div class="capabilities">
+              <p><a href="/wp-content/uploads/2018/10/FF_4_Page_Brochure_2018_Final_Pages.pdf"><img src="/wp-content/uploads/2018/05/capabilities-icon.png" alt="FreeFlyer Capabilities" width="100%"></a></p>
+              <p><a href="/wp-content/uploads/2018/10/FF_4_Page_Brochure_2018_Final_Pages.pdf">FreeFlyer<br>
+              Capabilities</a></p>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-3 col-lg-3">
+            <div class="help">
+              <p><a href="/freeflyer-login"><img src="/wp-content/uploads/2018/04/login-icon.png" alt="FreeFlyer Login" width="100%"></a></p>
+              <p><a href="/freeflyer-login">FreeFlyer<br>
+              Login</a></p>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-3 col-lg-3">
+            <div class="university">
+              <p><a href="/freeflyer/freeflyer-university"><img src="/wp-content/uploads/2018/04/university-icon.png" alt="FreeFlyer Blog" width="100%"></a></p>
+              <p><a href="/freeflyer/freeflyer-university">FreeFlyer<br>
+              University</a></p>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-3 col-lg-3">
+            <div class="blog">
+              <p><a href="/about-us/news-multimedia/?c=freeFlyer-blog"><img src="/wp-content/uploads/2018/04/blog-icon.png" alt="FreeFlyer Blog" width="100%"></a></p>
+              <p><a href="/about-us/news-multimedia/?c=freeFlyer-blog">FreeFlyer<br>
+              Blog</a></p>
+            </div>
+          </div>
+        </div>
+        <p></p>
+        <div class="clear"></div>
+      </div>
+      <div class="ffContent container" style="border-bottom: 1px solid #D12029; margin-bottom: 40px;">
+        <div class="row">
+          <div class="col-md-7 freeflyer-left-col">
+            <h1 class="title">FreeFlyer Astrodynamics Software</h1>
+            <p>FreeFlyer is a commercial off-the-shelf (COTS) software application for space mission design, analysis, and operations. FreeFlyer stands out as the most powerful tool of its kind by providing users with a robust scripting language for solving all types of astrodynamics problems. FreeFlyer has been independently verified and validated for flight-tested, proven accuracy, and is used for spacecraft analysis and operations by NASA, NOAA, USAF, NRO, and commercial satellite providers.</p>
+            <p>FreeFlyer offers flexible deployment options including customizable user interfaces, cross-platform support for Windows and Linux systems, and a dedicated API for integrating custom applications. Additionally, FreeFlyer-based ground systems can integrate with any 3rd party TT&amp;C programs and external tools. It is scalable to accommodate growing and evolving mission requirements and provides an open framework to easily adapt for the automation of mission-unique functions.</p>
+            <p>The FreeFlyer astrodynamics software comes in two license tiers, Engineer and Mission. FreeFlyer Engineer is an ideal choice for mission design and analysis, including constellation design, sensor coverages, maneuver planning, Monte Carlo analyses, and more. FreeFlyer Mission adds the FreeFlyer Orbit Determination suite as well as the FreeFlyer Runtime API for integration into external applications and operational satellite ground systems.</p>
+          </div>
+          <div class="col-md-5 evaluation-col">
+            <div id="evaluation-form" class="evaluation-form">
+              <h1 class="title">Download FreeFlyer<sup>®</sup> Demo</h1>
+              <p class="large-text text-left">To request a FREE demo copy of the FreeFlyer software please fill out the form below.</p>
+              <div class="contact-form">
+                <noscript class="ninja-forms-noscript-message">Notice: JavaScript is required for this content.</noscript>
+                <div id="nf-form-9-cont" class="nf-form-cont" aria-live="polite" aria-labelledby="nf-form-title-9" aria-describedby="nf-form-errors-9" role="form">
+                  <div class="nf-loading-spinner"></div>
+                </div>
+                <script>
+                var formDisplay=1;var nfForms=nfForms||[];var form=[];form.id='9';form.settings={"objectType":"Form Setting","editActive":true,"title":"FreeFlyer Evaluation Copy","show_title":0,"clear_complete":1,"hide_complete":1,"default_label_pos":"above","wrapper_class":"","element_class":"","key":"","add_submit":0,"currency":"","unique_field_error":"A form with this value has already been submitted.","logged_in":false,"not_logged_in_msg":"","sub_limit_msg":"The form has reached its submission limit.","calculations":[],"conditions":[],"formContentData":[{"order":1,"cells":[{"order":0,"fields":["firstname_1516636267275"],"width":"100"}]},{"order":2,"cells":[{"order":0,"fields":["lastname_1516636268481"],"width":"100"}]},{"order":3,"cells":[{"order":0,"fields":["company_1516636342482"],"width":"100"}]},{"order":4,"cells":[{"order":0,"fields":["phone_1558538795743"],"width":"100"}]},{"order":5,"cells":[{"order":0,"fields":["email_1516636295348"],"width":"100"}]},{"order":6,"cells":[{"order":0,"fields":["listcountry_1516636297150"],"width":"100"}]},{"order":7,"cells":[{"order":0,"fields":["comments_request_1516636945920"],"width":"100"}]},{"order":8,"cells":[{"order":0,"fields":["spam_1581622086351"],"width":"100"}]},{"order":9,"cells":[{"order":0,"fields":["submit_1516636331991"],"width":"100"}]}],"drawerDisabled":false,"container_styles_show_advanced_css":0,"title_styles_show_advanced_css":0,"row_styles_show_advanced_css":0,"row-odd_styles_show_advanced_css":0,"success-msg_styles_show_advanced_css":0,"error_msg_styles_show_advanced_css":0,"changeEmailErrorMsg":"Please enter a valid email address!","changeDateErrorMsg":"Please enter a valid date!","confirmFieldErrorMsg":"These fields must match!","fieldNumberNumMinError":"Number Min Error","fieldNumberNumMaxError":"Number Max Error","fieldNumberIncrementBy":"Please increment by ","formErrorsCorrectErrors":"Please correct errors before submitting this form.","validateRequiredField":"This is a required field.","honeypotHoneypotError":"Honeypot Error","fieldsMarkedRequired":"Fields marked with an <span class=\"ninja-forms-req-symbol\">*<\/span> are required","ninjaForms":"Ninja Forms","fieldTextareaRTEInsertLink":"Insert Link","fieldTextareaRTEInsertMedia":"Insert Media","fieldTextareaRTESelectAFile":"Select a file","fileUploadOldCodeFileUploadInProgress":"File Upload in Progress.","fileUploadOldCodeFileUpload":"FILE UPLOAD","currencySymbol":"&#36;","thousands_sep":",","decimal_point":".","dateFormat":"d\/m\/Y","startOfWeek":"1","of":"of","previousMonth":"Previous Month","nextMonth":"Next Month","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthsShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"weekdaysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"weekdaysMin":["Su","Mo","Tu","We","Th","Fr","Sa"],"currency_symbol":"","beforeForm":"","beforeFields":"","afterFields":"","afterForm":""};form.fields=[{"objectType":"Field","objectDomain":"fields","editActive":false,"order":1,"type":"firstname","label":"First Name","key":"firstname_1516636267275","label_pos":"above","required":1,"default":"","placeholder":"","container_class":"","element_class":"","admin_label":"","help_text":"","drawerDisabled":false,"custom_name_attribute":"fname","personally_identifiable":1,"wrap_styles_show_advanced_css":0,"label_styles_show_advanced_css":0,"element_styles_show_advanced_css":0,"cellcid":"c3248","id":134,"beforeField":"","afterField":"","parentType":"firstname","element_templates":["firstname","input"],"old_classname":"","wrap_template":"wrap"},{"objectType":"Field","objectDomain":"fields","editActive":false,"order":2,"type":"lastname","label":"Last Name","key":"lastname_1516636268481","label_pos":"above","required":1,"default":"","placeholder":"","container_class":"","element_class":"","admin_label":"","help_text":"","drawerDisabled":false,"custom_name_attribute":"lname","personally_identifiable":1,"wrap_styles_show_advanced_css":0,"label_styles_show_advanced_css":0,"element_styles_show_advanced_css":0,"cellcid":"c3252","id":135,"beforeField":"","afterField":"","parentType":"lastname","element_templates":["lastname","input"],"old_classname":"","wrap_template":"wrap"},{"objectType":"Field","objectDomain":"fields","editActive":false,"order":3,"type":"firstname","label":"Company","key":"company_1516636342482","label_pos":"above","required":1,"default":"","placeholder":"","container_class":"","element_class":"","admin_label":"","help_text":"","drawerDisabled":false,"custom_name_attribute":"fname","personally_identifiable":1,"wrap_styles_show_advanced_css":1,"label_styles_show_advanced_css":1,"element_styles_show_advanced_css":1,"cellcid":"c3255","wrap_styles_border":"","wrap_styles_width":"","wrap_styles_margin":"","wrap_styles_padding":"","wrap_styles_float":"","label_styles_border":"","label_styles_width":"","label_styles_font-size":"","label_styles_margin":"","label_styles_padding":"","label_styles_float":"","element_styles_border":"","element_styles_width":"","element_styles_font-size":"","element_styles_margin":"","element_styles_padding":"","element_styles_float":"","id":136,"beforeField":"","afterField":"","parentType":"firstname","element_templates":["firstname","input"],"old_classname":"","wrap_template":"wrap"},{"objectType":"Field","objectDomain":"fields","editActive":false,"order":4,"label":"Phone","type":"textbox","key":"phone_1558538795743","label_pos":"above","required":1,"default":"","placeholder":"","container_class":"","element_class":"","input_limit":"","input_limit_type":"characters","input_limit_msg":"Character(s) left","manual_key":false,"admin_label":"","help_text":"","mask":"","custom_mask":"","custom_name_attribute":"","personally_identifiable":"","wrap_styles_show_advanced_css":0,"label_styles_show_advanced_css":0,"element_styles_show_advanced_css":0,"cellcid":"c3258","drawerDisabled":false,"id":242,"beforeField":"","afterField":"","parentType":"textbox","element_templates":["textbox","input"],"old_classname":"","wrap_template":"wrap"},{"objectType":"Field","objectDomain":"fields","editActive":false,"order":5,"type":"email","label":"Email","key":"email_1516636295348","label_pos":"above","required":1,"default":"","placeholder":"","container_class":"","element_class":"","admin_label":"","help_text":"","drawerDisabled":false,"custom_name_attribute":"email","personally_identifiable":1,"wrap_styles_show_advanced_css":0,"label_styles_show_advanced_css":0,"element_styles_show_advanced_css":0,"cellcid":"c3261","id":137,"beforeField":"","afterField":"","parentType":"email","element_templates":["email","input"],"old_classname":"","wrap_template":"wrap"},{"objectType":"Field","objectDomain":"fields","editActive":false,"order":6,"type":"listcountry","label":"Country","key":"listcountry_1516636297150","label_pos":"above","required":1,"options":[{"label":"- Select Country -","value":"","calc":"","selected":0,"order":0},{"label":"Afghanistan","value":"AF","calc":"","selected":0,"order":1},{"label":"Albania","value":"AL","calc":"","selected":0,"order":2},{"label":"Algeria","value":"DZ","calc":"","selected":0,"order":3},{"label":"American Samoa","value":"AS","calc":"","selected":0,"order":4},{"label":"Andorra","value":"AD","calc":"","selected":0,"order":5},{"label":"Angola","value":"AO","calc":"","selected":0,"order":6},{"label":"Anguilla","value":"AI","calc":"","selected":0,"order":7},{"label":"Antarctica","value":"AQ","calc":"","selected":0,"order":8},{"label":"Antigua And Barbuda","value":"AG","calc":"","selected":0,"order":9},{"label":"Argentina","value":"AR","calc":"","selected":0,"order":10},{"label":"Armenia","value":"AM","calc":"","selected":0,"order":11},{"label":"Aruba","value":"AW","calc":"","selected":0,"order":12},{"label":"Australia","value":"AU","calc":"","selected":0,"order":13},{"label":"Austria","value":"AT","calc":"","selected":0,"order":14},{"label":"Azerbaijan","value":"AZ","calc":"","selected":0,"order":15},{"label":"Bahamas","value":"BS","calc":"","selected":0,"order":16},{"label":"Bahrain","value":"BH","calc":"","selected":0,"order":17},{"label":"Bangladesh","value":"BD","calc":"","selected":0,"order":18},{"label":"Barbados","value":"BB","calc":"","selected":0,"order":19},{"label":"Belarus","value":"BY","calc":"","selected":0,"order":20},{"label":"Belgium","value":"BE","calc":"","selected":0,"order":21},{"label":"Belize","value":"BZ","calc":"","selected":0,"order":22},{"label":"Benin","value":"BJ","calc":"","selected":0,"order":23},{"label":"Bermuda","value":"BM","calc":"","selected":0,"order":24},{"label":"Bhutan","value":"BT","calc":"","selected":0,"order":25},{"label":"Bolivia","value":"BO","calc":"","selected":0,"order":26},{"label":"Bosnia And Herzegowina","value":"BA","calc":"","selected":0,"order":27},{"label":"Botswana","value":"BW","calc":"","selected":0,"order":28},{"label":"Bouvet Island","value":"BV","calc":"","selected":0,"order":29},{"label":"Brazil","value":"BR","calc":"","selected":0,"order":30},{"label":"British Indian Ocean Territory","value":"IO","calc":"","selected":0,"order":31},{"label":"Brunei Darussalam","value":"BN","calc":"","selected":0,"order":32},{"label":"Bulgaria","value":"BG","calc":"","selected":0,"order":33},{"label":"Burkina Faso","value":"BF","calc":"","selected":0,"order":34},{"label":"Burundi","value":"BI","calc":"","selected":0,"order":35},{"label":"Cambodia","value":"KH","calc":"","selected":0,"order":36},{"label":"Cameroon","value":"CM","calc":"","selected":0,"order":37},{"label":"Canada","value":"CA","calc":"","selected":0,"order":38},{"label":"Cape Verde","value":"CV","calc":"","selected":0,"order":39},{"label":"Cayman Islands","value":"KY","calc":"","selected":0,"order":40},{"label":"Central African Republic","value":"CF","calc":"","selected":0,"order":41},{"label":"Chad","value":"TD","calc":"","selected":0,"order":42},{"label":"Chile","value":"CL","calc":"","selected":0,"order":43},{"label":"China","value":"CN","calc":"","selected":0,"order":44},{"label":"Christmas Island","value":"CX","calc":"","selected":0,"order":45},{"label":"Cocos (Keeling) Islands","value":"CC","calc":"","selected":0,"order":46},{"label":"Colombia","value":"CO","calc":"","selected":0,"order":47},{"label":"Comoros","value":"KM","calc":"","selected":0,"order":48},{"label":"Congo","value":"CG","calc":"","selected":0,"order":49},{"label":"Congo, The Democratic Republic Of The","value":"CD","calc":"","selected":0,"order":50},{"label":"Cook Islands","value":"CK","calc":"","selected":0,"order":51},{"label":"Costa Rica","value":"CR","calc":"","selected":0,"order":52},{"label":"Cote D'Ivoire","value":"CI","calc":"","selected":0,"order":53},{"label":"Croatia (Local Name: Hrvatska)","value":"HR","calc":"","selected":0,"order":54},{"label":"Cuba","value":"CU","calc":"","selected":0,"order":55},{"label":"Cyprus","value":"CY","calc":"","selected":0,"order":56},{"label":"Czech Republic","value":"CZ","calc":"","selected":0,"order":57},{"label":"Denmark","value":"DK","calc":"","selected":0,"order":58},{"label":"Djibouti","value":"DJ","calc":"","selected":0,"order":59},{"label":"Dominica","value":"DM","calc":"","selected":0,"order":60},{"label":"Dominican Republic","value":"DO","calc":"","selected":0,"order":61},{"label":"Ecuador","value":"EC","calc":"","selected":0,"order":63},{"label":"Egypt","value":"EG","calc":"","selected":0,"order":64},{"label":"El Salvador","value":"SV","calc":"","selected":0,"order":65},{"label":"Equatorial Guinea","value":"GQ","calc":"","selected":0,"order":66},{"label":"Eritrea","value":"ER","calc":"","selected":0,"order":67},{"label":"Estonia","value":"EE","calc":"","selected":0,"order":68},{"label":"Ethiopia","value":"ET","calc":"","selected":0,"order":69},{"label":"Falkland Islands (Malvinas)","value":"FK","calc":"","selected":0,"order":70},{"label":"Faroe Islands","value":"FO","calc":"","selected":0,"order":71},{"label":"Fiji","value":"FJ","calc":"","selected":0,"order":72},{"label":"Finland","value":"FI","calc":"","selected":0,"order":73},{"label":"France","value":"FR","calc":"","selected":0,"order":74},{"label":"France, Metropolitan","value":"FX","calc":"","selected":0,"order":75},{"label":"French Guiana","value":"GF","calc":"","selected":0,"order":76},{"label":"French Polynesia","value":"PF","calc":"","selected":0,"order":77},{"label":"French Southern Territories","value":"TF","calc":"","selected":0,"order":78},{"label":"Gabon","value":"GA","calc":"","selected":0,"order":79},{"label":"Gambia","value":"GM","calc":"","selected":0,"order":80},{"label":"Georgia","value":"GE","calc":"","selected":0,"order":81},{"label":"Germany","value":"DE","calc":"","selected":0,"order":82},{"label":"Ghana","value":"GH","calc":"","selected":0,"order":83},{"label":"Gibraltar","value":"GI","calc":"","selected":0,"order":84},{"label":"Greece","value":"GR","calc":"","selected":0,"order":85},{"label":"Greenland","value":"GL","calc":"","selected":0,"order":86},{"label":"Grenada","value":"GD","calc":"","selected":0,"order":87},{"label":"Guadeloupe","value":"GP","calc":"","selected":0,"order":88},{"label":"Guam","value":"GU","calc":"","selected":0,"order":89},{"label":"Guatemala","value":"GT","calc":"","selected":0,"order":90},{"label":"Guinea","value":"GN","calc":"","selected":0,"order":91},{"label":"Guinea-Bissau","value":"GW","calc":"","selected":0,"order":92},{"label":"Guyana","value":"GY","calc":"","selected":0,"order":93},{"label":"Haiti","value":"HT","calc":"","selected":0,"order":94},{"label":"Heard And Mc Donald Islands","value":"HM","calc":"","selected":0,"order":95},{"label":"Holy See (Vatican City State)","value":"VA","calc":"","selected":0,"order":96},{"label":"Honduras","value":"HN","calc":"","selected":0,"order":97},{"label":"Hong Kong","value":"HK","calc":"","selected":0,"order":98},{"label":"Hungary","value":"HU","calc":"","selected":0,"order":99},{"label":"Iceland","value":"IS","calc":"","selected":0,"order":100},{"label":"India","value":"IN","calc":"","selected":0,"order":101},{"label":"Indonesia","value":"ID","calc":"","selected":0,"order":102},{"label":"Iran (Islamic Republic Of)","value":"IR","calc":"","selected":0,"order":103},{"label":"Iraq","value":"IQ","calc":"","selected":0,"order":104},{"label":"Ireland","value":"IE","calc":"","selected":0,"order":105},{"label":"Israel","value":"IL","calc":"","selected":0,"order":106},{"label":"Italy","value":"IT","calc":"","selected":0,"order":107},{"label":"Jamaica","value":"JM","calc":"","selected":0,"order":108},{"label":"Japan","value":"JP","calc":"","selected":0,"order":109},{"label":"Jordan","value":"JO","calc":"","selected":0,"order":110},{"label":"Kazakhstan","value":"KZ","calc":"","selected":0,"order":111},{"label":"Kenya","value":"KE","calc":"","selected":0,"order":112},{"label":"Kiribati","value":"KI","calc":"","selected":0,"order":113},{"label":"Korea, Democratic People's Republic Of","value":"KP","calc":"","selected":0,"order":114},{"label":"Korea, Republic Of","value":"KR","calc":"","selected":0,"order":115},{"label":"Kuwait","value":"KW","calc":"","selected":0,"order":116},{"label":"Kyrgyzstan","value":"KG","calc":"","selected":0,"order":117},{"label":"Lao People's Democratic Republic","value":"LA","calc":"","selected":0,"order":118},{"label":"Latvia","value":"LV","calc":"","selected":0,"order":119},{"label":"Lebanon","value":"LB","calc":"","selected":0,"order":120},{"label":"Lesotho","value":"LS","calc":"","selected":0,"order":121},{"label":"Liberia","value":"LR","calc":"","selected":0,"order":122},{"label":"Libyan Arab Jamahiriya","value":"LY","calc":"","selected":0,"order":123},{"label":"Liechtenstein","value":"LI","calc":"","selected":0,"order":124},{"label":"Lithuania","value":"LT","calc":"","selected":0,"order":125},{"label":"Luxembourg","value":"LU","calc":"","selected":0,"order":126},{"label":"Macau","value":"MO","calc":"","selected":0,"order":127},{"label":"Macedonia, Former Yugoslav Republic Of","value":"MK","calc":"","selected":0,"order":128},{"label":"Madagascar","value":"MG","calc":"","selected":0,"order":129},{"label":"Malawi","value":"MW","calc":"","selected":0,"order":130},{"label":"Malaysia","value":"MY","calc":"","selected":0,"order":131},{"label":"Maldives","value":"MV","calc":"","selected":0,"order":132},{"label":"Mali","value":"ML","calc":"","selected":0,"order":133},{"label":"Malta","value":"MT","calc":"","selected":0,"order":134},{"label":"Marshall Islands","value":"MH","calc":"","selected":0,"order":135},{"label":"Martinique","value":"MQ","calc":"","selected":0,"order":136},{"label":"Mauritania","value":"MR","calc":"","selected":0,"order":137},{"label":"Mauritius","value":"MU","calc":"","selected":0,"order":138},{"label":"Mayotte","value":"YT","calc":"","selected":0,"order":139},{"label":"Mexico","value":"MX","calc":"","selected":0,"order":140},{"label":"Micronesia, Federated States Of","value":"FM","calc":"","selected":0,"order":141},{"label":"Moldova, Republic Of","value":"MD","calc":"","selected":0,"order":142},{"label":"Monaco","value":"MC","calc":"","selected":0,"order":143},{"label":"Mongolia","value":"MN","calc":"","selected":0,"order":144},{"label":"Montenegro","value":"ME","calc":"","selected":0,"order":145},{"label":"Montserrat","value":"MS","calc":"","selected":0,"order":146},{"label":"Morocco","value":"MA","calc":"","selected":0,"order":147},{"label":"Mozambique","value":"MZ","calc":"","selected":0,"order":148},{"label":"Myanmar","value":"MM","calc":"","selected":0,"order":149},{"label":"Namibia","value":"NA","calc":"","selected":0,"order":150},{"label":"Nauru","value":"NR","calc":"","selected":0,"order":151},{"label":"Nepal","value":"NP","calc":"","selected":0,"order":152},{"label":"Netherlands","value":"NL","calc":"","selected":0,"order":153},{"label":"Netherlands Antilles","value":"AN","calc":"","selected":0,"order":154},{"label":"New Caledonia","value":"NC","calc":"","selected":0,"order":155},{"label":"New Zealand","value":"NZ","calc":"","selected":0,"order":156},{"label":"Nicaragua","value":"NI","calc":"","selected":0,"order":157},{"label":"Niger","value":"NE","calc":"","selected":0,"order":158},{"label":"Nigeria","value":"NG","calc":"","selected":0,"order":159},{"label":"Niue","value":"NU","calc":"","selected":0,"order":160},{"label":"Norfolk Island","value":"NF","calc":"","selected":0,"order":161},{"label":"Northern Mariana Islands","value":"MP","calc":"","selected":0,"order":162},{"label":"Norway","value":"NO","calc":"","selected":0,"order":163},{"label":"Oman","value":"OM","calc":"","selected":0,"order":164},{"label":"Pakistan","value":"PK","calc":"","selected":0,"order":165},{"label":"Palau","value":"PW","calc":"","selected":0,"order":166},{"label":"Panama","value":"PA","calc":"","selected":0,"order":167},{"label":"Papua New Guinea","value":"PG","calc":"","selected":0,"order":168},{"label":"Paraguay","value":"PY","calc":"","selected":0,"order":169},{"label":"Peru","value":"PE","calc":"","selected":0,"order":170},{"label":"Philippines","value":"PH","calc":"","selected":0,"order":171},{"label":"Pitcairn","value":"PN","calc":"","selected":0,"order":172},{"label":"Poland","value":"PL","calc":"","selected":0,"order":173},{"label":"Portugal","value":"PT","calc":"","selected":0,"order":174},{"label":"Puerto Rico","value":"PR","calc":"","selected":0,"order":175},{"label":"Qatar","value":"QA","calc":"","selected":0,"order":176},{"label":"Reunion","value":"RE","calc":"","selected":0,"order":177},{"label":"Romania","value":"RO","calc":"","selected":0,"order":178},{"label":"Russian Federation","value":"RU","calc":"","selected":0,"order":179},{"label":"Rwanda","value":"RW","calc":"","selected":0,"order":180},{"label":"Saint Kitts And Nevis","value":"KN","calc":"","selected":0,"order":181},{"label":"Saint Lucia","value":"LC","calc":"","selected":0,"order":182},{"label":"Saint Vincent And The Grenadines","value":"VC","calc":"","selected":0,"order":183},{"label":"Samoa","value":"WS","calc":"","selected":0,"order":184},{"label":"San Marino","value":"SM","calc":"","selected":0,"order":185},{"label":"Sao Tome And Principe","value":"ST","calc":"","selected":0,"order":186},{"label":"Saudi Arabia","value":"SA","calc":"","selected":0,"order":187},{"label":"Senegal","value":"SN","calc":"","selected":0,"order":188},{"label":"Serbia","value":"RS","calc":"","selected":0,"order":189},{"label":"Seychelles","value":"SC","calc":"","selected":0,"order":190},{"label":"Sierra Leone","value":"SL","calc":"","selected":0,"order":191},{"label":"Singapore","value":"SG","calc":"","selected":0,"order":192},{"label":"Slovakia (Slovak Republic)","value":"SK","calc":"","selected":0,"order":193},{"label":"Slovenia","value":"SI","calc":"","selected":0,"order":194},{"label":"Solomon Islands","value":"SB","calc":"","selected":0,"order":195},{"label":"Somalia","value":"SO","calc":"","selected":0,"order":196},{"label":"South Africa","value":"ZA","calc":"","selected":0,"order":197},{"label":"South Georgia, South Sandwich Islands","value":"GS","calc":"","selected":0,"order":198},{"label":"Spain","value":"ES","calc":"","selected":0,"order":199},{"label":"Sri Lanka","value":"LK","calc":"","selected":0,"order":200},{"label":"St. Helena","value":"SH","calc":"","selected":0,"order":201},{"label":"St. Pierre And Miquelon","value":"PM","calc":"","selected":0,"order":202},{"label":"Sudan","value":"SD","calc":"","selected":0,"order":203},{"label":"Suriname","value":"SR","calc":"","selected":0,"order":204},{"label":"Svalbard And Jan Mayen Islands","value":"SJ","calc":"","selected":0,"order":205},{"label":"Swaziland","value":"SZ","calc":"","selected":0,"order":206},{"label":"Sweden","value":"SE","calc":"","selected":0,"order":207},{"label":"Switzerland","value":"CH","calc":"","selected":0,"order":208},{"label":"Syrian Arab Republic","value":"SY","calc":"","selected":0,"order":209},{"label":"Taiwan","value":"TW","calc":"","selected":0,"order":210},{"label":"Tajikistan","value":"TJ","calc":"","selected":0,"order":211},{"label":"Tanzania, United Republic Of","value":"TZ","calc":"","selected":0,"order":212},{"label":"Thailand","value":"TH","calc":"","selected":0,"order":213},{"label":"Timor-Leste (East Timor)","value":"TL","calc":"","selected":0,"order":62},{"label":"Togo","value":"TG","calc":"","selected":0,"order":214},{"label":"Tokelau","value":"TK","calc":"","selected":0,"order":215},{"label":"Tonga","value":"TO","calc":"","selected":0,"order":216},{"label":"Trinidad And Tobago","value":"TT","calc":"","selected":0,"order":217},{"label":"Tunisia","value":"TN","calc":"","selected":0,"order":218},{"label":"Turkey","value":"TR","calc":"","selected":0,"order":219},{"label":"Turkmenistan","value":"TM","calc":"","selected":0,"order":220},{"label":"Turks And Caicos Islands","value":"TC","calc":"","selected":0,"order":221},{"label":"Tuvalu","value":"TV","calc":"","selected":0,"order":222},{"label":"Uganda","value":"UG","calc":"","selected":0,"order":223},{"label":"Ukraine","value":"UA","calc":"","selected":0,"order":224},{"label":"United Arab Emirates","value":"AE","calc":"","selected":0,"order":225},{"label":"United Kingdom","value":"GB","calc":"","selected":0,"order":226},{"label":"United States","value":"US","calc":"","selected":1,"order":227},{"label":"United States Minor Outlying Islands","value":"UM","calc":"","selected":0,"order":228},{"label":"Uruguay","value":"UY","calc":"","selected":0,"order":229},{"label":"Uzbekistan","value":"UZ","calc":"","selected":0,"order":230},{"label":"Vanuatu","value":"VU","calc":"","selected":0,"order":231},{"label":"Venezuela","value":"VE","calc":"","selected":0,"order":232},{"label":"Viet Nam","value":"VN","calc":"","selected":0,"order":233},{"label":"Virgin Islands (British)","value":"VG","calc":"","selected":0,"order":234},{"label":"Virgin Islands (U.S.)","value":"VI","calc":"","selected":0,"order":235},{"label":"Wallis And Futuna Islands","value":"WF","calc":"","selected":0,"order":236},{"label":"Western Sahara","value":"EH","calc":"","selected":0,"order":237},{"label":"Yemen","value":"YE","calc":"","selected":0,"order":238},{"label":"Yugoslavia","value":"YU","calc":"","selected":0,"order":239},{"label":"Zambia","value":"ZM","calc":"","selected":0,"order":240},{"label":"Zimbabwe","value":"ZW","calc":"","selected":0,"order":241}],"container_class":"","element_class":"","admin_label":"","help_text":"","default":"US","drawerDisabled":false,"wrap_styles_show_advanced_css":0,"label_styles_show_advanced_css":0,"element_styles_show_advanced_css":0,"list_item_row_styles_show_advanced_css":0,"list_item_label_styles_show_advanced_css":0,"list_item_element_styles_show_advanced_css":0,"cellcid":"c3264","id":138,"beforeField":"","afterField":"","parentType":"list","value":"US","element_templates":["listcountry","listselect","input"],"old_classname":"","wrap_template":"wrap"},{"objectType":"Field","objectDomain":"fields","editActive":false,"order":7,"type":"textarea","label":"Comments \/ Request","key":"comments_request_1516636945920","label_pos":"above","required":1,"default":"","placeholder":"","container_class":"","element_class":"","input_limit":"","input_limit_type":"characters","input_limit_msg":"Character(s) left","manual_key":false,"admin_label":"","help_text":"","textarea_rte":"","disable_rte_mobile":"","textarea_media":"","drawerDisabled":false,"wrap_styles_show_advanced_css":0,"label_styles_show_advanced_css":0,"element_styles_show_advanced_css":0,"cellcid":"c3267","id":139,"beforeField":"","afterField":"","parentType":"textarea","element_templates":["textarea","input"],"old_classname":"","wrap_template":"wrap"},{"objectType":"Field","objectDomain":"fields","editActive":false,"order":8,"label":"Anti-Spam: 1+1 = ","type":"spam","key":"spam_1581622086351","label_pos":"above","required":1,"default":"","placeholder":"","container_class":"","element_class":"","input_limit":"","input_limit_type":"characters","input_limit_msg":"Character(s) left","manual_key":true,"admin_label":"","help_text":"","spam_answer":2,"wrap_styles_show_advanced_css":0,"label_styles_show_advanced_css":0,"element_styles_show_advanced_css":0,"cellcid":"c3612","drawerDisabled":false,"id":261,"beforeField":"","afterField":"","parentType":"spam","element_templates":["textbox","input"],"old_classname":"","wrap_template":"wrap"},{"objectType":"Field","objectDomain":"fields","editActive":false,"order":9,"type":"submit","label":"Submit","processing_label":"Processing","container_class":"","element_class":"content-button","key":"submit_1516636331991","drawerDisabled":false,"wrap_styles_show_advanced_css":0,"element_styles_show_advanced_css":0,"submit_element_hover_styles_show_advanced_css":0,"cellcid":"c3273","id":141,"beforeField":"","afterField":"","label_pos":"above","parentType":"textbox","element_templates":["submit","button","input"],"old_classname":"","wrap_template":"wrap-no-label"}];nfForms.push(form);
+                </script> 
+                <script id="nf-tmpl-cell" type="text/template">
+
+
+                <nf-fields></nf-fields>
+                </script> 
+                <script id="nf-tmpl-row" type="text/template">
+
+
+                <nf-cells></nf-cells>
+                </script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gray-banner">
+        <div class="ffContent container">
+          <div class="row">
+            <div class="col-xs-12">
+              <h1 class="title" style="color: #ffffff !important">Complete Astrodynamics Capability</h1>
+              <div class="tabsContainer">
+                <div class="tab">
+                  <button class="tablinks" onclick="openCap(event, 'Cap1')" id="defaultOpen">SPACECRAFT PROPAGATION</button><button class="tablinks" onclick="openCap(event, 'Cap2')">COVERAGE &amp; CONTACT</button><button class="tablinks" onclick="openCap(event, 'Cap3')">MANEUVERING &amp; TARGETING</button><button class="tablinks" onclick="openCap(event, 'Cap4')">ORBIT DETERMINATION</button><button class="tablinks" onclick="openCap(event, 'Cap5')">INTERPLANETARY ANALYSIS</button><button class="tablinks" onclick="openCap(event, 'Cap6')">OUTPUT OPTIONS</button><button class="tablinks" onclick="openCap(event, 'Cap7')">FREEFLYER SCRIPT</button><button class="tablinks" onclick="openCap(event, 'Cap8')">EXTERNAL INTERFACES</button>
+                </div>
+                <div class="tabcontent-con">
+                  <div id="Cap1" class="tabcontent">
+                    <img src="/wp-content/uploads/2018/04/cap1-image.png" alt="" width="100%" style="margin-bottom:20px;">
+                    <p></p>
+                    <h2>Spacecraft Propagation</h2>
+                    <ul>
+                      <li>Fixed or variable step propagation using multiple propagators and ephemeris types</li>
+                      <li>Full force modeling capability includes Solar System, atmospheric drag/lift, solar radiation pressure, IRI, and custom celestial bodies</li>
+                      <li>Detailed spacecraft modeling including fuel tanks, thrusters, proximity zones, and attitude modeling</li>
+                      <li>Custom sensor modeling with obscuration masking</li>
+                      <li>Formation support for efficiently modeling and analyzing constellation and multi-spacecraft problems</li>
+                    </ul>
+                  </div>
+                  <div id="Cap2" class="tabcontent">
+                    <img src="/wp-content/uploads/2018/04/cap2-image.png" alt="" width="100%" style="margin-bottom:20px;">
+                    <p></p>
+                    <h2>Coverage &amp; Contact</h2>
+                    <ul>
+                      <li>Hundreds of pre-defined and user-customizable ground station geodetic and masking profiles</li>
+                      <li>Easy-to-use chain visibility calculations to and from any objects, including spacecraft, sensors, ground stations, celestial bodies and more</li>
+                      <li>1500+ reportable data parameters including spacecraft state, AOS/LOS, node crossings, miss distances, attitude, and much more</li>
+                      <li>Temporal, spatial, and user-definable custom constraints</li>
+                      <li>Customizable graphics visualizations for complex coverage scenarios</li>
+                    </ul>
+                  </div>
+                  <div id="Cap3" class="tabcontent">
+                    <img src="/wp-content/uploads/2018/04/cap3-image.png" alt="" width="100%" style="margin-bottom:20px;">
+                    <p></p>
+                    <h2>Maneuvering &amp; Targeting</h2>
+                    <ul>
+                      <li>Native support for impulsive and finite burn maneuvers</li>
+                      <li>Modeling for mono- and bi-propellant blow down systems</li>
+                      <li>Electric and chemical propulsion support, including low-thrust systems</li>
+                      <li>Built-in multi-variable targeting tool with differential corrector</li>
+                      <li>Spacecraft tank, thruster, and mass flow modeling for accurate fuel consumption reports</li>
+                    </ul>
+                    <p></p>
+                  </div>
+                  <div id="Cap4" class="tabcontent">
+                    <img src="/wp-content/uploads/2018/04/cap4-image.png" alt="" width="100%" style="margin-bottom:20px;">
+                    <p></p>
+                    <h2>Orbit Determination</h2>
+                    <ul>
+                      <li>State estimation methods of Batch Least Squates, Extended Kalman Filter, and Unscented Kalman Filter, with customizable combinations</li>
+                      <li>Spacecraft receiver and transponder modeling and co-variance propagation</li>
+                      <li>Ground station location, ground station antenna bias, transponder delay, maneuver and spacecraft property estimation methods</li>
+                      <li>Tracking simulator and editor for managing data outliers and viewing multiple measurement types simultaneously</li>
+                      <li>Ground-based, TDRS, GPS point solution and pseudorange, Spacecraft-to-Spacecraft, and BRTS tracking</li>
+                    </ul>
+                    <p></p>
+                  </div>
+                  <div id="Cap5" class="tabcontent">
+                    <img src="/wp-content/uploads/2018/04/cap5-image.png" alt="" width="100%" style="margin-bottom:20px;">
+                    <p></p>
+                    <h2>Interplanetary Analysis</h2>
+                    <ul>
+                      <li>Support for multiple coordinate systems across any celestial objects</li>
+                      <li>Custom celestial objects for modeling asteroids, comets, and other planetary moon systems</li>
+                      <li>Ground station and spacecraft central body definable as any celestial object</li>
+                      <li>B-plane analysis and Rotating Libration Point (RLP) support</li>
+                      <li>Dynamically controllable solar system parameters for mission-specific deep-space propagation requirements</li>
+                    </ul>
+                    <p></p>
+                  </div>
+                  <div id="Cap6" class="tabcontent">
+                    <img src="/wp-content/uploads/2018/04/cap6-image.png" alt="" width="100%" style="margin-bottom:20px;">
+                    <p></p>
+                    <h2>Output Options</h2>
+                    <ul>
+                      <li>Customizable 2D and 3D OpenGL visualizations</li>
+                      <li>Fully tailorable Cartesian and polar plots for use with any mission parameters</li>
+                      <li>Controllable layout of all output windows for high fidelity situational awareness displays</li>
+                      <li>Any user data reportable to consoles, tables, or export via custom reports</li>
+                      <li>Custom layer control of foreground and background elements within a single output window for fine-tuned display control</li>
+                    </ul>
+                    <p></p>
+                  </div>
+                  <div id="Cap7" class="tabcontent">
+                    <img src="/wp-content/uploads/2018/04/cap7-image.png" alt="" width="100%" style="margin-bottom:20px;">
+                    <p></p>
+                    <h2>FreeFlyer Script</h2>
+                    <ul>
+                      <li>Scripting provides full user control over all inputs, outputs, and logical flow of astrodynamical simulations</li>
+                      <li>Integrated development and execution environment includes syntax auto-complete, text coloring, and native debugger</li>
+                      <li>In-script methods for file parsing of external data</li>
+                      <li>30+ mathematical functions, including matrix math and coordinate system conversions for custom algorithm implementation</li>
+                      <li>User-defined functions, macros, and lists enable systems to be complex yet not overwhelming</li>
+                    </ul>
+                    <p></p>
+                  </div>
+                  <div id="Cap8" class="tabcontent">
+                    <img src="/wp-content/uploads/2018/04/cap8-image.png" alt="" width="100%" style="margin-bottom:20px;">
+                    <p></p>
+                    <h2>External Interfaces</h2>
+                    <ul>
+                      <li>Custom force modeling and custom object definitions via FreeFlyer Extensions</li>
+                      <li>Dedicated interfaces for MATLAB, TCP/IP sockets, databases, and other external applications</li>
+                      <li>Interfaces with ODBC databases.</li>
+                      <li>Runtime Application Program Interface (API) for use with other C/C++, C#, and Java applications</li>
+                      <li>Customizable user interfaces to manage operational script workflows</li>
+                      <li>Full support for seamless system integration and 24/7 automation in operational ground systems</li>
+                    </ul>
+                    <p></p>
+                  </div>
+                </div>
+                <div class="clear"></div>
+                <p></p>
+              </div>
+              <div class="ffNav" style="margin: -40px 0 0 0; border: none; padding: 0">
+                <div class="row">
+                  <div class="col-xs-12 col-md-6 col-lg-6">
+                    <div class="login freeflyer-con">
+                      <p><a href="/freeflyer/freeflyer-software-help-desk"><img src="/wp-content/uploads/2018/04/help-icon.png" alt="FreeFlyer Help Center" width="100%"></a></p>
+                      <p><a class="freeflyer-login-button" href="/freeflyer/freeflyer-software-help-desk">Visit the FreeFlyer Help Desk</a></p>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6 col-lg-6">
+                    <div class="evaluate freeflyer-con">
+                      <p><a href="#evaluation-form"><img src="/wp-content/uploads/2018/04/eval-icon.png" alt="FreeFlyer Evaluation" width="100%"></a></p>
+                      <p><a class="freeflyer-login-button" href="#evaluation-form">Request a FREE Demo of FreeFlyer</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p></p>
+      <div class="ffContent container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h1 class="title">FreeFlyer Use Cases</h1>
+            <p>From future mission design and analysis to automated operations for tomorrow’s mega-constellations, FreeFlyer can be utilized in multiple ways to bring value to any space company or organization.</p>
+            <ul>
+              <li>Model the full life cycle of a mission, from launch and orbit insertion to on-orbit operations and de-orbit</li>
+              <li>Perform trade studies to optimize mission design for constellations, sensor coverages, maneuver burn sequences, and more</li>
+              <li>Automate real-time or non-real-time orbit determination for any number of spacecraft simultaneously</li>
+              <li>Model potential space conjunctions and analyze data trends</li>
+              <li>Perform human-in-loop BMC2 and wargaming scenarios</li>
+              <li>Create live telemetry-fed FreeFlyer visualization displays to run 24/7 in Mission Operations Centers</li>
+              <li>Scale large computational jobs on HPC systems with multi-threading</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="jssor_1" style="position: relative; margin: 40px auto; top: 0px; left: 0px; width: 1200px; height: 640px; overflow: hidden; visibility: hidden;">
+        <p></p>
+        <div class="jssorl-009-spin" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; text-align: center; background-color: rgba(0,0,0,0.7);" data-u="loading"></div>
+        <div style="cursor: default; position: relative; top: 0px; left: 0px; width: 1200px; height: 640px; overflow: hidden;" data-u="slides">
+          <div data-p="170.00"><img src="/wp-content/uploads/2018/04/ff1.png" alt="" width="100%" data-u="image"></div>
+          <div data-p="170.00"><img src="/wp-content/uploads/2018/04/ff2.png" alt="" width="100%" data-u="image"></div>
+          <div data-p="170.00"><img src="/wp-content/uploads/2018/04/ff3.png" alt="" width="100%" data-u="image"></div>
+          <div data-p="170.00"><img src="/wp-content/uploads/2018/04/ff4.png" alt="" width="100%" data-u="image"></div>
+          <div data-p="170.00"><img src="/wp-content/uploads/2018/04/ff5.png" alt="" width="100%" data-u="image"></div>
+          <div data-p="170.00"><img src="/wp-content/uploads/2018/04/ff6.png" alt="" width="100%" data-u="image"></div>
+        </div>
+        <p></p>
+        <div class="jssorb051" style="position: absolute; bottom: 12px; right: 12px;" data-u="navigator" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+          <div class="i" style="width: 16px; height: 16px;" data-u="prototype"></div>
+        </div>
+        <p></p>
+        <div class="jssora051" style="width: 55px; height: 55px; top: 0px; left: 25px;" data-u="arrowleft" data-autocenter="2" data-scale="0.75" data-scale-left="0.75"></div>
+        <div class="jssora051" style="width: 55px; height: 55px; top: 0px; right: 25px;" data-u="arrowright" data-autocenter="2" data-scale="0.75" data-scale-right="0.75"></div>
+      </div>
+      <div class="ffContent container">
+        <div class="row">
+          <div class="col-md-8">
+            <h1 class="title">FreeFlyer Deployment Options</h1>
+            <p>FreeFlyer can be utilized in multiple unique ways depending on individual mission or project needs.</p>
+            <h1 class="detail-title">FreeFlyer Desktop Application</h1>
+            <p>This is classic FreeFlyer. Here, users can create new space mission simulations, called “Mission Plans,” through a combination of GUIs and/or FreeFlyer’s powerful native scripting language. Users can run Mission Plans locally, view outputs, change user preferences, connect with other external tools like MATLAB, and much more.</p>
+            <h1 class="detail-title">FreeFlyer Runtime API</h1>
+            <p>The FreeFlyer runtime API allows users to embed the FreeFlyer executable engine into external custom applications. Here, the logic control, multi-threading, and task execution can all be controlled from the host application. The FreeFlyer runtime API supports integration into applications written in C, C++, C#, Java, MATLAB, and Python.</p>
+            <h1 class="detail-title">FreeFlyer Licensing</h1>
+            <p>FreeFlyer is available in a variety of license types to meet individual user requirements and budgets, including:</p>
+            <ul>
+              <li>Fixed machine use (node-locked) or floating use (network server or USB dongle)</li>
+              <li>Perpetual licenses or annual license subscriptions</li>
+              <li>Full desktop application + API or API-only</li>
+              <li>Windows (Windows 7+) or Linux (RedHat 6.5+) deployments</li>
+            </ul>
+            <div class="clear"></div>
+          </div>
+          <div class="col-md-4 contact-col">
+            <div class="contact-con">
+              <h1 class="title">Contact Our FreeFlyer Software Team</h1>
+              <p></p>
+              <p class="text"><noscript class="ninja-forms-noscript-message">Notice: JavaScript is required for this content.</noscript></p>
+              <div id="nf-form-22-cont" class="nf-form-cont" aria-live="polite" aria-labelledby="nf-form-title-22" aria-describedby="nf-form-errors-22" role="form">
+                <div class="nf-loading-spinner"></div>
+              </div>
+              <script>
+              var formDisplay=1;var nfForms=nfForms||[];var form=[];form.id='22';form.settings={"objectType":"Form Setting","editActive":true,"title":"FreeFlyer Software Contact Form","created_at":"2019-02-25 14:58:35","form_title":"Atlas - Software Applications Contact Form  - copy","default_label_pos":"above","show_title":"0","clear_complete":"1","hide_complete":"1","logged_in":"0","wrapper_class":"","element_class":"","add_submit":"1","changeEmailErrorMsg":"Please enter a valid email address!","confirmFieldErrorMsg":"These fields must match!","fieldNumberNumMinError":"Number Min Error","fieldNumberNumMaxError":"Number Max Error","fieldNumberIncrementBy":"Please increment by ","formErrorsCorrectErrors":"Please correct errors before submitting this form.","validateRequiredField":"This is a required field.","honeypotHoneypotError":"Honeypot Error","fieldsMarkedRequired":"Fields marked with an <span class=\"ninja-forms-req-symbol\">*<\/span> are required","currency":"","unique_field_error":"A form with this value has already been submitted.","not_logged_in_msg":"","sub_limit_msg":"The form has reached its submission limit.","calculations":[],"formContentData":[{"order":1,"cells":[{"order":0,"fields":["firstname_1515105689570"],"width":"100"}]},{"order":2,"cells":[{"order":0,"fields":["last_name_1551127577491"],"width":"100"}]},{"order":3,"cells":[{"order":0,"fields":["email_1515034242665"],"width":"100"}]},{"order":4,"cells":[{"order":0,"fields":["message_1551127635986"],"width":"100"}]},{"order":5,"cells":[{"order":0,"fields":["spam_1581622298308"],"width":"100"}]},{"order":6,"cells":[{"order":0,"fields":["submit_1515035325433"],"width":"100"}]}],"drawerDisabled":false,"key":"","container_styles_show_advanced_css":"0","title_styles_show_advanced_css":"0","row_styles_show_advanced_css":"0","row-odd_styles_show_advanced_css":"0","success-msg_styles_show_advanced_css":"0","error_msg_styles_show_advanced_css":"0","conditions":[],"ninjaForms":"Ninja Forms","changeDateErrorMsg":"Please enter a valid date!","fieldTextareaRTEInsertLink":"Insert Link","fieldTextareaRTEInsertMedia":"Insert Media","fieldTextareaRTESelectAFile":"Select a file","fileUploadOldCodeFileUploadInProgress":"File Upload in Progress.","fileUploadOldCodeFileUpload":"FILE UPLOAD","currencySymbol":"&#36;","thousands_sep":",","decimal_point":".","dateFormat":"d\/m\/Y","startOfWeek":"1","of":"of","previousMonth":"Previous Month","nextMonth":"Next Month","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthsShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"weekdaysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"weekdaysMin":["Su","Mo","Tu","We","Th","Fr","Sa"],"currency_symbol":"","beforeForm":"","beforeFields":"","afterFields":"","afterForm":""};form.fields=[{"objectType":"Field","objectDomain":"fields","editActive":false,"order":1,"type":"firstname","label":"First Name","key":"firstname_1515105689570","label_pos":"above","required":1,"default":"","placeholder":"","container_class":"","element_class":"","admin_label":"","help_text":"","drawerDisabled":"","custom_name_attribute":"fname","personally_identifiable":1,"wrap_styles_show_advanced_css":0,"label_styles_show_advanced_css":0,"element_styles_show_advanced_css":0,"cellcid":"c3251","id":217,"beforeField":"","afterField":"","parentType":"firstname","element_templates":["firstname","input"],"old_classname":"","wrap_template":"wrap"},{"objectType":"Field","objectDomain":"fields","editActive":false,"order":2,"type":"firstname","label":"Last Name","key":"last_name_1551127577491","label_pos":"above","required":1,"default":"","placeholder":"","container_class":"","element_class":"","admin_label":"","help_text":"","drawerDisabled":"","custom_name_attribute":"fname","personally_identifiable":1,"wrap_styles_show_advanced_css":0,"label_styles_show_advanced_css":0,"element_styles_show_advanced_css":0,"cellcid":"c3255","id":219,"beforeField":"","afterField":"","parentType":"firstname","element_templates":["firstname","input"],"old_classname":"","wrap_template":"wrap"},{"objectType":"Field","objectDomain":"fields","editActive":false,"order":3,"type":"email","label":"Email","key":"email_1515034242665","label_pos":"above","required":1,"default":"","placeholder":"","container_class":"","element_class":"","admin_label":"","help_text":"","drawerDisabled":"","custom_name_attribute":"email","personally_identifiable":1,"wrap_styles_show_advanced_css":0,"label_styles_show_advanced_css":0,"element_styles_show_advanced_css":0,"cellcid":"c3258","id":215,"beforeField":"","afterField":"","parentType":"email","element_templates":["email","input"],"old_classname":"","wrap_template":"wrap"},{"objectType":"Field","objectDomain":"fields","editActive":false,"order":4,"label":"Message","type":"textarea","key":"message_1551127635986","label_pos":"above","required":1,"default":"","placeholder":"","container_class":"","element_class":"","input_limit":"","input_limit_type":"characters","input_limit_msg":"Character(s) left","manual_key":"","admin_label":"","help_text":"","textarea_rte":"","disable_rte_mobile":"","textarea_media":"","wrap_styles_show_advanced_css":0,"label_styles_show_advanced_css":0,"element_styles_show_advanced_css":0,"cellcid":"c3261","id":221,"beforeField":"","afterField":"","parentType":"textarea","element_templates":["textarea","input"],"old_classname":"","wrap_template":"wrap"},{"objectType":"Field","objectDomain":"fields","editActive":false,"order":5,"label":"Anti-Spam: 1+1 = ","type":"spam","key":"spam_1581622298308","label_pos":"above","required":1,"default":"","placeholder":"","container_class":"","element_class":"","input_limit":"","input_limit_type":"characters","input_limit_msg":"Character(s) left","manual_key":true,"admin_label":"","help_text":"","spam_answer":2,"wrap_styles_show_advanced_css":0,"label_styles_show_advanced_css":0,"element_styles_show_advanced_css":0,"cellcid":"c3608","drawerDisabled":false,"id":262,"beforeField":"","afterField":"","parentType":"spam","element_templates":["textbox","input"],"old_classname":"","wrap_template":"wrap"},{"objectType":"Field","objectDomain":"fields","editActive":false,"order":6,"type":"submit","label":"Submit","processing_label":"Processing","container_class":"","element_class":"content-button","key":"submit_1515035325433","drawerDisabled":"","wrap_styles_show_advanced_css":0,"element_styles_show_advanced_css":0,"submit_element_hover_styles_show_advanced_css":0,"cellcid":"c3267","id":216,"beforeField":"","afterField":"","label_pos":"above","parentType":"textbox","element_templates":["submit","button","input"],"old_classname":"","wrap_template":"wrap-no-label"}];nfForms.push(form);
+              </script> 
+              <script id="nf-tmpl-cell" type="text/template">
+
+
+              <nf-fields></nf-fields>
+              </script> 
+              <script id="nf-tmpl-row" type="text/template">
+
+
+              <nf-cells></nf-cells>
+              </script>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div style="clear:both"></div>
+  <div class="footer">
+    <div class="footer-bar">
+      <div class="footer-cell" style="">
+        <div>
+          <a href='/' class="logo"><img src="/img/global/logo-dark.png"></a><br>
+          Copyright 2020<br>
+          a.i. solutions, Inc.<br>
+          All Rights Reserved
+        </div>
+      </div>
+      <div class="footer-cell">
+        <div>
+          4500 Forbes Boulevard<br>
+          Suite 300<br>
+          Lanham, MD 20706<br>
+          (301) 306-1756
+        </div>
+      </div>
+      <div class="footer-cell links">
+        <div>
+          <a href='/about-us/'>About Us</a> <a href='/about-us/careers/'>Careers</a> <a href='/about-us/news-multimedia'>Newsroom</a> <a href='/about-us/contact-us/'>Contact Us</a> <a href='/about-us/privacy-policy/'>Privacy Policy</a>
+        </div>
+      </div>
+      <div class="footer-cell">
+        <div class="f-sm">
+          <i>Facebook</i> <i>Twitter</i> <i>LinkedIn</i> <i>Youtube</i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script> 
+  <script src="/js/size.js"></script> 
+  <script src="/js/jquery-custom-scrollbar-master/jquery.custom-scrollbar.js"></script>
+  <link href="/js/jquery-custom-scrollbar-master/jquery.custom-scrollbar.css" rel="stylesheet">
+  <script src="/js/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.js"></script>
+  <link href="/js/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet">
+  <script type="text/javascript">
+                /*      function initialize() {
+                                var mapOptions = {
+                                center: { lat: -34.397, lng: 150.644},
+                                zoom: 8
+                                };
+                                var map = new google.maps.Map(document.getElementById('map-canvas'),
+                                mapOptions);
+                        }
+                        google.maps.event.addDomListener(window, 'load', initialize);
+                */
+                        function switchBanners()
+                        {
+                                //alert("in")
+                                current = $('.bg.current');
+                                next = $(current).next();
+                                if (!(next.length))
+                                        next = $('.bg:first')
+
+                                current.removeClass('current');
+                                next.addClass('current').addClass('added');
+                        }
+                        var menuheight;
+                        function setMenuHeight()
+                        {
+                                if ($(window).width() < 650)
+                                        menuheight = 60;
+                                else
+                                        menuheight = 40;
+                                $('.menu-wrap').removeClass("vis");
+                        }
+                        function resizeElements()
+                        {
+                                $('.hovertext').each(function(){
+                                        he = $(this).find('div').height();
+                                        wid = $(this).find('div').width();
+                                        $(this).css("height", he).css("width", wid);
+                                })
+                        }
+                        function getHelpFile(id)
+                        {
+
+                        }
+                        function ShouldIStayOrShouldIGo(itm)
+                        {
+                                //console.log($('body').width())
+                                $(".menu-item").not(itm).data('clicked', 0);
+                                if (  (navigator.userAgent.match(/(iPod|iPhone|iPad)/) || navigator.userAgent.toLowerCase().indexOf("android") > -1 ) && $('body').width() > 700 ) {
+
+                                        if (itm.parent().children("div").length>0)
+                                        {
+                                                if (itm.data('clicked') == 1)
+                                                {
+                                                        window.location = itm.attr("href");
+                                                }
+                                                else
+                                                {
+                                                        itm.data('clicked',1)
+                                                }
+                                        }
+                                        else
+                                                window.location = itm.attr("href");
+                                }
+                                else
+                                        window.location = itm.attr("href");
+                        }
+                        $(document).ready(function(){
+                                setMenuHeight();
+                                setInterval(switchBanners, 8000)
+                                $("a.video, a.picture, a.inline-video").fancybox();
+                                window.resizeBy(1,0);
+                                if ($('.btn-ffvc').length>0)
+                                {
+                                        $('.btn-ffvc').on('click', function(){
+                                                if ($('.ffvc').css('display') == 'block')
+                                                        $('.ffvc').slideUp(500);
+                                                else
+                                                        $('.ffvc').slideDown(500);
+                                        })
+                                        $('.btn-collapse').on('click', function(){
+                                                $('.ffvc').slideUp(500);
+                                        })
+                                }
+                                $(".scrollbar").customScrollbar({
+                                        updateOnWindowResize: "false"
+                                });
+                                //      blocks clicking while the animation is playing
+                                var ivAnimating = false;
+                                $('#img-left, #img-right, #vid-left, #vid-right').on("click", function(){
+                                        //      if not already animating
+                                        if (ivAnimating == false)
+                                        {
+                                                //      lock the buttons
+                                                ivAnimating = true;
+                                                //      get the id
+                                                var id = $(this).attr("id");
+                                                //      figure out if it is images or videos
+                                                if (id == "img-left" || id == "img-right")
+                                                        el = "images"
+                                                else
+                                                        el = "videos"
+                                                //      get the wrapper info
+                                                var wrap = $('.'+el+'list')
+                                                var wrapwidth = wrap.css("width").replace("px", "");
+                                                //      figure out which way the slides need to move
+                                                if (id == "img-left" || id == "vid-left")
+                                                        dir = "1"
+                                                else
+                                                        dir = "-1"
+                                                //      set the element that is scrolling
+                                                var toScroll = $('.'+el);
+                                                //      get the left margin of the element.  this is what is adjusted to slide the list around
+                                                var left = toScroll.css("margin-left").replace("px","");
+                                                //      the width of the scroll element
+                                                var max = toScroll.css("width").replace("px", "")
+                                                //      handles the left moves
+                                                if ((left <=0 )&& (parseInt((-1 * wrapwidth) + parseInt(left)) >= parseInt(-1 * max)) && dir == "-1")
+                                                        toScroll.animate({"margin-left" : parseInt(left) + parseInt(dir * (200)) }, 500, function(){ivAnimating = false;})
+                                                //      handles the right moves
+                                                if (left < 0 && dir == "1")
+                                                        toScroll.animate({"margin-left" : parseInt(left) + parseInt(dir * (200)) }, 500, function(){ivAnimating = false;})
+                                        }
+                                })
+
+                                //$("a.iframe").fancybox();
+
+                                $('.icon-navicon').on('click', function(){
+
+                                        $('.menu-wrap').toggleClass("vis");
+
+                                })
+                                if ($(".hide-timer").length>0)
+                                        setTimeout(function(){$(".hide-timer").slideUp(400)}, 5000)
+                        });
+
+                        /*$(window).load(function(){*/
+      $( document ).ready(function() {
+                                if ($('.tabs'))
+                                {
+                                        $('.tabs-sidebar a').on('click', function(){
+                                                $('.tabs-sidebar a').removeClass("on");
+                                                $(this).addClass("on")
+                                                tab = $(this).data('tab');
+                                                $('.tab').removeClass('on');
+                                                $('.tab-'+tab).addClass('on');
+                                                $('.tabs').animate({height:$('.tab-'+tab).outerHeight(true)}, 500)
+
+                                        })
+                                        //console.log($('.tab.on').outerHeight(true))
+                                        $('.tabs').animate({height:$('.tab.on').outerHeight(true)}, 500)
+
+                                }
+
+                                $('.top-menu').on('touchstart touchmove', function (e) {
+                                        e.stopPropagation();
+                                });
+
+                                executeSizeFunction();
+                        });
+
+                        $(window).resize(function(){
+                                console.log("resize")
+                                setMenuHeight();
+                                resizeElements();
+                                executeSizeFunction();
+                        })
+  </script>
+  <link rel='stylesheet' id='dashicons-css' href='/wp-includes/css/dashicons.min.css?ver=4.9.9' type='text/css' media='all'>
+  <link rel='stylesheet' id='nf-display-css' href='/wp-content/plugins/ninja-forms/assets/css/display-structure.css?ver=4.9.9' type='text/css' media='all'>
+  <link rel='stylesheet' id='nf-layout-front-end-css' href='/wp-content/plugins/ninja-forms-style/layouts/assets/css/display-structure.css?ver=3.0.25' type='text/css' media='all'>
+  <script type='text/javascript'>
+  /* <![CDATA[ */
+  var nm_load_more = {"url":"https:\/\/ai-solutions.com\/wp-admin\/admin-ajax.php"};
+  /* ]]> */
+  </script> 
+  <script type='text/javascript' src='/js/nm_load_more.js'></script> 
+  <script type='text/javascript' src='/wp-includes/js/wp-embed.min.js?ver=4.9.9'></script> 
+  <script type='text/javascript' src='/wp-includes/js/underscore.min.js?ver=1.8.3'></script> 
+  <script type='text/javascript' src='/wp-includes/js/backbone.min.js?ver=1.2.3'></script> 
+  <script type='text/javascript' src='/wp-content/plugins/ninja-forms/assets/js/min/front-end-deps.js?ver=3.3.20'></script> 
+  <script type='text/javascript'>
+
+
+  /* <![CDATA[ */
+  var nfi18n = {"ninjaForms":"Ninja Forms","changeEmailErrorMsg":"Please enter a valid email address!","changeDateErrorMsg":"Please enter a valid date!","confirmFieldErrorMsg":"These fields must match!","fieldNumberNumMinError":"Number Min Error","fieldNumberNumMaxError":"Number Max Error","fieldNumberIncrementBy":"Please increment by ","fieldTextareaRTEInsertLink":"Insert Link","fieldTextareaRTEInsertMedia":"Insert Media","fieldTextareaRTESelectAFile":"Select a file","formErrorsCorrectErrors":"Please correct errors before submitting this form.","validateRequiredField":"This is a required field.","honeypotHoneypotError":"Honeypot Error","fileUploadOldCodeFileUploadInProgress":"File Upload in Progress.","fileUploadOldCodeFileUpload":"FILE UPLOAD","currencySymbol":"$","fieldsMarkedRequired":"Fields marked with an <span class=\"ninja-forms-req-symbol\">*<\/span> are required","thousands_sep":",","decimal_point":".","dateFormat":"d\/m\/Y","startOfWeek":"1","of":"of","previousMonth":"Previous Month","nextMonth":"Next Month","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthsShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"weekdaysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"weekdaysMin":["Su","Mo","Tu","We","Th","Fr","Sa"]};
+  var nfFrontEnd = {"adminAjax":"https:\/\/ai-solutions.com\/wp-admin\/admin-ajax.php","ajaxNonce":"b5ced0c53b","requireBaseUrl":"https:\/\/ai-solutions.com\/wp-content\/plugins\/ninja-forms\/assets\/js\/","use_merge_tags":{"user":{"address":"address","textbox":"textbox","button":"button","checkbox":"checkbox","city":"city","confirm":"confirm","date":"date","email":"email","firstname":"firstname","html":"html","hidden":"hidden","lastname":"lastname","listcheckbox":"listcheckbox","listcountry":"listcountry","listmultiselect":"listmultiselect","listradio":"listradio","listselect":"listselect","liststate":"liststate","note":"note","number":"number","password":"password","passwordconfirm":"passwordconfirm","product":"product","quantity":"quantity","recaptcha":"recaptcha","shipping":"shipping","spam":"spam","starrating":"starrating","submit":"submit","terms":"terms","textarea":"textarea","total":"total","unknown":"unknown","zip":"zip","hr":"hr"},"post":{"address":"address","textbox":"textbox","button":"button","checkbox":"checkbox","city":"city","confirm":"confirm","date":"date","email":"email","firstname":"firstname","html":"html","hidden":"hidden","lastname":"lastname","listcheckbox":"listcheckbox","listcountry":"listcountry","listmultiselect":"listmultiselect","listradio":"listradio","listselect":"listselect","liststate":"liststate","note":"note","number":"number","password":"password","passwordconfirm":"passwordconfirm","product":"product","quantity":"quantity","recaptcha":"recaptcha","shipping":"shipping","spam":"spam","starrating":"starrating","submit":"submit","terms":"terms","textarea":"textarea","total":"total","unknown":"unknown","zip":"zip","hr":"hr"},"system":{"address":"address","textbox":"textbox","button":"button","checkbox":"checkbox","city":"city","confirm":"confirm","date":"date","email":"email","firstname":"firstname","html":"html","hidden":"hidden","lastname":"lastname","listcheckbox":"listcheckbox","listcountry":"listcountry","listmultiselect":"listmultiselect","listradio":"listradio","listselect":"listselect","liststate":"liststate","note":"note","number":"number","password":"password","passwordconfirm":"passwordconfirm","product":"product","quantity":"quantity","recaptcha":"recaptcha","shipping":"shipping","spam":"spam","starrating":"starrating","submit":"submit","terms":"terms","textarea":"textarea","total":"total","unknown":"unknown","zip":"zip","hr":"hr"},"fields":{"address":"address","textbox":"textbox","button":"button","checkbox":"checkbox","city":"city","confirm":"confirm","date":"date","email":"email","firstname":"firstname","html":"html","hidden":"hidden","lastname":"lastname","listcheckbox":"listcheckbox","listcountry":"listcountry","listmultiselect":"listmultiselect","listradio":"listradio","listselect":"listselect","liststate":"liststate","note":"note","number":"number","password":"password","passwordconfirm":"passwordconfirm","product":"product","quantity":"quantity","recaptcha":"recaptcha","shipping":"shipping","spam":"spam","starrating":"starrating","submit":"submit","terms":"terms","textarea":"textarea","total":"total","unknown":"unknown","zip":"zip","hr":"hr"},"calculations":{"html":"html","hidden":"hidden","note":"note","unknown":"unknown"}},"opinionated_styles":""};
+  var nfi18n = {"ninjaForms":"Ninja Forms","changeEmailErrorMsg":"Please enter a valid email address!","changeDateErrorMsg":"Please enter a valid date!","confirmFieldErrorMsg":"These fields must match!","fieldNumberNumMinError":"Number Min Error","fieldNumberNumMaxError":"Number Max Error","fieldNumberIncrementBy":"Please increment by ","fieldTextareaRTEInsertLink":"Insert Link","fieldTextareaRTEInsertMedia":"Insert Media","fieldTextareaRTESelectAFile":"Select a file","formErrorsCorrectErrors":"Please correct errors before submitting this form.","validateRequiredField":"This is a required field.","honeypotHoneypotError":"Honeypot Error","fileUploadOldCodeFileUploadInProgress":"File Upload in Progress.","fileUploadOldCodeFileUpload":"FILE UPLOAD","currencySymbol":"$","fieldsMarkedRequired":"Fields marked with an <span class=\"ninja-forms-req-symbol\">*<\/span> are required","thousands_sep":",","decimal_point":".","dateFormat":"d\/m\/Y","startOfWeek":"1","of":"of","previousMonth":"Previous Month","nextMonth":"Next Month","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthsShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"weekdaysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"weekdaysMin":["Su","Mo","Tu","We","Th","Fr","Sa"]};
+  var nfFrontEnd = {"adminAjax":"https:\/\/ai-solutions.com\/wp-admin\/admin-ajax.php","ajaxNonce":"b5ced0c53b","requireBaseUrl":"https:\/\/ai-solutions.com\/wp-content\/plugins\/ninja-forms\/assets\/js\/","use_merge_tags":{"user":{"address":"address","textbox":"textbox","button":"button","checkbox":"checkbox","city":"city","confirm":"confirm","date":"date","email":"email","firstname":"firstname","html":"html","hidden":"hidden","lastname":"lastname","listcheckbox":"listcheckbox","listcountry":"listcountry","listmultiselect":"listmultiselect","listradio":"listradio","listselect":"listselect","liststate":"liststate","note":"note","number":"number","password":"password","passwordconfirm":"passwordconfirm","product":"product","quantity":"quantity","recaptcha":"recaptcha","shipping":"shipping","spam":"spam","starrating":"starrating","submit":"submit","terms":"terms","textarea":"textarea","total":"total","unknown":"unknown","zip":"zip","hr":"hr"},"post":{"address":"address","textbox":"textbox","button":"button","checkbox":"checkbox","city":"city","confirm":"confirm","date":"date","email":"email","firstname":"firstname","html":"html","hidden":"hidden","lastname":"lastname","listcheckbox":"listcheckbox","listcountry":"listcountry","listmultiselect":"listmultiselect","listradio":"listradio","listselect":"listselect","liststate":"liststate","note":"note","number":"number","password":"password","passwordconfirm":"passwordconfirm","product":"product","quantity":"quantity","recaptcha":"recaptcha","shipping":"shipping","spam":"spam","starrating":"starrating","submit":"submit","terms":"terms","textarea":"textarea","total":"total","unknown":"unknown","zip":"zip","hr":"hr"},"system":{"address":"address","textbox":"textbox","button":"button","checkbox":"checkbox","city":"city","confirm":"confirm","date":"date","email":"email","firstname":"firstname","html":"html","hidden":"hidden","lastname":"lastname","listcheckbox":"listcheckbox","listcountry":"listcountry","listmultiselect":"listmultiselect","listradio":"listradio","listselect":"listselect","liststate":"liststate","note":"note","number":"number","password":"password","passwordconfirm":"passwordconfirm","product":"product","quantity":"quantity","recaptcha":"recaptcha","shipping":"shipping","spam":"spam","starrating":"starrating","submit":"submit","terms":"terms","textarea":"textarea","total":"total","unknown":"unknown","zip":"zip","hr":"hr"},"fields":{"address":"address","textbox":"textbox","button":"button","checkbox":"checkbox","city":"city","confirm":"confirm","date":"date","email":"email","firstname":"firstname","html":"html","hidden":"hidden","lastname":"lastname","listcheckbox":"listcheckbox","listcountry":"listcountry","listmultiselect":"listmultiselect","listradio":"listradio","listselect":"listselect","liststate":"liststate","note":"note","number":"number","password":"password","passwordconfirm":"passwordconfirm","product":"product","quantity":"quantity","recaptcha":"recaptcha","shipping":"shipping","spam":"spam","starrating":"starrating","submit":"submit","terms":"terms","textarea":"textarea","total":"total","unknown":"unknown","zip":"zip","hr":"hr"},"calculations":{"html":"html","hidden":"hidden","note":"note","unknown":"unknown"}},"opinionated_styles":""};
+  /* ]]> */
+  </script> 
+  <script type='text/javascript' src='/wp-content/plugins/ninja-forms/assets/js/min/front-end.js?ver=3.3.20'></script> 
+  <script type='text/javascript' src='/wp-content/plugins/ninja-forms-conditionals/assets/js/min/front-end.js?ver=4.9.9'></script> 
+  <script type='text/javascript' src='/wp-content/plugins/ninja-forms-style/layouts/assets/js/min/front-end.js?ver=3.0.25'></script> 
+  <script id="tmpl-nf-layout" type="text/template">
+
+
+        <span id="nf-form-title-{{{ data.id }}}" class="nf-form-title">
+                {{{ ( 1 == data.settings.show_title ) ? '<h3>' + data.settings.title + '</h3>' : '' }}}
+        </span>
+        <div class="nf-form-wrap ninja-forms-form-wrap">
+                <div class="nf-response-msg"></div>
+                <div class="nf-debug-msg"></div>
+                <div class="nf-before-form"></div>
+                <div class="nf-form-layout"></div>
+                <div class="nf-after-form"></div>
+        </div>
+  </script> 
+  <script id="tmpl-nf-empty" type="text/template"></script> 
+  <script id="tmpl-nf-before-form" type="text/template">
+
+
+        {{{ data.beforeForm }}}
+  </script> 
+  <script id="tmpl-nf-after-form" type="text/template">
+
+
+        {{{ data.afterForm }}}
+  </script> 
+  <script id="tmpl-nf-before-fields" type="text/template">
+
+
+    <div class="nf-form-fields-required">{{{ data.renderFieldsMarkedRequired() }}}</div>
+    {{{ data.beforeFields }}}
+  </script> 
+  <script id="tmpl-nf-after-fields" type="text/template">
+
+
+    {{{ data.afterFields }}}
+    <div id="nf-form-errors-{{{ data.id }}}" class="nf-form-errors" role="alert"></div>
+    <div class="nf-form-hp"></div>
+  </script> 
+  <script id="tmpl-nf-before-field" type="text/template">
+
+
+    {{{ data.beforeField }}}
+  </script> 
+  <script id="tmpl-nf-after-field" type="text/template">
+
+
+    {{{ data.afterField }}}
+  </script> 
+  <script id="tmpl-nf-form-layout" type="text/template">
+
+
+        <form>
+                <div>
+                        <div class="nf-before-form-content"></div>
+                        <div class="nf-form-content {{{ data.element_class }}}"></div>
+                        <div class="nf-after-form-content"></div>
+                </div>
+        </form>
+  </script> 
+  <script id="tmpl-nf-form-hp" type="text/template">
+
+
+        <label for="nf-field-hp-{{{ data.id }}}" aria-hidden="true">
+                {{{ nfi18n.formHoneypot }}}
+                <input id="nf-field-hp-{{{ data.id }}}" name="nf-field-hp" class="nf-element nf-field-hp" type="text" value=""/>
+        </label>
+  </script> 
+  <script id="tmpl-nf-field-layout" type="text/template">
+
+
+    <div id="nf-field-{{{ data.id }}}-container" class="nf-field-container {{{ data.type }}}-container {{{ data.renderContainerClass() }}}">
+        <div class="nf-before-field"></div>
+        <div class="nf-field"></div>
+        <div class="nf-after-field"></div>
+    </div>
+  </script> 
+  <script id="tmpl-nf-field-before" type="text/template">
+
+
+    {{{ data.beforeField }}}
+  </script> 
+  <script id="tmpl-nf-field-after" type="text/template">
+
+
+    <#
+    /*
+     * Render our input limit section if that setting exists.
+     */
+    #>
+    <div class="nf-input-limit"></div>
+    <#
+    /*
+     * Render our error section if we have an error.
+     */
+    #>
+    <div id="nf-error-{{{ data.id }}}" class="nf-error-wrap nf-error" role="alert"></div>
+    <#
+    /*
+     * Render any custom HTML after our field.
+     */
+    #>
+    {{{ data.afterField }}}
+  </script> 
+  <script id="tmpl-nf-field-wrap" type="text/template">
+
+
+        <div id="nf-field-{{{ data.id }}}-wrap" class="{{{ data.renderWrapClass() }}}" data-field-id="{{{ data.id }}}">
+                <#
+                /*
+                 * This is our main field template. It's called for every field type.
+                 * Note that must have ONE top-level, wrapping element. i.e. a div/span/etc that wraps all of the template.
+                 */
+        #>
+                <#
+                /*
+                 * Render our label.
+                 */
+        #>
+                {{{ data.renderLabel() }}}
+                <#
+                /*
+                 * Render our field element. Uses the template for the field being rendered.
+                 */
+        #>
+                <div class="nf-field-element">{{{ data.renderElement() }}}</div>
+                <#
+                /*
+                 * Render our Description Text.
+                 */
+        #>
+                {{{ data.renderDescText() }}}
+        </div>
+  </script> 
+  <script id="tmpl-nf-field-wrap-no-label" type="text/template">
+
+
+    <div id="nf-field-{{{ data.id }}}-wrap" class="{{{ data.renderWrapClass() }}}" data-field-id="{{{ data.id }}}">
+        <div class="nf-field-label"></div>
+        <div class="nf-field-element">{{{ data.renderElement() }}}</div>
+        <div class="nf-error-wrap"></div>
+    </div>
+  </script> 
+  <script id="tmpl-nf-field-wrap-no-container" type="text/template">
+
+
+
+        {{{ data.renderElement() }}}
+
+        <div class="nf-error-wrap"></div>
+  </script> 
+  <script id="tmpl-nf-field-label" type="text/template">
+
+
+        <div class="nf-field-label"><label for="nf-field-{{{ data.id }}}"
+                                           id="nf-label-field-{{{ data.id }}}"
+                                           class="{{{ data.renderLabelClasses() }}}">{{{ data.label }}} {{{ ( 'undefined' != typeof data.required && 1 == data.required ) ? '<span class="ninja-forms-req-symbol">*</span>' : '' }}} {{{ data.maybeRenderHelp() }}}</label></div>
+  </script> 
+  <script id="tmpl-nf-field-error" type="text/template">
+
+
+        <div class="nf-error-msg nf-error-{{{ data.id }}}">{{{ data.msg }}}</div>
+  </script> 
+  <script id="tmpl-nf-form-error" type="text/template">
+
+
+        <div class="nf-error-msg nf-error-{{{ data.id }}}">{{{ data.msg }}}</div>
+  </script> 
+  <script id="tmpl-nf-field-input-limit" type="text/template">
+
+
+    {{{ data.currentCount() }}} {{{ nfi18n.of }}} {{{ data.input_limit }}} {{{ data.input_limit_msg }}}
+  </script> 
+  <script id="tmpl-nf-field-null" type="text/template"></script> 
+  <script id="tmpl-nf-field-firstname" type="text/template">
+
+
+    <input
+            type="text"
+            value="{{{ data.value }}}"
+            class="{{{ data.renderClasses() }}} nf-element"
+
+            id="nf-field-{{{ data.id }}}"
+            <# if( ! data.disable_browser_autocompletes ){ #>
+            name="{{ data.custom_name_attribute || 'nf-field-' + data.id + '-' + data.type }}"
+            autocomplete="given-name"
+            <# } else { #>
+            name="{{ data.custom_name_attribute || 'nf-field-' + data.id }}"
+            {{{ data.maybeDisableAutocomplete() }}}
+            <# } #>
+            {{{ data.renderPlaceholder() }}}
+
+            aria-invalid="false"
+            aria-describedby="nf-error-{{{ data.id }}}"
+            aria-labelledby="nf-label-field-{{{ data.id }}}"
+
+            {{{ data.maybeRequired() }}}
+    >
+  </script> 
+  <script id='tmpl-nf-field-input' type='text/template'>
+
+
+    <input id="nf-field-{{{ data.id }}}" name="nf-field-{{{ data.id }}}" aria-invalid="false" aria-describedby="nf-error-{{{ data.id }}}" class="{{{ data.renderClasses() }}} nf-element" type="text" value="{{{ data.value }}}" {{{ data.renderPlaceholder() }}} {{{ data.maybeDisabled() }}}
+           aria-labelledby="nf-label-field-{{{ data.id }}}"
+
+            {{{ data.maybeRequired() }}}
+    >
+  </script> 
+  <script id="tmpl-nf-field-lastname" type="text/template">
+
+
+    <input
+            type="text"
+            value="{{{ data.value }}}"
+            class="{{{ data.renderClasses() }}} nf-element"
+
+            id="nf-field-{{{ data.id }}}"
+            <# if( ! data.disable_browser_autocompletes ){ #>
+            name="{{ data.custom_name_attribute || 'nf-field-' + data.id + '-' + data.type }}"
+            autocomplete="family-name"
+            <# } else { #>
+            name="{{ data.custom_name_attribute || 'nf-field-' + data.id }}"
+            {{{ data.maybeDisableAutocomplete() }}}
+            <# } #>
+            {{{ data.renderPlaceholder() }}}
+
+            aria-invalid="false"
+            aria-describedby="nf-error-{{{ data.id }}}"
+                aria-labelledby="nf-label-field-{{{ data.id }}}"
+
+            {{{ data.maybeRequired() }}}
+    >
+  </script> 
+  <script id="tmpl-nf-field-textbox" type="text/template">
+
+
+        <input
+                        type="text"
+                        value="{{{ data.value }}}"
+                        class="{{{ data.renderClasses() }}} nf-element"
+                        {{{ data.renderPlaceholder() }}}
+                        {{{ data.maybeDisabled() }}}
+                        {{{ data.maybeInputLimit() }}}
+
+                        id="nf-field-{{{ data.id }}}"
+                        <# if( ! data.disable_browser_autocomplete && -1 < [ 'city', 'zip' ].indexOf( data.type ) ){ #>
+                                name="{{ data.custom_name_attribute || 'nf-field-' + data.id + '-' + data.type }}"
+                                autocomplete="on"
+                        <# } else { #>
+                                name="{{ data.custom_name_attribute || 'nf-field-' + data.id }}"
+                                {{{ data.maybeDisableAutocomplete() }}}
+                        <# } #>
+
+                        aria-invalid="false"
+                        aria-describedby="nf-error-{{{ data.id }}}"
+                        aria-labelledby="nf-label-field-{{{ data.id }}}"
+
+                        {{{ data.maybeRequired() }}}
+        >
+  </script> 
+  <script id="tmpl-nf-field-email" type="text/template">
+
+
+        <input
+                        type="email"
+                        value="{{{ data.value }}}"
+                        class="{{{ data.renderClasses() }}} nf-element"
+
+                        id="nf-field-{{{ data.id }}}"
+                        <# if( ! data.disable_browser_autocompletes ){ #>
+                        name="{{ data.custom_name_attribute || 'nf-field-' + data.id + '-' + data.type }}"
+                        autocomplete="email"
+                        <# } else { #>
+                        name="{{ data.custom_name_attribute || 'nf-field-' + data.id }}"
+                        {{{ data.maybeDisableAutocomplete() }}}
+                        <# } #>
+                        {{{ data.renderPlaceholder() }}}
+                        {{{ data.maybeDisabled() }}}
+
+                        aria-invalid="false"
+                        aria-describedby="nf-error-{{{ data.id }}}"
+                        aria-labelledby="nf-label-field-{{{ data.id }}}"
+
+                        {{{ data.maybeRequired() }}}
+        >
+  </script> 
+  <script id="tmpl-nf-field-listselect" type="text/template">
+
+
+    <select id="nf-field-{{{ data.id }}}" name="nf-field-{{{ data.id }}}" aria-invalid="false" aria-describedby="nf-error-{{{ data.id }}}" class="{{{ data.renderClasses() }}} nf-element" {{{ data.renderOtherAttributes() }}}
+            aria-labelledby="nf-label-field-{{{ data.id }}}"
+
+            {{{ data.maybeRequired() }}}
+    >
+        {{{ data.renderOptions() }}}
+    </select>
+    <div for="nf-field-{{{ data.id }}}"></div>
+  </script> 
+  <script id="tmpl-nf-field-listselect-option" type="text/template">
+
+
+        <# if ( ! data.visible ) { return ''; } #>
+        <option value="{{{ data.value }}}" {{{ ( 1 == data.selected ) ? 'selected="selected"' : '' }}} >{{{ data.label }}}</option>
+  </script> 
+  <script id="tmpl-nf-field-textarea" type="text/template">
+
+
+    <textarea id="nf-field-{{{ data.id }}}" name="nf-field-{{{ data.id }}}" aria-invalid="false" aria-describedby="nf-error-{{{ data.id }}}" class="{{{ data.renderClasses() }}} nf-element" {{{ data.renderPlaceholder() }}} {{{ data.maybeDisabled() }}} {{{ data.maybeDisableAutocomplete() }}} {{{ data.maybeInputLimit() }}}
+        aria-labelledby="nf-label-field-{{{ data.id }}}"
+
+        {{{ data.maybeRequired() }}}
+    >{{{ data.value }}}</textarea>
+  </script> 
+  <script id="tmpl-nf-rte-media-button" type="text/template">
+
+
+    <span class="dashicons dashicons-admin-media"></span>
+  </script> 
+  <script id="tmpl-nf-rte-link-button" type="text/template">
+
+
+    <span class="dashicons dashicons-admin-links"></span>
+  </script> 
+  <script id="tmpl-nf-rte-unlink-button" type="text/template">
+
+
+    <span class="dashicons dashicons-editor-unlink"></span>
+  </script> 
+  <script id="tmpl-nf-rte-link-dropdown" type="text/template">
+
+
+    <div class="summernote-link">
+        URL
+        <input type="url" class="widefat code link-url"> <br />
+        Text
+        <input type="url" class="widefat code link-text"> <br />
+        <label>
+            <input type="checkbox" class="link-new-window"> {{{ nfi18n.fieldsTextareaOpenNewWindow }}}
+        </label>
+        <input type="button" class="cancel-link extra" value="Cancel">
+        <input type="button" class="insert-link extra" value="Insert">
+    </div>
+  </script> 
+  <script id="tmpl-nf-field-submit" type="text/template">
+
+
+        <input id="nf-field-{{{ data.id }}}" class="{{{ data.renderClasses() }}} nf-element " type="button" value="{{{ data.label }}}" {{{ ( data.disabled ) ? 'disabled' : '' }}}>
+  </script> 
+  <script id='tmpl-nf-field-button' type='text/template'>
+
+
+    <button id="nf-field-{{{ data.id }}}" name="nf-field-{{{ data.id }}}" class="{{{ data.classes }}} nf-element">
+        {{{ data.label }}}
+    </button>
+  </script> 
+  <script>
+
+
+            var post_max_size = '10';
+            var upload_max_filesize = '1600';
+            var wp_memory_limit = '40';
+  </script> 
+  <script>
+
+
+        $(document).ready(function(){
+                $(".learnmore").addClass("content-button");
+
+                $(".content-button").each(function(){
+
+                        if ($(this).children("span").length == 0)
+                        {
+                                var txt = $(this).html();
+                                $(this).html("");
+                                $(this).append("<span>"+txt+"</span>")
+                        }
+
+                })
+
+        })
+  </script> 
+  <script type="text/javascript">
+
+  jssor_1_slider_init();
+  </script> 
+  <script>
+
+
+
+    
+    
+    
+  function openCap(evt, capName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(capName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+
+  </script> 
+  <script>
+
+
+        $('p:empty').remove();
+  </script>
+</body>
+</html>

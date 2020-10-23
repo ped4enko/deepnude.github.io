@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/ai_solutions_Favicon_32x32.png">
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:300,700,400|Muli' rel='stylesheet' type='text/css'>
+  <link href="/wp-content/themes/ai/style.css" rel="stylesheet">
+  <style>
+                        html, * html body {margin: 0}
+                        body {margin: 0 !important;padding: 0 !important;}
+  </style>
+  <title>Space Software Applications | ai-solutions.com</title>
+  <link rel="canonical" href="/spacesoftware/">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Space Software Applications | ai-solutions.com">
+  <meta property="og:url" content="https://ai-solutions.com/spacesoftware/">
+  <meta property="og:site_name" content="ai-solutions.com">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Space Software Applications | ai-solutions.com">
+  <link rel='dns-prefetch' href='//s.w.org'>
+  <script type="text/javascript">
+                        window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/ai-solutions.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.9"}};
+                        !function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+  </script>
+  <style type="text/css">
+  img.wp-smiley,
+  img.emoji {
+        display: inline !important;
+        border: none !important;
+        box-shadow: none !important;
+        height: 1em !important;
+        width: 1em !important;
+        margin: 0 .07em !important;
+        vertical-align: -0.1em !important;
+        background: none !important;
+        padding: 0 !important;
+  }
+  </style>
+  <script type='text/javascript' src='/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+  <script type='text/javascript' src='/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+  <link rel='https://api.w.org/' href='/wp-json/'>
+  <link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+  <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml">
+  <link rel='shortlink' href='/?p=7545'>
+  <link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fai-solutions.com%2Fspacesoftware%2F">
+  <link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fai-solutions.com%2Fspacesoftware%2F&#038;format=xml">
+  <style type="text/css" id="wp-custom-css">
+                        #swap-border .stemQLeft {
+        width: 44%;
+        margin-right: 0;
+        padding-right: 0;
+        border-right: none !important;
+  }
+
+  #swap-border .stemQRight {
+        width: calc(56% - 40px);
+        padding-left: 100px;
+        border-left: 1px solid #77777B;
+  }
+
+  @media (max-width: 1200px) {
+        #swap-border .stemQLeft {
+                width: 100%;
+        }
+        
+        #swap-border .stemQRight {
+                width: 100%;
+                border-left: none;
+                padding-left: 0;
+        }
+  }
+
+  @media (max-width: 1440px) {
+    .case-study-col-left {
+         display: none !important;
+    }
+
+    .case-study-col-right {
+        min-width: 100% !important;
+        padding-left: 15px !important;
+    }
+  }
+
+  .single-article {
+        text-align: justify;
+  }               
+  </style>
+  <style>
+  .clear{
+     clear:both;
+  }
+
+  .centered-content{
+     width:100% !important;
+  }
+
+  @font-face {
+        font-family: 'century';
+    src: url('/wp-content/themes/ai/fonts/CenturyGothic.eot');
+    src: url('/wp-content/themes/ai/fonts/CenturyGothic.eot?#iefix') format('embedded-opentype'),
+         url('/wp-content/themes/ai/fonts/CenturyGothic.woff') format('woff'),
+         url('/wp-content/themes/ai/fonts/CenturyGothic.ttf') format('truetype'),
+         url('/wp-content/themes/ai/fonts/CenturyGothic.svg#linux') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+
+  body{
+     background-color:#000;
+     background-position: center top;
+     background-size: auto;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+  }
+
+  /*--Header-------------------------------------------------------------------------------------------------------------------*/
+
+  .header-bg::before{
+     background: none !important
+  }
+
+  .header-bg::after{
+     background: none !important
+  }
+
+  .header-bg{
+     background: url(/wp-content/uploads/2018/05/spacesw_bg.png) center top no-repeat;
+     box-shadow:none !important;
+     height:911px;
+     margin:0 auto;
+  }
+  .header-banner{
+     margin: 20px auto 0;
+     background-color: rgba(30,30,30,0.5);
+     border-top: 1px solid #d12029;
+     border-bottom: 1px solid #d12029;
+     padding-bottom: 20px;
+  }
+
+  .header-bannerTitle{
+     margin: 140px auto 0;
+     max-width:1200px;
+  }
+
+  .header-bannerContainer{
+     margin: 0 auto;
+     max-width:1200px;
+  }
+
+  .header-bannerTitle h1{
+     font-family:centuryb;
+     color: #FFFFFF;
+     font-size:48px;
+     text-shadow: 0px 4px 5px #000000;
+  }
+
+  .header-bannerTitle h3{
+     font-family:century;
+     color: #FFFFFF;
+     font-size:30px;
+     text-shadow: 0px 4px 5px #000000;
+  }
+
+  .header-bannerContainer p{
+     font-family:century;
+     color: #FFFFFF;
+     font-size:25px;
+     text-shadow: 0px 4px 5px #000000;
+  }
+
+  .bannerBTNs a{
+     color: #FFFFFF;
+     background-color: rgba(0,0,0,0.4);
+     border: 1px solid #d12029;
+     padding: 6px 20px 8px;
+     margin-right: 20px;
+     font-family: centuryb;
+     font-size: 22px;
+  }
+
+  .bannerBTNs a:hover{
+     background-color: rgba(209,32,41,0.4);
+  }
+
+  /*-----------------------------------------------------------------------------------------------------------------------------*/
+  /*-Video Header--------------------------------------------------------------------------------------------------------------*/
+
+  #ffVideo {
+    position: fixed;
+    right: 0;
+    top: -200px;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  /*-----------------------------------------------------------------------------------------------------------------------------*/
+  /*-Content--------------------------------------------------------------------------------------------------------------------*/
+
+  .content-wrapper{
+     margin:0 auto !important;
+     background-color:#FFFFFF;
+     padding:40px 0px;
+  }
+
+  .cotsProducts{
+     margin: 0 auto;
+  }
+
+  .customProducts{
+     margin: 40px auto;
+  }
+
+  .cotsIntro, .customIntro{
+     max-width: 1200px;
+     margin: 0 auto;
+     padding-bottom: 40px;
+  }
+
+  .cotsIntro h1, .customIntro h1{
+     text-align-last: center;
+     font-family: centuryb;
+     font-size: 50px;
+     color:#d12029;
+  }
+
+  .cotsIntro p, .customIntro p{
+     text-align-last: center;
+     font-size: 22px;
+     margin: 10px 0px;
+     letter-spacing: 1px;
+     font-family: century;
+  }
+
+  .freeflyer{
+     margin: 0 auto;
+     border-top: 1px solid #d12029;
+  }
+
+  .freeflyerContainer{
+     max-width: 1200px;
+     margin: 80px auto 140px;
+  }
+
+  .ffText{
+     float: left;
+     max-width: 540px;
+  }
+
+  .ffText p{
+     font-size: 20px;
+     line-height: 35px;
+  }
+
+  .ffImage{
+       float:right;
+       max-width:580px;
+  }
+
+  .dste{
+     margin: 0 auto;
+     background: url(/wp-content/uploads/2018/03/dste_background.png) center top;
+  }
+
+  .dsteContainer{
+     max-width: 1200px;
+     margin: 0px auto;
+     padding: 130px 0 140px;
+  }
+
+  .dsteText{
+     float: right;
+     max-width: 500px;
+     background: rgba(0,0,0,0.55);
+     padding: 40px;
+  }
+
+  .dsteText p{
+     font-size: 20px;
+     line-height: 35px;
+     color: #FFFFFF;
+  }
+
+  .dsteImage{
+       float:left;
+       max-width:580px;
+  }
+
+  .pbff{
+     margin: 0 auto;
+  }
+
+  .pbff h1{
+     color: #FFFFFF;
+     font-size: 30px;
+     font-family: centuryb;
+  }
+
+  .atlas{
+     float:left;
+     margin: 0 30px;
+     max-width: 31%;
+     background-color:#D12029;
+  }
+
+  .atlasText{
+     background-color:#77777B;
+     color:#FFFFFF;
+     min-height:270px;
+     padding:20px 40px;
+     font-size: 20px;
+     float:left;
+  }
+
+  .atlasImage{
+     float:left;
+  }
+
+  .meridian{
+     float:left;
+     margin-right: 30px;
+     max-width: 31%;
+     background-color:#D12029;
+  }
+
+  .meridianText{
+     background-color:#77777B;
+     color:#FFFFFF;
+     min-height:270px;
+     padding:20px 40px;
+     font-size: 20px;
+     float:left;
+  }
+
+  .meridianImage{
+     float:left;
+  }
+
+  .obssim{
+     float:left;
+     max-width: 31%;
+  }
+
+  .obssimText{
+     background-color:#77777B;
+     color:#FFFFFF;
+     min-height:270px;
+     padding:20px 40px;
+     font-size: 20px;
+     float:left;
+  }
+
+  .obssimImage{
+     float:left;
+  }
+
+  /*-----------------------------------------------------------------------------------------------------------------------------*/
+  /*--Footer--------------------------------------------------------------------------------------------------------------------*/
+
+  .footer{
+     background-color:#FFFFFF;
+  }
+
+  /*-----------------------------------------------------------------------------------------------------------------------------*/
+
+  /* aci added */
+  @media all and (max-width:768px){
+
+  .header-bg{
+  height:auto;
+  padding-bottom:40px;}
+
+  .bannerBTNs a{
+  font-size: 1em;
+  margin-right:0px;}
+
+
+
+  .cotsIntro h1, .customIntro h1{text-align:center; font-size:32px;}
+  .cotsIntro p, .customIntro p {text-align:center;}
+
+  }
+  </style>
+  <style>
+
+
+  *,html,body{
+  text-align-last: unset;
+  }
+
+
+
+  .header-bg{
+  height:auto !important;
+  }
+
+  .header-banner{
+  margin-bottom:2rem;
+  }
+
+  .content-wrapper{
+  padding:1px 0px;
+  }
+
+  .freeflyerContainer, .header-bannerTitle{
+  max-width: 1440px;
+  margin:3rem auto;
+  padding:0px 10px;
+  }
+
+  .vcenter{
+  display:flex;
+  align-items: center;
+  }
+
+  .header-banner h2{
+  color:#fff;
+  text-align: center;
+  font-size: 3em;
+  text-align-last: center;
+  margin-bottom:1rem;
+  font-weight: 300;
+  }
+
+
+  .header-banner p, .header-banner p:last-of-type {
+    font-family: century;
+    color: #FFFFFF;
+    font-size: 25px;
+    text-shadow: 0px 4px 5px #000000;
+    text-align: left;
+  }
+
+  .header-banner a{width:100%;}
+
+  .header-banner img{
+  margin:0px auto;
+  display:block;
+  }
+
+  .redline{
+  border:1px solid #d12029;
+  padding:1rem 3rem;
+  margin-bottom:1rem;
+  }
+
+  .redline-main{
+  border:1px solid #d12029;
+  padding:1rem 6rem;
+  margin-bottom:1rem;
+  }
+
+
+  @media only screen and (max-width: 996px) {
+
+  body{font-size: 12px;}
+
+
+  .vcenter{
+  display:inherit;
+  }
+
+  .redline,.redline-main{
+  padding:1rem 2rem;
+  }
+
+  .content-button{
+  text-align: center;
+  text-align-last: center;}
+
+  }
+
+  /* page content styles */
+  .ffText .freeflyer-main-logo{
+  margin:0px;
+  width:100%;
+  }
+
+  .ffImage img{width:100%;}
+
+  .content-button{
+  border:1px solid #d12029;
+  color:#000;
+  background:none;
+  font-size: 1.5em;
+  text-transform: capitalize;
+  padding:1rem 2rem;
+  }
+
+  .ffText p{color:#111;
+  margin:3rem 0px;}
+
+
+  .content-button span{
+  vertical-align: super;
+  display:inline;
+  font-size: .5em;
+  }
+
+  .freeflyer{border:0px;}
+
+  .section{
+  border-top:2px solid #d12029;
+  }
+
+  .sec-custom h2{
+  text-align: center;
+  text-align-last: center;
+  font-size: 4em;
+  color: #d12029;
+  }
+
+  .sec-custom img{
+  display:inherit;
+  margin:0px auto;
+  }
+
+  .sec-custom p{
+  text-align: center;
+  font-size: 2em;
+  }
+
+  .sec-atlas{
+
+  background-image:url('/wp-content/uploads/2019/04/atlas-bg.jpeg');
+  background-size: cover;
+  background-position: center;
+  }
+
+  .atlas-text-bg{
+  color:#fff;
+  padding: 2rem;
+  background: rgba(0,0,0,.65);
+  margin-bottom:3rem;
+  }
+
+
+
+  .atlas-text-bg p{
+  color:#fff;
+  }
+
+  .atlas-text-bg .content-button{
+  color:#fff;
+  width: 100%;
+  text-align: center;
+  }
+
+  .exp-atlas, .atlas-right{display:none;}
+
+  .atlas-monitor{}
+
+  @media only screen and (min-width: 997px) {
+
+  .sec-atlas{
+  background-image:url('/wp-content/uploads/2019/04/atlas-bg2.jpg');
+  background-image:url('/wp-content/uploads/2019/04/atlas-bg.jpeg');
+  }
+
+  .atlas-text-bg .content-button{width:auto;text-align: left;}
+
+  .exp-atlas, .atlas-right{display:block !important;}
+
+  .sec-atlas{
+  min-height: 980px;
+  }
+
+  .atlas-expand-bottom{
+  /*margin-bottom:240px; */
+  }
+
+  .atlast-monitor-con{
+  height:280px; width:100%; background:#fff; position: relative;}
+
+  .atlas-monitor{
+  position: absolute;
+  right:0px;
+  width:50%;
+  bottom: 150px;
+  padding:0px 40px;
+  }
+
+
+
+
+  .atlas-left{
+  }
+
+  .atlas-right{
+  position: relative;
+  }
+  }
+
+  @media only screen and (max-width: 996px) {
+  .atlast-monitor-con{display:none;}}
+
+  .sec-obssim{
+  background-image: url('/wp-content/uploads/2019/04/obssim-bg.jpg');
+  background-size: cover;
+  background-position: left;
+  min-height: 970px;
+  }
+
+  .obssim-text-bg{
+  color:#fff;
+  padding: 2rem;
+  background: rgba(0,0,0,.65);
+  margin-bottom:3rem;
+  }
+
+  .obssim-text-bg p{
+  color:#fff;
+  }
+
+  .obssim-text-bg .content-button{
+  color:#fff;
+  }
+
+  .exp-obssim{display:inline-block;}
+
+  @media only screen and (max-width: 996px) {
+
+  .exp-obssim{display:none;}
+
+  .sec-obssim{min-height: auto;}
+
+  .obssim-text-bg .content-button{
+  width:100%;
+  text-align: center;
+  }
+  }
+
+  .fullscreen{
+  display: flex;
+  align-items: center;}
+
+  .content .header-bg{
+  display:inline-block;
+  }
+
+  </style>
+  <style>
+                .header .logo a, .menu-item a, .subs a {color:#ffffff}
+                .subs>ul {-webkit-margin-after: 0; -webkit-margin-before: 0;}
+                .subs ul, .subs ul ul li {list-style: none; }
+                .subs>ul>li {display: inline-block; position: relative;}
+                .subs>ul>li>ul {display: none;position: absolute;}
+                .subs>ul>li:hover>ul{display: block;}
+  </style>
+  <style>
+  label, .ninja-forms-form .label-above label, .ninja-forms-form .label-below label {font-size: 14px;
+    font-weight: 400;}
+    .field-wrap li {list-style: none !important;}
+  </style>
+</head>
+<body style="z-index: 0" class="type-page">
+  <noscript></noscript>
+  <div id="privacy-opt">
+    <span><a class="dismiss-privacy-opt" href='/cookie-opt?opt=in'>X</a></span>
+    <div>
+      This site uses cookies & other tracking technologies to improve your experience. By using this site you agree to our <a href='/about-us/privacy-policy'>Privacy Policy</a>.
+    </div>
+    <div>
+      <a class="dismiss-privacy-opt btn" href='/cookie-opt?opt=in'>I Agree</a> <a class="btn" title="Opt Out" href='/cookie-opt?opt=out'>I Wish to Opt Out</a>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" media="all" href="/wp-content/themes/ai/css/aci.css">
+  <link rel="stylesheet" type="text/css" media="all" href="/wp-content/themes/ai/css/boostrap/bootstrap.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script> 
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <script src="/wp-content/themes/ai/js/smooth-scroll.js" type="text/javascript"></script> 
+  <script>
+
+
+
+  $( document ).ready(function() { console.log('fullscreen');
+  var wheight = $(window).height() + 20;
+
+  if ($(window).width() > 768){
+  $(".fullscreen").each(function(){
+
+  var cheight = $(this).height();
+
+  //$(this).height(Math.max(cheight,wheight));
+  $(this).css('min-height', String(Math.max(cheight,wheight))+'px');
+  });
+
+
+  $(".sec-atlas").each(function(){
+
+  var cheight = $(this).height();
+
+  //$(this).height(Math.max(cheight,wheight));
+  $(this).css('min-height', String(Math.max(cheight,wheight) - 200)+'px');
+  });
+
+
+  }
+
+  });
+  </script>
+  <div class="content">
+    <div id="ffVideo">
+      <div class="wistia_responsive_padding" style="width:1920px;height:1080px">
+        <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"></div>
+      </div>
+      <script src="https://fast.wistia.net/assets/external/E-v1.js" async></script>
+    </div>
+    <div class="header-bg fullscreen" style="background:none;">
+      <div class="header centered-content">
+        <div style="width: 100%; margin-left: 0%">
+          <div class="subs">
+            <ul>
+              <li>employee login</li>
+              <li>
+                <a href="/freeflyer-login/">freeflyer<sup>®</sup> login</a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu">
+            <a class="icon icon-navicon"></a>
+            <div class="logo">
+              <a href='/'><img src="/img/global/logo-text.png"></a>
+            </div>
+            <div class="menu-wrap">
+              <div class="menu-main-navigation-container">
+                <ul id="menu-main-navigation" class="menu">
+                  <li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-20">
+                    <a href="/about-us/">Who We Are</a>
+                    <ul class="sub-menu">
+                      <li id="menu-item-4996" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4996">
+                        <a href="/about-us/">About Us</a>
+                      </li>
+                      <li id="menu-item-8372" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8372">
+                        <a href="/about-us/careers/">Careers</a>
+                      </li>
+                      <li id="menu-item-23" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23">
+                        <a href="/about-us/news-multimedia/">Newsroom</a>
+                      </li>
+                      <li id="menu-item-4997" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4997">
+                        <a href="/about-us/events/">Events</a>
+                      </li>
+                      <li id="menu-item-7642" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7642">
+                        <a href="/about-us/spot-on-spotlight/">SPOT ON Spotlight</a>
+                      </li>
+                      <li id="menu-item-5636" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5636">
+                        <a href="/about-us/stem-women-of-space/">STEM Women of Space</a>
+                      </li>
+                      <li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22">
+                        <a href="/contact-us/">Contact Us</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li id="menu-item-4999" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-4999">
+                    <a href="/space-mission-engineering/">Capabilities</a>
+                    <ul class="sub-menu">
+                      <li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26">
+                        <a href="/space-mission-engineering/">Space Mission Engineering</a>
+                      </li>
+                      <li id="menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24">
+                        <a href="/mission-systems-assurance/">Mission Systems Assurance</a>
+                      </li>
+                      <li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25">
+                        <a href="/launch-vehicle-services/">Launch Services</a>
+                      </li>
+                      <li id="menu-item-6432" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6432">
+                        <a href="/emergency-management/">Emergency Management</a>
+                      </li>
+                      <li id="menu-item-7645" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-7545 current_page_item menu-item-7645">
+                        <a href="/spacesoftware/">Space Software Applications</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li id="menu-item-7581" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-7581">
+                    <a href="/freeflyer/">FreeFlyer<sup>®</sup></a>
+                    <ul class="sub-menu">
+                      <li id="menu-item-6892" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6892">
+                        <a href="/freeflyer/freeflyer-university/">FreeFlyer<sup>®</sup> University</a>
+                      </li>
+                      <li id="menu-item-7477" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7477">
+                        <a href="/freeflyer/">FreeFlyer<sup>®</sup> Software</a>
+                      </li>
+                      <li id="menu-item-6250" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6250">
+                        <a href="/freeflyer/freeflyer-software-help-desk/">FreeFlyer<sup>®</sup> Help Desk</a>
+                      </li>
+                      <li id="menu-item-5000" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5000">
+                        <a href="/about-us/news-multimedia/?c=freeFlyer-blog">FreeFlyer<sup>®</sup> Blog</a>
+                      </li>
+                      <li id="menu-item-9021" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9021">
+                        <a href="/freeflyer/freeflyer-certification/">FreeFlyer<sup>®</sup> Certification</a>
+                      </li>
+                      <li id="menu-item-5001" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5001">
+                        <a href="/freeflyer-login/">FreeFlyer<sup>®</sup> Login</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-bannerTitle">
+        <h3>Software Applications for</h3>
+        <h1>Space Mission Design, Analysis, and Operations</h1>
+      </div>
+      <div class="header-banner">
+        <div class="freeflyerContainer" style="margin:0px auto">
+          <div class="row vcenter">
+            <div class="col-md-6">
+              <p>With 20 years of successful uses by more than 300 civilian, military, commercial and international missions to date, a.i. solutions delivers powerful, customizable, and scalable space software products and solutions for full-lifecycle space mission planing and operations.</p>
+            </div>
+            <div class="col-md-6">
+              <div class="redline-main">
+                <a href="#sec-freeflyer"><img src="/wp-content/uploads/2019/04/space-soft-2019-freeflyer-logo.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <h2>Explore Solutions Powered by <b><i>FreeFlyer<sup>&reg;</sup></i></b></h2>
+            </div>
+          </div>
+          <div class="row vcenter">
+            <div class="col-md-4">
+              <div class="redline">
+                <a href="#sec-meridian"><img src="/wp-content/uploads/2019/04/space-soft-2019-meridian-logo.png" alt=""></a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="redline">
+                <a href="#sec-atlas"><img src="/wp-content/uploads/2019/04/space-soft-2019-atlas-logo.png" alt=""></a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="redline">
+                <a href="#sec-obssim"><img src="/wp-content/uploads/2019/04/space-soft-2019-obssim-logo.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="content-wrapper">
+      <div id="cotsProducts" class="cotsProducts">
+        <div class="freeflye fullscreen" id="sec-freeflyer">
+          <div class="freeflyerContainer row">
+            <div class="col-md-6 col-md-push-6">
+              <div class="ffImage"><img src="/wp-content/uploads/2018/03/ff_monitor_34ss.png" alt="FreeFlyer Mission Design, Analysis, and Operations" width="100%"></div>
+            </div>
+            <div class="col-md-6 col-md-pull-6">
+              <div class="ffText">
+                <p><img class="freeflyer-main-logo" src="/wp-content/uploads/2018/03/ff_logo_34ss.png" alt="FreeFlyer Software" title="FreeFlyer Astrodynamics" width="100%"></p>
+                <p>FreeFlyer<sup>&reg;</sup>, a commercial-off-the-shelf (COTS) application, is a feature-rich astrodynamics tool that supports all phases of the mission lifecycle, from initial design trade studies through automated on-orbit operations. Powered by industry-proven astrodynamics algorithms accessed through a flexible scripting environment, FreeFlyer is unmatched in its versatility to solve the toughest problems of today’s space missions.</p>
+                <p><a href="/freeflyer" class="content-button">Discover the Power of FreeFlyer<span>&reg;</span></a></p>
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="section sec-custom">
+          <div class="freeflyerContainer">
+            <div class="row">
+              <div class="col-md-12">
+                <h2>Customized Space Software Solutions</h2><img src="/wp-content/uploads/2019/04/powered-by-freeflyer.png" alt="Powered by Freeflyer">
+                <p>Extend the power of FreeFlyer with these customized software solutions designed to meet your mission’s specific requirements and capabilities.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section freeflyer sec-meridian fullscreen" id="sec-meridian">
+          <div class="freeflyerContainer row">
+            <div class="col-md-6">
+              <div class="ffImage"><img src="/wp-content/uploads/2019/04/meridian-monitor.png" alt="FreeFlyer Meridian" width="100%"></div>
+            </div>
+            <div class="col-md-6">
+              <div class="ffText">
+                <p><img class="freeflyer-main-logo" src="/wp-content/uploads/2019/04/meridian-software-2019-large.png" alt="FreeFlyer Software" title="FreeFlyer Astrodynamics" width="100%"></p>
+                <p>Meridian Ground Systems is a turnkey, cost-effective solution for managing your mission through user-friendly graphical interfaces specifically designed for streamlined spacecraft operations within geosynchronous and low earth orbits (GEO/LEO).</p>
+                <p><a href="/meridian" class="content-button">Learn More About Meridian<span></span></a></p>
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="section freeflyer sec-atlas fullscreen" id="sec-atlas" style="position: relative;">
+          <div class="freeflyerContainer row atlas-expand-bottom">
+            <div class="col-md-6 atlas-left">
+              <div class="ffText atlas-text-bg">
+                <p><img class="freeflyer-main-logo" src="/wp-content/uploads/2019/04/atlas-logo-large.png" alt="FreeFlyer Software" title="FreeFlyer Astrodynamics" width="100%"></p>
+                <p>Atlas Displays provides real-time situational awareness supporting any mission operations center and the flexibility to be customized to and integrated into any ground system environment via a number of interface methods.</p>
+                <p><a href="/atlas" class="content-button">Learn More About Atlas<span></span></a></p>
+                <div class="exp-atlas"></div>
+              </div>
+            </div>
+            <div class="col-md-6"></div>
+          </div>
+        </div>
+        <div class="atlast-monitor-con" style="">
+          <div class="atlas-monitor"><img class="" src="/wp-content/uploads/2019/04/atlas-monitor.png" alt="FreeFlyer Mission Design, Analysis, and Operations" width="100%"></div>
+        </div>
+        <div class="section freeflyer sec-obssim fullscreen" id="sec-obssim">
+          <div class="freeflyerContainer row" style="margin-bottom:0px;">
+            <div class="col-md-6">
+              <div class="ffImage"></div>
+            </div>
+            <div class="col-md-6">
+              <div class="ffText obssim-text-bg">
+                <p><img class="freeflyer-main-logo" src="/wp-content/uploads/2019/04/obssim-logo-large.png" alt="FreeFlyer Software" title="FreeFlyer Astrodynamics" width="100%"></p>
+                <p>Generate simulated space surveillance sensors observations with a.i. solutions’ ObsSIM. ObsSIM produces physics-based observation data powered by FreeFlyer<sup>&reg;</sup>, simulating the ground and space-based sensors of the US SSN.</p>
+                <p><a href="/obssim" class="content-button">Learn More About ObsSIM<span></span></a></p>
+                <div class="exp-obssim"></div>
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div style="clear:both"></div>
+    <div class="footer">
+      <div class="footer-bar">
+        <div class="footer-cell" style="">
+          <div>
+            <a href='/' class="logo"><img src="/img/global/logo-dark.png"></a><br>
+            Copyright 2020<br>
+            a.i. solutions, Inc.<br>
+            All Rights Reserved
+          </div>
+        </div>
+        <div class="footer-cell">
+          <div>
+            4500 Forbes Boulevard<br>
+            Suite 300<br>
+            Lanham, MD 20706<br>
+            (301) 306-1756
+          </div>
+        </div>
+        <div class="footer-cell links">
+          <div>
+            <a href='/about-us/'>About Us</a> <a href='/about-us/careers/'>Careers</a> <a href='/about-us/news-multimedia'>Newsroom</a> <a href='/about-us/contact-us/'>Contact Us</a> <a href='/about-us/privacy-policy/'>Privacy Policy</a>
+          </div>
+        </div>
+        <div class="footer-cell">
+          <div class="f-sm">
+            <i>Facebook</i> <i>Twitter</i> <i>LinkedIn</i> <i>Youtube</i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script> 
+    <script src="/js/size.js"></script> 
+    <script src="/js/jquery-custom-scrollbar-master/jquery.custom-scrollbar.js"></script>
+    <link href="/js/jquery-custom-scrollbar-master/jquery.custom-scrollbar.css" rel="stylesheet">
+    <script src="/js/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.js"></script>
+    <link href="/js/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet">
+    <script type="text/javascript">
+                /*      function initialize() {
+                                var mapOptions = {
+                                center: { lat: -34.397, lng: 150.644},
+                                zoom: 8
+                                };
+                                var map = new google.maps.Map(document.getElementById('map-canvas'),
+                                mapOptions);
+                        }
+                        google.maps.event.addDomListener(window, 'load', initialize);
+                */
+                        function switchBanners()
+                        {
+                                //alert("in")
+                                current = $('.bg.current');
+                                next = $(current).next();
+                                if (!(next.length))
+                                        next = $('.bg:first')
+
+                                current.removeClass('current');
+                                next.addClass('current').addClass('added');
+                        }
+                        var menuheight;
+                        function setMenuHeight()
+                        {
+                                if ($(window).width() < 650)
+                                        menuheight = 60;
+                                else
+                                        menuheight = 40;
+                                $('.menu-wrap').removeClass("vis");
+                        }
+                        function resizeElements()
+                        {
+                                $('.hovertext').each(function(){
+                                        he = $(this).find('div').height();
+                                        wid = $(this).find('div').width();
+                                        $(this).css("height", he).css("width", wid);
+                                })
+                        }
+                        function getHelpFile(id)
+                        {
+
+                        }
+                        function ShouldIStayOrShouldIGo(itm)
+                        {
+                                //console.log($('body').width())
+                                $(".menu-item").not(itm).data('clicked', 0);
+                                if (  (navigator.userAgent.match(/(iPod|iPhone|iPad)/) || navigator.userAgent.toLowerCase().indexOf("android") > -1 ) && $('body').width() > 700 ) {
+
+                                        if (itm.parent().children("div").length>0)
+                                        {
+                                                if (itm.data('clicked') == 1)
+                                                {
+                                                        window.location = itm.attr("href");
+                                                }
+                                                else
+                                                {
+                                                        itm.data('clicked',1)
+                                                }
+                                        }
+                                        else
+                                                window.location = itm.attr("href");
+                                }
+                                else
+                                        window.location = itm.attr("href");
+                        }
+                        $(document).ready(function(){
+                                setMenuHeight();
+                                setInterval(switchBanners, 8000)
+                                $("a.video, a.picture, a.inline-video").fancybox();
+                                window.resizeBy(1,0);
+                                if ($('.btn-ffvc').length>0)
+                                {
+                                        $('.btn-ffvc').on('click', function(){
+                                                if ($('.ffvc').css('display') == 'block')
+                                                        $('.ffvc').slideUp(500);
+                                                else
+                                                        $('.ffvc').slideDown(500);
+                                        })
+                                        $('.btn-collapse').on('click', function(){
+                                                $('.ffvc').slideUp(500);
+                                        })
+                                }
+                                $(".scrollbar").customScrollbar({
+                                        updateOnWindowResize: "false"
+                                });
+                                //      blocks clicking while the animation is playing
+                                var ivAnimating = false;
+                                $('#img-left, #img-right, #vid-left, #vid-right').on("click", function(){
+                                        //      if not already animating
+                                        if (ivAnimating == false)
+                                        {
+                                                //      lock the buttons
+                                                ivAnimating = true;
+                                                //      get the id
+                                                var id = $(this).attr("id");
+                                                //      figure out if it is images or videos
+                                                if (id == "img-left" || id == "img-right")
+                                                        el = "images"
+                                                else
+                                                        el = "videos"
+                                                //      get the wrapper info
+                                                var wrap = $('.'+el+'list')
+                                                var wrapwidth = wrap.css("width").replace("px", "");
+                                                //      figure out which way the slides need to move
+                                                if (id == "img-left" || id == "vid-left")
+                                                        dir = "1"
+                                                else
+                                                        dir = "-1"
+                                                //      set the element that is scrolling
+                                                var toScroll = $('.'+el);
+                                                //      get the left margin of the element.  this is what is adjusted to slide the list around
+                                                var left = toScroll.css("margin-left").replace("px","");
+                                                //      the width of the scroll element
+                                                var max = toScroll.css("width").replace("px", "")
+                                                //      handles the left moves
+                                                if ((left <=0 )&& (parseInt((-1 * wrapwidth) + parseInt(left)) >= parseInt(-1 * max)) && dir == "-1")
+                                                        toScroll.animate({"margin-left" : parseInt(left) + parseInt(dir * (200)) }, 500, function(){ivAnimating = false;})
+                                                //      handles the right moves
+                                                if (left < 0 && dir == "1")
+                                                        toScroll.animate({"margin-left" : parseInt(left) + parseInt(dir * (200)) }, 500, function(){ivAnimating = false;})
+                                        }
+                                })
+
+                                //$("a.iframe").fancybox();
+
+                                $('.icon-navicon').on('click', function(){
+
+                                        $('.menu-wrap').toggleClass("vis");
+
+                                })
+                                if ($(".hide-timer").length>0)
+                                        setTimeout(function(){$(".hide-timer").slideUp(400)}, 5000)
+                        });
+
+                        /*$(window).load(function(){*/
+      $( document ).ready(function() {
+                                if ($('.tabs'))
+                                {
+                                        $('.tabs-sidebar a').on('click', function(){
+                                                $('.tabs-sidebar a').removeClass("on");
+                                                $(this).addClass("on")
+                                                tab = $(this).data('tab');
+                                                $('.tab').removeClass('on');
+                                                $('.tab-'+tab).addClass('on');
+                                                $('.tabs').animate({height:$('.tab-'+tab).outerHeight(true)}, 500)
+
+                                        })
+                                        //console.log($('.tab.on').outerHeight(true))
+                                        $('.tabs').animate({height:$('.tab.on').outerHeight(true)}, 500)
+
+                                }
+
+                                $('.top-menu').on('touchstart touchmove', function (e) {
+                                        e.stopPropagation();
+                                });
+
+                                executeSizeFunction();
+                        });
+
+                        $(window).resize(function(){
+                                console.log("resize")
+                                setMenuHeight();
+                                resizeElements();
+                                executeSizeFunction();
+                        })
+    </script> 
+    <script type='text/javascript'>
+
+
+    /* <![CDATA[ */
+    var nm_load_more = {"url":"https:\/\/ai-solutions.com\/wp-admin\/admin-ajax.php"};
+    /* ]]> */
+    </script> 
+    <script type='text/javascript' src='/js/nm_load_more.js'></script> 
+    <script type='text/javascript' src='/wp-includes/js/wp-embed.min.js?ver=4.9.9'></script> 
+    <script>
+
+
+        $(document).ready(function(){
+                $(".learnmore").addClass("content-button");
+
+                $(".content-button").each(function(){
+
+                        if ($(this).children("span").length == 0)
+                        {
+                                var txt = $(this).html();
+                                $(this).html("");
+                                $(this).append("<span>"+txt+"</span>")
+                        }
+
+                })
+
+        })
+    </script> 
+    <script>
+
+        $('p:empty').remove();
+    </script>
+  </div>
+</body>
+</html>
