@@ -108,7 +108,14 @@
     .field-wrap li {list-style: none !important;}
   </style>
 </head>
-<body style="z-index: 0" class="type-page">
+<body style="z-index: 0" class="type-page"><script async src="https://www.googletagmanager.com/gtag/js?id=G-NR37CGWPD6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NR37CGWPD6');
+</script>
   <noscript></noscript>
   <div id="privacy-opt">
     <span><a class="dismiss-privacy-opt" href='/cookie-opt?opt=in'>X</a></span>
