@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Error Handling</title>
+  <meta name="keywords" content="">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link type="text/css" href="default.css" rel="stylesheet">
+  <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+  </style>
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="helpman_settings.js"></script>
+  <script type="text/javascript" src="helpman_topicinit.js"></script>
+  <script type="text/javascript">
+     HMSyncTOC("index.html", "error_handling.htm");
+  </script>
+  <script type="text/javascript" src="highlight.js"></script>
+  <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+  </script>
+</head>
+<body>
+  <table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#808080">
+    <tr style="vertical-align:middle">
+      <td style="text-align:left">
+        <h1 class="p_Heading1"><span class="f_Heading1">Error Handling</span></h1>
+      </td>
+      <td style="text-align:right">
+        <a href="welcome.htm">Top</a>&nbsp; <a href="using_the_runtime_api.htm">Previous</a>&nbsp; <a href="expression_handling.htm">Next</a>
+      </td>
+    </tr>
+  </table>
+  <table style="width:100%;border:none;border-spacing:0px">
+    <tr style="vertical-align:top">
+      <td style="text-align:left;padding:5px">
+        <p class="p_Normal">When using the FreeFlyer runtime API, it is entirely possible that the user will make mistakes in API configuration, in Mission Plan configuration, in programming, or otherwise. These errors result in exceptions being thrown at the API level, and an understanding of the exceptions that are thrown is critical to the development of applications that successfully utilize the runtime API.</p>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">&nbsp;</p>
+        <h2 class="p_Heading2"><span class="f_Heading2">Capturing Exceptions</span></h2>
+        <hr style="height:1px; color:#999999; border-width:0px; background-color:#999999;">
+        <p class="p_Normal">The best way to capture exceptions with the runtime API is to use the try/catch functionality of the programming language for the interface you're using. From within the try/catch, if any exception is thrown, it will exit out of the try portion and immediately break into the catch portion, from which you can access the exception itself and obtain details on the failure. In the case of the runtime API, you will always have a RuntimeApiException thrown if a failure occurs within the context of the runtime API itself and not elsewhere in your programming. The following is a trivial C# example demonstrating using the try/catch functionality of C# to capture the RuntimeApiException.</p>
+        <p class="p_Normal">&nbsp;</p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table class="Script Example Table" style="border:none; border-spacing:0px; border-collapse:collapse;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:8px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas; color: #0000ff;">try</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">{</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas; color: #0000ff;">&nbsp; using</span> <span style="font-family: Consolas;">(</span><span style="font-family: Consolas; color: #2b91af;">RuntimeApiEngine</span> <span style="font-family: Consolas;">engine =</span> <span style="font-family: Consolas; color: #0000ff;">new</span> <span style="font-family: Consolas;"></span><span style="font-family: Consolas; color: #2b91af;">RuntimeApiEngine</span><span style="font-family: Consolas;">(</span><span style="font-family: Consolas; color: #a31515;">&quot;FreeFlyerInstallDirectory&quot;</span><span style="font-family: Consolas;">))</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">&nbsp; {</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">&nbsp; &nbsp; &nbsp;engine.LoadMissionPlanFromFile(</span><span style="font-family: Consolas; color: #a31515;">&quot;MissionPlanPath&quot;</span><span style="font-family: Consolas;">);</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">&nbsp; &nbsp; &nbsp;engine.PrepareMissionPlan();</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">&nbsp; &nbsp; &nbsp;engine.ExecuteRemainingStatements();</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">&nbsp; &nbsp; &nbsp;engine.CleanupMissionPlan();</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">&nbsp; }</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">}</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas; color: #0000ff;">catch</span> <span style="font-family: Consolas;">(</span><span style="font-family: Consolas; color: #2b91af;">RuntimeApiException</span> <span style="font-family: Consolas;">e)</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">{</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas; color: #2b91af;">&nbsp; Console</span><span style="font-family: Consolas;">.WriteLine(e.Message);</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">}</span></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Notes"><span class="f_Notes">Note: Most asynchronous exceptions are thrown when they are encountered in the asynchronous queue. Invalid argument or invalid engine exceptions, however, are caught up-front when the call is made. See the <a href="asynchronous_programming.htm" class="topiclink">Asynchronous Programming</a> guide for more information on asynchronous calls.</span></p>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">Some details that you can obtain from your exception include the result type. To obtain the result type, you might do the following in the catch portion of the above C# example.</p>
+        <p class="p_Normal">&nbsp;</p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table class="Script Example Table" style="border:none; border-spacing:0px; border-collapse:collapse;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:8px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas; color: #0000ff;">catch</span> <span style="font-family: Consolas;">(</span><span style="font-family: Consolas; color: #2b91af;">RuntimeApiException</span> <span style="font-family: Consolas;">e)</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">{</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas; color: #0000ff;">&nbsp; if</span> <span style="font-family: Consolas;">(e.Result ==</span> <span style="font-family: Consolas; color: #2b91af;">Result</span><span style="font-family: Consolas;">.ErrorFailedToParseScript)</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">&nbsp; {</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">&nbsp; &nbsp;</span> <span style="font-family: Consolas; color: #2b91af;">Console</span><span style="font-family: Consolas;">.WriteLine(</span><span style="font-family: Consolas; color: #a31515;">&quot;There was a syntax error in the FreeFlyer Mission Plan.&quot;</span><span style="font-family: Consolas;">);</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">&nbsp; }</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">}</span></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">&nbsp;</p>
+        <h2 class="p_Heading2"><span class="f_Heading2">Mission Plan Diagnostics</span></h2>
+        <hr style="height:1px; color:#999999; border-width:0px; background-color:#999999;">
+        <p class="p_Normal">Exception handling within the runtime API captures errors that are experienced within the actual application code itself, but doesn't give any details about the Mission Plan. Your exception may be rooted in an error thrown at runtime in the FreeFlyer Mission Plan itself, and so there is a lot of value in being able to diagnose those errors without having to actually run your Mission Plan from FreeFlyer.exe. To do this, we leverage another capability of the runtime API, the GetMissionPlanDiagnosticsResult class.</p>
+        <p class="p_Normal">&nbsp;</p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table class="Script Example Table" style="border:none; border-spacing:0px; border-collapse:collapse;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:8px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas; color: #2b91af;">GetMissionPlanDiagnosticsResult</span> <span style="font-family: Consolas;">myDiagnostics = engine.GetMissionPlanDiagnostics(</span><span style="font-family: Consolas; color: #2b91af;">DiagnosticLevel</span><span style="font-family: Consolas;">.Default);</span></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">The GetMissionPlanDiagnosticsResult class has four key properties associated with it, which all give you greater insight into the issues experienced in the Mission Plan itself.</p>
+        <p class="p_Normal">&nbsp;</p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table class="Data Table with Header" style="border:solid 2px #c0c0c0; border-spacing:0px; border-collapse:collapse;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; width:248px; background-color:#c0c0c0; padding:4px; border:solid thin #c0c0c0;">
+                <p class="p_Normal"><span style="font-weight: bold;">Property Signature</span></p>
+              </td>
+              <td style="vertical-align:top; width:531px; background-color:#c0c0c0; padding:4px; border:solid thin #c0c0c0;">
+                <p class="p_Normal"><span style="font-weight: bold;">Property Function</span></p>
+              </td>
+            </tr>
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:middle; width:248px; padding:4px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">myDiagnostics.ErrorsCount</span></p>
+              </td>
+              <td style="vertical-align:middle; width:531px; padding:4px; border:solid thin #c0c0c0;">
+                <p class="p_Normal">Contains the number of runtime errors present in the Mission Plan.</p>
+              </td>
+            </tr>
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:middle; width:248px; padding:4px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">myDiagnostics.Errors</span></p>
+              </td>
+              <td style="vertical-align:middle; width:531px; padding:4px; border:solid thin #c0c0c0;">
+                <p class="p_Normal">Contains the text of the runtime errors present in the Mission Plan.</p>
+              </td>
+            </tr>
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:middle; width:248px; padding:4px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">myDiagnostics.WarningsCount</span></p>
+              </td>
+              <td style="vertical-align:middle; width:531px; padding:4px; border:solid thin #c0c0c0;">
+                <p class="p_Normal">Contains the number of warnings present in the Mission Plan.</p>
+              </td>
+            </tr>
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:middle; width:248px; padding:4px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">myDiagnostics.Warnings</span></p>
+              </td>
+              <td style="vertical-align:middle; width:531px; padding:4px; border:solid thin #c0c0c0;">
+                <p class="p_Normal">Contains the text of the warnings present in the Mission Plan.</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">The GetMissionPlanDiagnosticsResult class requires access to the RuntimeApiEngine class that experienced the error in order to provide further information on that error. It is especially apparent that should you be diagnosing exceptions in your application, you are likely doing it in the Catch block of a Try/Catch setup. Typically within the Catch block you will not have access to the RuntimeApiEngine class, and thus may be unable to diagnose your Mission Plan. It's not as simple as instantiating your RuntimeApiEngine outside of the Try/Catch blocks, however, as you will want to ensure that any exceptions thrown when attempting to create the engine are captured. There are effective ways to program around this, however, and one such example is provided below.</p>
+        <p class="p_Normal">&nbsp;</p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table class="Script Example Table" style="border:none; border-spacing:0px; border-collapse:collapse;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:8px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas; color: #2b91af;">RuntimeApiEngine</span> <span style="font-family: Consolas;">engine =</span> <span style="font-family: Consolas; color: #0000ff;">null</span><span style="font-family: Consolas;">;</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas; color: #0000ff;">try</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">{</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas; color: #0000ff;">&nbsp;</span> <span style="font-family: Consolas;">engine =</span> <span style="font-family: Consolas; color: #0000ff;">new</span> <span style="font-family: Consolas;"></span><span style="font-family: Consolas; color: #2b91af;">RuntimeApiEngine</span><span style="font-family: Consolas;">(</span><span style="font-family: Consolas; color: #a31515;">&quot;FreeFlyerInstallDirectory&quot;</span><span style="font-family: Consolas;">)</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">&nbsp;</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">&nbsp; engine.LoadMissionPlanFromFile(</span><span style="font-family: Consolas; color: #a31515;">&quot;MissionPlanPath&quot;</span><span style="font-family: Consolas;">);</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">&nbsp; engine.PrepareMissionPlan();</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">&nbsp; engine.ExecuteRemainingStatements();</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">&nbsp; engine.CleanupMissionPlan();</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">}</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas; color: #0000ff;">catch</span> <span style="font-family: Consolas;">(</span><span style="font-family: Consolas; color: #2b91af;">RuntimeApiException</span> <span style="font-family: Consolas;">e)</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">{</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas; color: #2b91af;">&nbsp; Console</span><span style="font-family: Consolas;">.WriteLine(e.Message);</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">&nbsp;</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">&nbsp;</span> <span style="font-family: Consolas; color: #0000ff;">if</span> <span style="font-family: Consolas;">(engine !=</span> <span style="font-family: Consolas; color: #0000ff;">null</span><span style="font-family: Consolas;">)</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">&nbsp; {</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">&nbsp; &nbsp;</span> <span style="font-family: Consolas; color: #2b91af;">GetMissionPlanDiagnosticsResult</span> <span style="font-family: Consolas;">myDiagnostics = engine.GetMissionPlanDiagnostics(</span><span style="font-family: Consolas; color: #2b91af;">DiagnosticLevel</span><span style="font-family: Consolas;">.Default);</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">&nbsp; &nbsp;</span> <span style="font-family: Consolas; color: #2b91af;">Console</span><span style="font-family: Consolas;">.WriteLine(myDiagnostics.Errors);</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">&nbsp; }</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">}</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas; color: #0000ff;">finally</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">{</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">&nbsp;</span> <span style="font-family: Consolas; color: #0000ff;">if</span> <span style="font-family: Consolas;">(engine !=</span> <span style="font-family: Consolas; color: #0000ff;">null</span><span style="font-family: Consolas;">)</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">&nbsp; {</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">&nbsp; &nbsp; &nbsp;engine.Dispose();</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">&nbsp; }</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">}</span></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">In the above example, we create the RuntimeApiEngine class outside the Try/Catch block and then dispose of it in a Finally block to ensure that it has been appropriately cleaned up. The text that gets written to the Console in this case is identical to the text that one would experience were they encountering this error in FreeFlyer.exe itself. An example of what one of these errors might look like follows.</p>
+        <p class="p_Normal">&nbsp;</p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table class="Script Example Table" style="border:none; border-spacing:0px; border-collapse:collapse;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:8px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">Syntax error.</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">&nbsp; Location: Mission Plan Line 7</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">&nbsp; Script: mySpacecraft1</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">&nbsp; Message: The identifier 'mySpacecraft1' is not defined.</span></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">&nbsp;</p>
+        <h2 class="p_Heading2"><a id="achr_exceptionresultlist" class="hmanchor"></a><span class="f_Heading2">Exception Result List</span></h2>
+        <hr style="height:1px; color:#999999; border-width:0px; background-color:#999999;">
+        <p class="p_Normal">A result type is not the same as an exception. When an error occurs with the runtime API, regardless of the type of error, a RuntimeApiException will be thrown. Meanwhile, that an exception has been thrown in itself may not be as useful as one would like. What is important is what the diagnosis of that exception is, and ultimately the nature of the exception, which is described by its result type. A host of different result types can be thrown by the runtime API's methods when called, and where each of the errors can appear depends on the method being used as well as how it interacts with FreeFlyer. The following table showcases all of the different result types supported by the runtime API, the specific issue they're trying to communicate, and a non-exhaustive list of some places where you might encounter an exception with that result type given in the context of the C# interface.</p>
+        <p class="p_Normal">&nbsp;</p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table class="Data Table with Header" style="border:solid 2px #c0c0c0; border-spacing:0px; border-collapse:collapse;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; width:248px; background-color:#c0c0c0; padding:4px; border:solid thin #c0c0c0;">
+                <p class="p_Normal"><span style="font-weight: bold;">Result Type</span></p>
+              </td>
+              <td style="vertical-align:top; width:531px; background-color:#c0c0c0; padding:4px; border:solid thin #c0c0c0;">
+                <p class="p_Normal"><span style="font-weight: bold;">Issue Captured</span></p>
+              </td>
+              <td style="vertical-align:top; width:331px; background-color:#c0c0c0; padding:4px; border:solid thin #c0c0c0;">
+                <p class="p_Normal"><span style="font-weight: bold;">Examples of where you might encounter the error</span></p>
+              </td>
+            </tr>
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:middle; width:248px; padding:4px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">ErrorAsyncDataTypeMismatch</span></p>
+              </td>
+              <td style="vertical-align:middle; width:531px; padding:4px; border:solid thin #c0c0c0;">
+                <p class="p_Normal">The current value of the specified async data is not the expected type.</p>
+              </td>
+              <td style="vertical-align:middle; width:331px; padding:4px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">GetExpressionStringAsync()</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">GetExpressionStringArrayAsync()</span></p>
+              </td>
+            </tr>
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:middle; width:248px; padding:4px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">ErrorCreateEngineBadFreeFlyerConfig</span></p>
+              </td>
+              <td style="vertical-align:middle; width:531px; padding:4px; border:solid thin #c0c0c0;">
+                <p class="p_Normal">There was a problem with the FreeFlyer configuration which prevented it from starting successfully.</p>
+              </td>
+              <td style="vertical-align:middle; width:331px; padding:4px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas; color: #0000ff;">new</span> <span style="font-family: Consolas;"></span><span style="font-family: Consolas; color: #2b91af;">RuntimeApiEngine</span><span style="font-family: Consolas;">()</span></p>
+              </td>
+            </tr>
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:middle; width:248px; padding:4px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">ErrorCreateEngineCommunicationError</span></p>
+              </td>
+              <td style="vertical-align:middle; width:531px; padding:4px; border:solid thin #c0c0c0;">
+                <p class="p_Normal">The created FreeFlyer engine did not respond as expected.</p>
+              </td>
+              <td style="vertical-align:middle; width:331px; padding:4px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas; color: #0000ff;">new</span> <span style="font-family: Consolas;"></span><span style="font-family: Consolas; color: #2b91af;">RuntimeApiEngine</span><span style="font-family: Consolas;">()</span></p>
+              </td>
+            </tr>
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:middle; width:248px; padding:4px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">ErrorCreateEngineNoAvailableLicense</span></p>
+              </td>
+              <td style="vertical-align:middle; width:531px; padding:4px; border:solid thin #c0c0c0;">
+                <p class="p_Normal">There was no available license to create an engine.</p>
+              </td>
+              <td style="vertical-align:middle; width:331px; padding:4px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas; color: #0000ff;">new</span> <span style="font-family: Consolas;"></span><span style="font-family: Consolas; color: #2b91af;">RuntimeApiEngine</span><span style="font-family: Consolas;">()</span></p>
+              </td>
+            </tr>
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:middle; width:248px; padding:4px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">ErrorEngineUnexpectedlyTerminated</span></p>
+              </td>
+              <td style="vertical-align:middle; width:531px; padding:4px; border:solid thin #c0c0c0;">
+                <p class="p_Normal">The engine unexpectedly terminated.</p>
+              </td>
+              <td style="vertical-align:middle; width:331px; padding:4px; border:solid thin #c0c0c0;">
+                <p class="p_Normal">Potentially anywhere during usage of the engine.</p>
+              </td>
+            </tr>
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:middle; width:248px; padding:4px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">ErrorExpressionFailedToEvaluate</span></p>
+              </td>
+              <td style="vertical-align:middle; width:531px; padding:4px; border:solid thin #c0c0c0;">
+                <p class="p_Normal">The provided expression was not an expression that evaluates to a meaningful object type.</p>
+              </td>
+              <td style="vertical-align:middle; width:331px; padding:4px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">GetExpressionString()</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">SetExpressionString()</span></p>
+              </td>
+            </tr>
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:middle; width:248px; padding:4px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">ErrorExpressionNotReadable</span></p>
+              </td>
+              <td style="vertical-align:middle; width:531px; padding:4px; border:solid thin #c0c0c0;">
+                <p class="p_Normal">The provided expression does not evaluate to a property or object that is readable.</p>
+              </td>
+              <td style="vertical-align:middle; width:331px; padding:4px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">GetExpressionArray()</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">GetExpressionVariable()</span></p>
+              </td>
+            </tr>
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:middle; width:248px; padding:4px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">ErrorExpressionNotWriteable</span></p>
+              </td>
+              <td style="vertical-align:middle; width:531px; padding:4px; border:solid thin #c0c0c0;">
+                <p class="p_Normal">The provided expression does not evaluate to a property or object that is writeable.</p>
+              </td>
+              <td style="vertical-align:middle; width:331px; padding:4px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">SetExpressionArray()</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">SetExpressionVariable()</span></p>
+              </td>
+            </tr>
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:middle; width:248px; padding:4px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">ErrorExpressionTypeMismatch</span></p>
+              </td>
+              <td style="vertical-align:middle; width:531px; padding:4px; border:solid thin #c0c0c0;">
+                <p class="p_Normal">The provided expression does not evaluate to the expected type.</p>
+              </td>
+              <td style="vertical-align:middle; width:331px; padding:4px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">GetExpressionString()</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">SetExpressionString()</span></p>
+              </td>
+            </tr>
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:middle; width:248px; padding:4px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">ErrorFailedToExecuteStatement</span></p>
+              </td>
+              <td style="vertical-align:middle; width:531px; padding:4px; border:solid thin #c0c0c0;">
+                <p class="p_Normal">The statement failed to execute.</p>
+              </td>
+              <td style="vertical-align:middle; width:331px; padding:4px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">ExecuteStatement()</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">ExecuteRemainingStatements()</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">ExecuteUntilApiLabel()</span></p>
+              </td>
+            </tr>
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:middle; width:248px; padding:4px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">ErrorFailedToLoadMissionPlan</span></p>
+              </td>
+              <td style="vertical-align:middle; width:531px; padding:4px; border:solid thin #c0c0c0;">
+                <p class="p_Normal">The specified file did not exist, the specified file was not a valid Mission Plan, or a data file specified in the Mission Plan did not exist.</p>
+              </td>
+              <td style="vertical-align:middle; width:331px; padding:4px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">LoadMissionPlanFromFile()</span></p>
+              </td>
+            </tr>
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:middle; width:248px; padding:4px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">ErrorFailedToParseScript</span></p>
+              </td>
+              <td style="vertical-align:middle; width:531px; padding:4px; border:solid thin #c0c0c0;">
+                <p class="p_Normal">The Mission Plan contained a syntax error.</p>
+              </td>
+              <td style="vertical-align:middle; width:331px; padding:4px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">PrepareMissionPlan()</span></p>
+              </td>
+            </tr>
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:middle; width:248px; padding:4px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">ErrorFailedToSetExpressionValue</span></p>
+              </td>
+              <td style="vertical-align:middle; width:531px; padding:4px; border:solid thin #c0c0c0;">
+                <p class="p_Normal">The provided expression failed to have a value assigned to it.</p>
+              </td>
+              <td style="vertical-align:middle; width:331px; padding:4px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">SetExpressionArray()</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">SetExpressionVariable()</span></p>
+              </td>
+            </tr>
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:middle; width:248px; padding:4px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">ErrorGeneral</span></p>
+              </td>
+              <td style="vertical-align:middle; width:531px; padding:4px; border:solid thin #c0c0c0;">
+                <p class="p_Normal">There was an error without a more specific reason provided.</p>
+              </td>
+              <td style="vertical-align:middle; width:331px; padding:4px; border:solid thin #c0c0c0;">
+                <p class="p_Normal">Potentially anywhere during usage of the engine.</p>
+              </td>
+            </tr>
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:middle; width:248px; padding:4px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">ErrorInvalidArgumentValue</span></p>
+              </td>
+              <td style="vertical-align:middle; width:531px; padding:4px; border:solid thin #c0c0c0;">
+                <p class="p_Normal">An argument provided to the method was invalid.</p>
+              </td>
+              <td style="vertical-align:middle; width:331px; padding:4px; border:solid thin #c0c0c0;">
+                <p class="p_Normal">Any method with an argument.</p>
+              </td>
+            </tr>
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:middle; width:248px; padding:4px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">ErrorInvalidEngineStateForOperation</span></p>
+              </td>
+              <td style="vertical-align:middle; width:531px; padding:4px; border:solid thin #c0c0c0;">
+                <p class="p_Normal">The FreeFlyer engine was in an invalid state for operation, such as not having a Mission Plan loaded.</p>
+              </td>
+              <td style="vertical-align:middle; width:331px; padding:4px; border:solid thin #c0c0c0;">
+                <p class="p_Normal">Potentially anywhere during usage of the engine.</p>
+              </td>
+            </tr>
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:middle; width:248px; padding:4px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">ErrorInvalidExpression</span></p>
+              </td>
+              <td style="vertical-align:middle; width:531px; padding:4px; border:solid thin #c0c0c0;">
+                <p class="p_Normal">The provided expression does not evaluate at all within the context of the loaded script.</p>
+              </td>
+              <td style="vertical-align:middle; width:331px; padding:4px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">GetExpressionString()</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">SetExpressionString()</span></p>
+              </td>
+            </tr>
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:middle; width:248px; padding:4px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">ErrorNoStatementsToExecute</span></p>
+              </td>
+              <td style="vertical-align:middle; width:531px; padding:4px; border:solid thin #c0c0c0;">
+                <p class="p_Normal">There are no more statements left in the Mission Plan to execute.</p>
+              </td>
+              <td style="vertical-align:middle; width:331px; padding:4px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">ExecuteStatement()</span></p>
+              </td>
+            </tr>
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:middle; width:248px; padding:4px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">ErrorOutOfMemory</span></p>
+              </td>
+              <td style="vertical-align:middle; width:531px; padding:4px; border:solid thin #c0c0c0;">
+                <p class="p_Normal">The operation ran out of memory while executing.</p>
+              </td>
+              <td style="vertical-align:middle; width:331px; padding:4px; border:solid thin #c0c0c0;">
+                <p class="p_Normal">Potentially anywhere during usage of the engine.</p>
+              </td>
+            </tr>
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:middle; width:248px; padding:4px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">OperationTimeout</span></p>
+              </td>
+              <td style="vertical-align:middle; width:531px; padding:4px; border:solid thin #c0c0c0;">
+                <p class="p_Normal">The operation timed out while attempting to communicate with the host engine.</p>
+              </td>
+              <td style="vertical-align:middle; width:331px; padding:4px; border:solid thin #c0c0c0;">
+                <p class="p_Normal">Potentially anywhere during usage of the engine.</p>
+              </td>
+            </tr>
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:middle; width:248px; padding:4px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">Success</span></p>
+              </td>
+              <td style="vertical-align:middle; width:531px; padding:4px; border:solid thin #c0c0c0;">
+                <p class="p_Normal">The operation was successful.</p>
+              </td>
+              <td style="vertical-align:middle; width:331px; padding:4px; border:solid thin #c0c0c0;">
+                <p class="p_Normal">N/A</p>
+              </td>
+            </tr>
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:middle; width:248px; padding:4px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Consolas;">Undefined</span></p>
+              </td>
+              <td style="vertical-align:middle; width:531px; padding:4px; border:solid thin #c0c0c0;">
+                <p class="p_Normal">The operation is undefined. Report these cases to FreeFlyer Technical Support.</p>
+              </td>
+              <td style="vertical-align:middle; width:331px; padding:4px; border:solid thin #c0c0c0;">
+                <p class="p_Normal">N/A</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">&nbsp;</p>
+        <h2 class="p_Heading2"><span class="f_Heading2">See Also</span></h2>
+        <hr style="height:1px; color:#999999; border-width:0px; background-color:#999999;">
+        <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><a href="application_program_interface.htm" class="topiclink">Application Program Interface</a></p>
+        <p class="p_Normal">&nbsp;</p>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

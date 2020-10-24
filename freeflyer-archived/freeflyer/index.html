@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/ai_solutions_Favicon_32x32.png">
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:300,700,400|Muli' rel='stylesheet' type='text/css'>
+  <link href="/wp-content/themes/ai/style.css" rel="stylesheet">
+  <style>
+                        html, * html body {margin: 0}
+                        body {margin: 0 !important;padding: 0 !important;}
+  </style>
+  <title>FreeFlyer Software | Astrodynamics | Orbital Mechanics | a.i. solutions</title>
+  <meta name="description" content="FreeFlyer® is a COTS software for space missions that provides users with a robust scripting language for solving all types of astrodynamics problems.">
+  <link rel="canonical" href="/freeflyer-archived/freeflyer/">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="FreeFlyer Software | Astrodynamics | Orbital Mechanics | a.i. solutions">
+  <meta property="og:description" content="FreeFlyer® is a COTS software for space missions that provides users with a robust scripting language for solving all types of astrodynamics problems.">
+  <meta property="og:url" content="https://ai-solutions.com/freeflyer-archived/freeflyer/">
+  <meta property="og:site_name" content="ai-solutions.com">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:description" content="FreeFlyer® is a COTS software for space missions that provides users with a robust scripting language for solving all types of astrodynamics problems.">
+  <meta name="twitter:title" content="FreeFlyer Software | Astrodynamics | Orbital Mechanics | a.i. solutions">
+  <meta name="twitter:image" content="https://ai-solutions.com/img/freeflyer/freeflyer-logo.png">
+  <link rel='dns-prefetch' href='//s.w.org'>
+  <link rel="alternate" type="application/rss+xml" title="ai-solutions.com &raquo; FreeFlyer&reg; Comments Feed" href="/freeflyer-archived/freeflyer/feed/">
+  <script type="text/javascript">
+                        window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/ai-solutions.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.9"}};
+                        !function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+  </script>
+  <style type="text/css">
+  img.wp-smiley,
+  img.emoji {
+        display: inline !important;
+        border: none !important;
+        box-shadow: none !important;
+        height: 1em !important;
+        width: 1em !important;
+        margin: 0 .07em !important;
+        vertical-align: -0.1em !important;
+        background: none !important;
+        padding: 0 !important;
+  }
+  </style>
+  <script type='text/javascript' src='/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+  <script type='text/javascript' src='/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+  <link rel='https://api.w.org/' href='/wp-json/'>
+  <link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+  <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml">
+  <link rel='shortlink' href='/?p=19'>
+  <link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fai-solutions.com%2Ffreeflyer-archived%2Ffreeflyer%2F">
+  <link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fai-solutions.com%2Ffreeflyer-archived%2Ffreeflyer%2F&#038;format=xml">
+  <style type="text/css" id="wp-custom-css">
+                        #swap-border .stemQLeft {
+        width: 44%;
+        margin-right: 0;
+        padding-right: 0;
+        border-right: none !important;
+  }
+
+  #swap-border .stemQRight {
+        width: calc(56% - 40px);
+        padding-left: 100px;
+        border-left: 1px solid #77777B;
+  }
+
+  @media (max-width: 1200px) {
+        #swap-border .stemQLeft {
+                width: 100%;
+        }
+        
+        #swap-border .stemQRight {
+                width: 100%;
+                border-left: none;
+                padding-left: 0;
+        }
+  }
+
+  @media (max-width: 1440px) {
+    .case-study-col-left {
+         display: none !important;
+    }
+
+    .case-study-col-right {
+        min-width: 100% !important;
+        padding-left: 15px !important;
+    }
+  }
+
+  .single-article {
+        text-align: justify;
+  }               
+  </style>
+  <style>
+                .header .logo a, .menu-item a, .subs a {color:#ffffff}
+                .subs>ul {-webkit-margin-after: 0; -webkit-margin-before: 0;}
+                .subs ul, .subs ul ul li {list-style: none; }
+                .subs>ul>li {display: inline-block; position: relative;}
+                .subs>ul>li>ul {display: none;position: absolute;}
+                .subs>ul>li:hover>ul{display: block;}
+  </style>
+  <style>
+  label, .ninja-forms-form .label-above label, .ninja-forms-form .label-below label {font-size: 14px;
+    font-weight: 400;}
+    .field-wrap li {list-style: none !important;}
+  </style>
+</head>
+<body style="z-index: 0" class="type-page">
+  <noscript></noscript>
+  <div id="privacy-opt">
+    <span><a class="dismiss-privacy-opt" href='/cookie-opt?opt=in'>X</a></span>
+    <div>
+      This site uses cookies & other tracking technologies to improve your experience. By using this site you agree to our <a href='/about-us/privacy-policy'>Privacy Policy</a>.
+    </div>
+    <div>
+      <a class="dismiss-privacy-opt btn" href='/cookie-opt?opt=in'>I Agree</a> <a class="btn" title="Opt Out" href='/cookie-opt?opt=out'>I Wish to Opt Out</a>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" media="all" href="/wp-content/themes/ai/css/aci.css">
+  <link rel="stylesheet" type="text/css" media="all" href="/wp-content/themes/ai/css/boostrap/bootstrap.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script> 
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <div class="content">
+    <div class="header-bg" style="background-image: url(/wp-content/uploads/2015/06/careers-bg-1.jpg); background-position: center center;">
+      <div class="header centered-content">
+        <div style="width: 100%; margin-left: 0%">
+          <div class="subs">
+            <ul>
+              <li>employee login</li>
+              <li>
+                <a href="/freeflyer-login/">freeflyer<sup>®</sup> login</a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu">
+            <a class="icon icon-navicon"></a>
+            <div class="logo">
+              <a href='/'><img src="/img/global/logo-text.png"></a>
+            </div>
+            <div class="menu-wrap">
+              <div class="menu-main-navigation-container">
+                <ul id="menu-main-navigation" class="menu">
+                  <li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-20">
+                    <a href="/about-us/">Who We Are</a>
+                    <ul class="sub-menu">
+                      <li id="menu-item-4996" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4996">
+                        <a href="/about-us/">About Us</a>
+                      </li>
+                      <li id="menu-item-8372" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8372">
+                        <a href="/about-us/careers/">Careers</a>
+                      </li>
+                      <li id="menu-item-23" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23">
+                        <a href="/about-us/news-multimedia/">Newsroom</a>
+                      </li>
+                      <li id="menu-item-4997" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4997">
+                        <a href="/about-us/events/">Events</a>
+                      </li>
+                      <li id="menu-item-7642" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7642">
+                        <a href="/about-us/spot-on-spotlight/">SPOT ON Spotlight</a>
+                      </li>
+                      <li id="menu-item-5636" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5636">
+                        <a href="/about-us/stem-women-of-space/">STEM Women of Space</a>
+                      </li>
+                      <li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22">
+                        <a href="/contact-us/">Contact Us</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li id="menu-item-4999" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4999">
+                    <a href="/space-mission-engineering/">Capabilities</a>
+                    <ul class="sub-menu">
+                      <li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26">
+                        <a href="/space-mission-engineering/">Space Mission Engineering</a>
+                      </li>
+                      <li id="menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24">
+                        <a href="/mission-systems-assurance/">Mission Systems Assurance</a>
+                      </li>
+                      <li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25">
+                        <a href="/launch-vehicle-services/">Launch Services</a>
+                      </li>
+                      <li id="menu-item-6432" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6432">
+                        <a href="/emergency-management/">Emergency Management</a>
+                      </li>
+                      <li id="menu-item-7645" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7645">
+                        <a href="/spacesoftware/">Space Software Applications</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li id="menu-item-7581" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-7581">
+                    <a href="/freeflyer/">FreeFlyer<sup>®</sup></a>
+                    <ul class="sub-menu">
+                      <li id="menu-item-6892" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6892">
+                        <a href="/freeflyer/freeflyer-university/">FreeFlyer<sup>®</sup> University</a>
+                      </li>
+                      <li id="menu-item-7477" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7477">
+                        <a href="/freeflyer/">FreeFlyer<sup>®</sup> Software</a>
+                      </li>
+                      <li id="menu-item-6250" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6250">
+                        <a href="/freeflyer/freeflyer-software-help-desk/">FreeFlyer<sup>®</sup> Help Desk</a>
+                      </li>
+                      <li id="menu-item-5000" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5000">
+                        <a href="/about-us/news-multimedia/?c=freeFlyer-blog">FreeFlyer<sup>®</sup> Blog</a>
+                      </li>
+                      <li id="menu-item-9021" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9021">
+                        <a href="/freeflyer/freeflyer-certification/">FreeFlyer<sup>®</sup> Certification</a>
+                      </li>
+                      <li id="menu-item-5001" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5001">
+                        <a href="/freeflyer-login/">FreeFlyer<sup>®</sup> Login</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content-wrapper">
+      <div class="content-setup">
+        <div class="seventypercent-max centered-content">
+          <ul id="breadcrumbs" class="breadcrumbs">
+            <li class="item-home">
+              <a class="bread-link bread-home" href="/" title="Home">Home</a>
+            </li>
+            <li class="separator separator-home">&gt;</li>
+            <li class="item-parent item-parent-15">
+              <a class="bread-parent bread-parent-15" href="/freeflyer-archived/" title="Private: FreeFlyer&lt;sup&gt;®&lt;/sup&gt; Software">Private: FreeFlyer<sup>®</sup> Software</a>
+            </li>
+            <li class="separator separator-15">&gt;</li>
+            <li class="item-current item-19"><strong title="FreeFlyer&lt;sup&gt;&reg;&lt;/sup&gt;">FreeFlyer<sup>&reg;</sup></strong></li>
+          </ul>
+          <div class="flex-body">
+            <div class="content-body left">
+              <div style="padding-top: 30px; text-align: left;"><img class="freeflyer-logo" src="/img/freeflyer/freeflyer-logo.png" alt="" style='width: 40%;'></div>
+              <p>FreeFlyer® is a commercial off-the-shelf (COTS) software application for space mission design, analysis, and operations. FreeFlyer stands out as the most powerful tool of its kind by providing users with a robust scripting language for solving all types of astrodynamics problems. FreeFlyer has been independently verified and validated for flight-tested, proven accuracy, and is used for spacecraft analysis and operations by NASA, NOAA, USAF, NRO, and commercial satellite providers.</p>
+              <p>FreeFlyer offers flexible deployment options including customizable user interfaces, cross-platform support for Windows and Linux systems, and a dedicated API for integrating custom applications. Additionally, FreeFlyer-based ground systems can integrate with any 3rd party TT&amp;C programs and external tools. It is scalable to accommodate growing and evolving mission requirements and provides an open framework to easily adapt for the automation of mission-unique functions.</p>
+              <p>The FreeFlyer astrodynamics software comes in two license tiers, Engineer and Mission. FreeFlyer Engineer is an ideal choice for mission design and analysis, including constellation design, sensor coverages, maneuver planning, Monte Carlo analyses, and more. FreeFlyer Mission adds the FreeFlyer Orbit Determination suite as well as multiple ways to interface with external resources for integration into an operational satellite ground system.</p>
+              <div class="left">
+                <h1 class='bold'>Complete Astrodynamics Capability</h1>
+              </div>
+              <div style="clear: both;"></div>
+              <div class="tabs">
+                <div class="tabs-sidebar">
+                  <a data-tab="0" class="on"><span>SPACECRAFT PROPAGATION</span></a> <a data-tab="1" class=""><span>COVERAGE AND CONTACT</span></a> <a data-tab="2" class=""><span>MANEUVERING AND TARGETING</span></a> <a data-tab="3" class=""><span>ORBIT DETERMINATION</span></a> <a data-tab="4" class=""><span>INTERPLANETARY ANALYSIS</span></a> <a data-tab="5" class=""><span>OUTPUT OPTIONS</span></a> <a data-tab="6" class=""><span>FREEFLYER SCRIPT</span></a> <a data-tab="7" class=""><span>EXTERNAL INTERFACES</span></a>
+                </div>
+                <div class="tabs-content">
+                  <div class="tab tab-0 on">
+                    <img src="/wp-content/uploads/2015/07/SpacecraftPropagation.png">
+                    <h5>SPACECRAFT PROPAGATION</h5>
+                    <ul>
+                      <li>Fixed or variable step propagation using multiple propagators and ephemeris types</li>
+                      <li>Full force modeling capability includes Solar System, atmospheric drag/lift, solar radiation pressure, IRI, and custom celestial bodies</li>
+                      <li>Detailed spacecraft modeling including fuel tanks, thrusters, proximity zones, and attitude modeling</li>
+                      <li>Custom sensor modeling with obscuration masking</li>
+                      <li>Formation support for efficiently modeling and analyzing constellation and multi-spacecraft problems</li>
+                    </ul>
+                  </div>
+                  <div class="tab tab-1">
+                    <img src="/wp-content/uploads/2015/07/CoverageAndContact.png">
+                    <h5>COVERAGE AND CONTACT</h5>
+                    <ul>
+                      <li>Hundreds of pre-defined and user-customizable ground station geodetic and masking profiles</li>
+                      <li>Easy-to-use chain visibility calculations to and from any objects, including spacecraft, sensors, ground stations, celestial bodies and more</li>
+                      <li>1500+ reportable data parameters including spacecraft state, AOS/LOS, node crossings, miss distances, attitude, and much more</li>
+                      <li>Temporal, spatial, and user-definable custom constraints</li>
+                      <li>Customizable graphics visualizations for complex coverage scenarios</li>
+                    </ul>
+                  </div>
+                  <div class="tab tab-2">
+                    <img src="/wp-content/uploads/2015/06/ManeuveringTargeting.png">
+                    <h5>MANEUVERING AND TARGETING</h5>
+                    <ul>
+                      <li>Native support for impulsive and finite burn maneuvers</li>
+                      <li>Modeling for mono- and bi-propellant blow down systems</li>
+                      <li>Electric and chemical propulsion support, including low-thrust systems</li>
+                      <li>Built-in multi-variable targeting tool with differential corrector</li>
+                      <li>Spacecraft tank, thruster, and mass flow modeling for accurate fuel consumption reports</li>
+                    </ul>
+                  </div>
+                  <div class="tab tab-3">
+                    <img src="/wp-content/uploads/2015/07/OrbitDetermination.png">
+                    <h5>ORBIT DETERMINATION</h5>
+                    <ul>
+                      <li>State estimation methods of Batch Least Squates, Extended Kalman Filter, and Unscented Kalman Filter, with customizable combinations</li>
+                      <li>Spacecraft receiver and transponder modeling and co-variance propagation</li>
+                      <li>Ground station location, ground station antenna bias, transponder delay, maneuver and spacecraft property estimation methods</li>
+                      <li>Tracking data simulator and editor for managing data outliers and viewing multiple measurement types simultaneously</li>
+                      <li>Ground-based, TDRS, GPS point solution and pseudorange, Spacecraft-to-Spacecraft, and BRTS tracking data types</li>
+                    </ul>
+                    <p>* Only available in FreeFlyer Mission</p>
+                  </div>
+                  <div class="tab tab-4">
+                    <img src="/wp-content/uploads/2015/07/Interplanetary.png">
+                    <h5>INTERPLANETARY ANALYSIS</h5>
+                    <ul>
+                      <li>Support for multiple coordinate systems across any celestial objects</li>
+                      <li>Custom celestial objects for modeling asteroids, comets, and other planetary moon systems</li>
+                      <li>Ground station and spacecraft central body definable as any celestial object</li>
+                      <li>B-plane analysis and Rotating Libration Point (RLP) support</li>
+                      <li>Dynamically controllable solar system parameters for mission-specific deep-space propagation requirements</li>
+                    </ul>
+                  </div>
+                  <div class="tab tab-5">
+                    <img src="/wp-content/uploads/2015/07/GeneratingOutput.png">
+                    <h5>OUTPUT OPTIONS</h5>
+                    <ul>
+                      <li>Customizable 2D and 3D OpenGL visualizations</li>
+                      <li>Fully tailorable Cartesian and polar plots for use with any mission parameters</li>
+                      <li>Controllable layout of all output windows for high fidelity situational awareness displays</li>
+                      <li>Any user data reportable to consoles, tables, or export via custom reports</li>
+                      <li>Custom layer control of foreground and background elements within a single output window for fine-tuned display control</li>
+                    </ul>
+                  </div>
+                  <div class="tab tab-6">
+                    <img src="/wp-content/uploads/2015/07/Scripting.png">
+                    <h5>FREEFLYER SCRIPT</h5>
+                    <ul>
+                      <li>Scripting language provides full user control over all inputs, outputs, and logical flow of astrodynamical simulations</li>
+                      <li>Integrated development and execution environment includes syntax auto-complete, text coloring, and native debugger</li>
+                      <li>In-script methods for file parsing of external data</li>
+                      <li>30+ mathematical functions, including matrix math and coordinate system conversions for custom algorithm implementation</li>
+                      <li>User-defined functions, macros, and lists enable systems to be complex yet not overwhelming</li>
+                    </ul>
+                  </div>
+                  <div class="tab tab-7">
+                    <img src="/wp-content/uploads/2015/07/ExternalInterfaces.png">
+                    <h5>EXTERNAL INTERFACES</h5>
+                    <ul>
+                      <li>Custom force modeling and custom object definitions via FreeFlyer Extensions</li>
+                      <li>Dedicated interfaces for MATLAB, TCP/IP sockets, databases, and other external applications</li>
+                      <li>Interfaces with ODBC databases.</li>
+                      <li>Runtime Application Program Interface (API) for use with other C/C++, C#, and Java applications</li>
+                      <li>Customizable user interfaces to manage operational script workflows</li>
+                      <li>Full support for seamless system integration and 24/7 automation in operational ground systems</li>
+                    </ul>
+                    <p>* Only available in FreeFlyer Mission</p>
+                  </div>
+                </div>
+              </div>
+              <div class="documents-container">
+                <div class="document-group">
+                  <h1>FreeFlyer® Documents</h1><a class='content-button' href="/wp-content/uploads/2017/12/12132017-FreeFlyer-Space-Software-Capabilities-Summary.pdf" target="_blank"><span><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="24" x="0px" y="0px" viewbox="0 0 58 58" style="enable-background:new 0 0 58 58;" xml:space="preserve">
+                  <g>
+                    <path d="M39.57,25.259c0.149-0.209,0.207-0.343,0.23-0.415c-0.123-0.065-0.286-0.197-1.175-0.197c-0.505,0-1.139,0.022-1.811,0.108 c0.815,0.627,1.014,0.944,1.547,0.944C38.594,25.7,39.262,25.69,39.57,25.259z"></path>
+                    <path d="M20.536,32.634c0.149-0.047,1.019-0.444,2.64-3.436c-2.138,1.201-3.008,2.188-3.07,2.744 C20.095,32.034,20.068,32.276,20.536,32.634z"></path>
+                    <path d="M51.5,39V13.978c0-0.766-0.092-1.333-0.55-1.792L39.313,0.55C38.964,0.201,38.48,0,37.985,0H8.963 C7.777,0,6.5,0.916,6.5,2.926V39H51.5z M37.5,3.391c0-0.458,0.553-0.687,0.877-0.363l10.095,10.095 C48.796,13.447,48.567,14,48.109,14H37.5V3.391z M18.432,31.755c0.182-1.628,2.195-3.332,5.985-5.068 c1.504-3.296,2.935-7.357,3.788-10.75c-0.998-2.172-1.968-4.99-1.261-6.643c0.248-0.579,0.557-1.023,1.134-1.215 c0.228-0.076,0.804-0.172,1.016-0.172c0.504,0,0.947,0.649,1.261,1.049c0.295,0.376,0.964,1.173-0.373,6.802 c1.348,2.784,3.258,5.62,5.088,7.562c1.311-0.237,2.439-0.358,3.358-0.358c1.566,0,2.515,0.365,2.902,1.117 c0.32,0.622,0.189,1.349-0.39,2.16c-0.557,0.779-1.325,1.191-2.22,1.191c-1.216,0-2.632-0.768-4.211-2.285 c-2.837,0.593-6.151,1.651-8.828,2.822c-0.836,1.774-1.637,3.203-2.383,4.251c-1.023,1.438-1.907,2.107-2.782,2.107h0 c-0.348,0-0.682-0.113-0.967-0.326C18.506,33.216,18.366,32.347,18.432,31.755z"></path>
+                    <path d="M21.222,45.858c-0.142-0.196-0.34-0.36-0.595-0.492c-0.255-0.132-0.593-0.198-1.012-0.198h-1.23v3.992h1.504 c0.2,0,0.398-0.034,0.595-0.103c0.196-0.068,0.376-0.18,0.54-0.335c0.164-0.155,0.296-0.371,0.396-0.649 c0.1-0.278,0.15-0.622,0.15-1.032c0-0.164-0.023-0.354-0.068-0.567C21.456,46.26,21.363,46.055,21.222,45.858z"></path>
+                    <path d="M29.343,18.174c-0.716,2.474-1.659,5.145-2.674,7.564c2.09-0.811,4.362-1.519,6.496-2.02 C31.815,22.15,30.466,20.192,29.343,18.174z"></path>
+                    <path d="M6.5,41v15c0,1.009,1.22,2,2.463,2h40.074c1.243,0,2.463-0.991,2.463-2V41H6.5z M22.896,48.429 c-0.173,0.415-0.415,0.764-0.725,1.046c-0.31,0.282-0.684,0.501-1.121,0.656s-0.921,0.232-1.449,0.232h-1.217V54h-1.641V43.924 h2.898c0.428,0,0.852,0.068,1.271,0.205c0.419,0.137,0.795,0.342,1.128,0.615c0.333,0.273,0.602,0.604,0.807,0.991 s0.308,0.822,0.308,1.306C23.156,47.552,23.069,48.014,22.896,48.429z M32.952,50.808c-0.178,0.588-0.403,1.08-0.677,1.477 s-0.581,0.709-0.923,0.937s-0.672,0.398-0.991,0.513c-0.319,0.114-0.611,0.187-0.875,0.219C29.222,53.984,29.026,54,28.898,54 h-3.814V43.924h3.035c0.848,0,1.593,0.135,2.235,0.403s1.176,0.627,1.6,1.073s0.74,0.955,0.95,1.524 c0.209,0.569,0.314,1.155,0.314,1.757C33.219,49.511,33.13,50.22,32.952,50.808z M41.9,45.168h-4.635v3.172h4.211v1.121h-4.211V54 h-1.668V43.924H41.9V45.168z"></path>
+                    <path d="M30.765,46.282c-0.287-0.333-0.677-0.602-1.169-0.807s-1.13-0.308-1.914-0.308h-0.957v7.629h1.627 c1.112,0,1.914-0.355,2.406-1.066s0.738-1.741,0.738-3.09c0-0.419-0.05-0.834-0.15-1.244 C31.245,46.986,31.052,46.615,30.765,46.282z"></path>
+                    <path d="M28.736,9.712c-0.098,0.033-1.33,1.757,0.096,3.216C29.781,10.813,28.779,9.698,28.736,9.712z"></path>
+                  </g></svg></span>
+                  <div style="margin-left: 4px">
+                    <span>FreeFlyer Software Capabilities Summary</span>
+                  </div></a>
+                </div>
+                <div class="document-group">
+                  <h1>FreeFlyer® Actions</h1><a class='content-button' href="/request-evaluation" target="_blank"><span><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="24" x="0px" y="0px" viewbox="0 0 58 58" style="enable-background:new 0 0 58 58;" xml:space="preserve">
+                  <g>
+                    <path d="M39.57,25.259c0.149-0.209,0.207-0.343,0.23-0.415c-0.123-0.065-0.286-0.197-1.175-0.197c-0.505,0-1.139,0.022-1.811,0.108 c0.815,0.627,1.014,0.944,1.547,0.944C38.594,25.7,39.262,25.69,39.57,25.259z"></path>
+                    <path d="M20.536,32.634c0.149-0.047,1.019-0.444,2.64-3.436c-2.138,1.201-3.008,2.188-3.07,2.744 C20.095,32.034,20.068,32.276,20.536,32.634z"></path>
+                    <path d="M51.5,39V13.978c0-0.766-0.092-1.333-0.55-1.792L39.313,0.55C38.964,0.201,38.48,0,37.985,0H8.963 C7.777,0,6.5,0.916,6.5,2.926V39H51.5z M37.5,3.391c0-0.458,0.553-0.687,0.877-0.363l10.095,10.095 C48.796,13.447,48.567,14,48.109,14H37.5V3.391z M18.432,31.755c0.182-1.628,2.195-3.332,5.985-5.068 c1.504-3.296,2.935-7.357,3.788-10.75c-0.998-2.172-1.968-4.99-1.261-6.643c0.248-0.579,0.557-1.023,1.134-1.215 c0.228-0.076,0.804-0.172,1.016-0.172c0.504,0,0.947,0.649,1.261,1.049c0.295,0.376,0.964,1.173-0.373,6.802 c1.348,2.784,3.258,5.62,5.088,7.562c1.311-0.237,2.439-0.358,3.358-0.358c1.566,0,2.515,0.365,2.902,1.117 c0.32,0.622,0.189,1.349-0.39,2.16c-0.557,0.779-1.325,1.191-2.22,1.191c-1.216,0-2.632-0.768-4.211-2.285 c-2.837,0.593-6.151,1.651-8.828,2.822c-0.836,1.774-1.637,3.203-2.383,4.251c-1.023,1.438-1.907,2.107-2.782,2.107h0 c-0.348,0-0.682-0.113-0.967-0.326C18.506,33.216,18.366,32.347,18.432,31.755z"></path>
+                    <path d="M21.222,45.858c-0.142-0.196-0.34-0.36-0.595-0.492c-0.255-0.132-0.593-0.198-1.012-0.198h-1.23v3.992h1.504 c0.2,0,0.398-0.034,0.595-0.103c0.196-0.068,0.376-0.18,0.54-0.335c0.164-0.155,0.296-0.371,0.396-0.649 c0.1-0.278,0.15-0.622,0.15-1.032c0-0.164-0.023-0.354-0.068-0.567C21.456,46.26,21.363,46.055,21.222,45.858z"></path>
+                    <path d="M29.343,18.174c-0.716,2.474-1.659,5.145-2.674,7.564c2.09-0.811,4.362-1.519,6.496-2.02 C31.815,22.15,30.466,20.192,29.343,18.174z"></path>
+                    <path d="M6.5,41v15c0,1.009,1.22,2,2.463,2h40.074c1.243,0,2.463-0.991,2.463-2V41H6.5z M22.896,48.429 c-0.173,0.415-0.415,0.764-0.725,1.046c-0.31,0.282-0.684,0.501-1.121,0.656s-0.921,0.232-1.449,0.232h-1.217V54h-1.641V43.924 h2.898c0.428,0,0.852,0.068,1.271,0.205c0.419,0.137,0.795,0.342,1.128,0.615c0.333,0.273,0.602,0.604,0.807,0.991 s0.308,0.822,0.308,1.306C23.156,47.552,23.069,48.014,22.896,48.429z M32.952,50.808c-0.178,0.588-0.403,1.08-0.677,1.477 s-0.581,0.709-0.923,0.937s-0.672,0.398-0.991,0.513c-0.319,0.114-0.611,0.187-0.875,0.219C29.222,53.984,29.026,54,28.898,54 h-3.814V43.924h3.035c0.848,0,1.593,0.135,2.235,0.403s1.176,0.627,1.6,1.073s0.74,0.955,0.95,1.524 c0.209,0.569,0.314,1.155,0.314,1.757C33.219,49.511,33.13,50.22,32.952,50.808z M41.9,45.168h-4.635v3.172h4.211v1.121h-4.211V54 h-1.668V43.924H41.9V45.168z"></path>
+                    <path d="M30.765,46.282c-0.287-0.333-0.677-0.602-1.169-0.807s-1.13-0.308-1.914-0.308h-0.957v7.629h1.627 c1.112,0,1.914-0.355,2.406-1.066s0.738-1.741,0.738-3.09c0-0.419-0.05-0.834-0.15-1.244 C31.245,46.986,31.052,46.615,30.765,46.282z"></path>
+                    <path d="M28.736,9.712c-0.098,0.033-1.33,1.757,0.096,3.216C29.781,10.813,28.779,9.698,28.736,9.712z"></path>
+                  </g></svg></span>
+                  <div style="margin-left: 4px">
+                    <span>Request Evaluation</span>
+                  </div></a> <a class='content-button' href="/about-us/news-multimedia" target="_blank"><span><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="24" x="0px" y="0px" viewbox="0 0 58 58" style="enable-background:new 0 0 58 58;" xml:space="preserve">
+                  <g>
+                    <path d="M39.57,25.259c0.149-0.209,0.207-0.343,0.23-0.415c-0.123-0.065-0.286-0.197-1.175-0.197c-0.505,0-1.139,0.022-1.811,0.108 c0.815,0.627,1.014,0.944,1.547,0.944C38.594,25.7,39.262,25.69,39.57,25.259z"></path>
+                    <path d="M20.536,32.634c0.149-0.047,1.019-0.444,2.64-3.436c-2.138,1.201-3.008,2.188-3.07,2.744 C20.095,32.034,20.068,32.276,20.536,32.634z"></path>
+                    <path d="M51.5,39V13.978c0-0.766-0.092-1.333-0.55-1.792L39.313,0.55C38.964,0.201,38.48,0,37.985,0H8.963 C7.777,0,6.5,0.916,6.5,2.926V39H51.5z M37.5,3.391c0-0.458,0.553-0.687,0.877-0.363l10.095,10.095 C48.796,13.447,48.567,14,48.109,14H37.5V3.391z M18.432,31.755c0.182-1.628,2.195-3.332,5.985-5.068 c1.504-3.296,2.935-7.357,3.788-10.75c-0.998-2.172-1.968-4.99-1.261-6.643c0.248-0.579,0.557-1.023,1.134-1.215 c0.228-0.076,0.804-0.172,1.016-0.172c0.504,0,0.947,0.649,1.261,1.049c0.295,0.376,0.964,1.173-0.373,6.802 c1.348,2.784,3.258,5.62,5.088,7.562c1.311-0.237,2.439-0.358,3.358-0.358c1.566,0,2.515,0.365,2.902,1.117 c0.32,0.622,0.189,1.349-0.39,2.16c-0.557,0.779-1.325,1.191-2.22,1.191c-1.216,0-2.632-0.768-4.211-2.285 c-2.837,0.593-6.151,1.651-8.828,2.822c-0.836,1.774-1.637,3.203-2.383,4.251c-1.023,1.438-1.907,2.107-2.782,2.107h0 c-0.348,0-0.682-0.113-0.967-0.326C18.506,33.216,18.366,32.347,18.432,31.755z"></path>
+                    <path d="M21.222,45.858c-0.142-0.196-0.34-0.36-0.595-0.492c-0.255-0.132-0.593-0.198-1.012-0.198h-1.23v3.992h1.504 c0.2,0,0.398-0.034,0.595-0.103c0.196-0.068,0.376-0.18,0.54-0.335c0.164-0.155,0.296-0.371,0.396-0.649 c0.1-0.278,0.15-0.622,0.15-1.032c0-0.164-0.023-0.354-0.068-0.567C21.456,46.26,21.363,46.055,21.222,45.858z"></path>
+                    <path d="M29.343,18.174c-0.716,2.474-1.659,5.145-2.674,7.564c2.09-0.811,4.362-1.519,6.496-2.02 C31.815,22.15,30.466,20.192,29.343,18.174z"></path>
+                    <path d="M6.5,41v15c0,1.009,1.22,2,2.463,2h40.074c1.243,0,2.463-0.991,2.463-2V41H6.5z M22.896,48.429 c-0.173,0.415-0.415,0.764-0.725,1.046c-0.31,0.282-0.684,0.501-1.121,0.656s-0.921,0.232-1.449,0.232h-1.217V54h-1.641V43.924 h2.898c0.428,0,0.852,0.068,1.271,0.205c0.419,0.137,0.795,0.342,1.128,0.615c0.333,0.273,0.602,0.604,0.807,0.991 s0.308,0.822,0.308,1.306C23.156,47.552,23.069,48.014,22.896,48.429z M32.952,50.808c-0.178,0.588-0.403,1.08-0.677,1.477 s-0.581,0.709-0.923,0.937s-0.672,0.398-0.991,0.513c-0.319,0.114-0.611,0.187-0.875,0.219C29.222,53.984,29.026,54,28.898,54 h-3.814V43.924h3.035c0.848,0,1.593,0.135,2.235,0.403s1.176,0.627,1.6,1.073s0.74,0.955,0.95,1.524 c0.209,0.569,0.314,1.155,0.314,1.757C33.219,49.511,33.13,50.22,32.952,50.808z M41.9,45.168h-4.635v3.172h4.211v1.121h-4.211V54 h-1.668V43.924H41.9V45.168z"></path>
+                    <path d="M30.765,46.282c-0.287-0.333-0.677-0.602-1.169-0.807s-1.13-0.308-1.914-0.308h-0.957v7.629h1.627 c1.112,0,1.914-0.355,2.406-1.066s0.738-1.741,0.738-3.09c0-0.419-0.05-0.834-0.15-1.244 C31.245,46.986,31.052,46.615,30.765,46.282z"></path>
+                    <path d="M28.736,9.712c-0.098,0.033-1.33,1.757,0.096,3.216C29.781,10.813,28.779,9.698,28.736,9.712z"></path>
+                  </g></svg></span>
+                  <div style="margin-left: 4px">
+                    <span>FreeFlyer® Blog</span>
+                  </div></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="clear:both"></div>
+  <div class="footer">
+    <div class="footer-bar">
+      <div class="footer-cell" style="">
+        <div>
+          <a href='/' class="logo"><img src="/img/global/logo-dark.png"></a><br>
+          Copyright 2020<br>
+          a.i. solutions, Inc.<br>
+          All Rights Reserved
+        </div>
+      </div>
+      <div class="footer-cell">
+        <div>
+          4500 Forbes Boulevard<br>
+          Suite 300<br>
+          Lanham, MD 20706<br>
+          (301) 306-1756
+        </div>
+      </div>
+      <div class="footer-cell links">
+        <div>
+          <a href='/about-us/'>About Us</a> <a href='/about-us/careers/'>Careers</a> <a href='/about-us/news-multimedia'>Newsroom</a> <a href='/about-us/contact-us/'>Contact Us</a> <a href='/about-us/privacy-policy/'>Privacy Policy</a>
+        </div>
+      </div>
+      <div class="footer-cell">
+        <div class="f-sm">
+          <i>Facebook</i> <i>Twitter</i> <i>LinkedIn</i> <i>Youtube</i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script> 
+  <script src="/js/size.js"></script> 
+  <script src="/js/jquery-custom-scrollbar-master/jquery.custom-scrollbar.js"></script>
+  <link href="/js/jquery-custom-scrollbar-master/jquery.custom-scrollbar.css" rel="stylesheet">
+  <script src="/js/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.js"></script>
+  <link href="/js/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet">
+  <script type="text/javascript">
+                /*      function initialize() {
+                                var mapOptions = {
+                                center: { lat: -34.397, lng: 150.644},
+                                zoom: 8
+                                };
+                                var map = new google.maps.Map(document.getElementById('map-canvas'),
+                                mapOptions);
+                        }
+                        google.maps.event.addDomListener(window, 'load', initialize);
+                */
+                        function switchBanners()
+                        {
+                                //alert("in")
+                                current = $('.bg.current');
+                                next = $(current).next();
+                                if (!(next.length))
+                                        next = $('.bg:first')
+
+                                current.removeClass('current');
+                                next.addClass('current').addClass('added');
+                        }
+                        var menuheight;
+                        function setMenuHeight()
+                        {
+                                if ($(window).width() < 650)
+                                        menuheight = 60;
+                                else
+                                        menuheight = 40;
+                                $('.menu-wrap').removeClass("vis");
+                        }
+                        function resizeElements()
+                        {
+                                $('.hovertext').each(function(){
+                                        he = $(this).find('div').height();
+                                        wid = $(this).find('div').width();
+                                        $(this).css("height", he).css("width", wid);
+                                })
+                        }
+                        function getHelpFile(id)
+                        {
+
+                        }
+                        function ShouldIStayOrShouldIGo(itm)
+                        {
+                                //console.log($('body').width())
+                                $(".menu-item").not(itm).data('clicked', 0);
+                                if (  (navigator.userAgent.match(/(iPod|iPhone|iPad)/) || navigator.userAgent.toLowerCase().indexOf("android") > -1 ) && $('body').width() > 700 ) {
+
+                                        if (itm.parent().children("div").length>0)
+                                        {
+                                                if (itm.data('clicked') == 1)
+                                                {
+                                                        window.location = itm.attr("href");
+                                                }
+                                                else
+                                                {
+                                                        itm.data('clicked',1)
+                                                }
+                                        }
+                                        else
+                                                window.location = itm.attr("href");
+                                }
+                                else
+                                        window.location = itm.attr("href");
+                        }
+                        $(document).ready(function(){
+                                setMenuHeight();
+                                setInterval(switchBanners, 8000)
+                                $("a.video, a.picture, a.inline-video").fancybox();
+                                window.resizeBy(1,0);
+                                if ($('.btn-ffvc').length>0)
+                                {
+                                        $('.btn-ffvc').on('click', function(){
+                                                if ($('.ffvc').css('display') == 'block')
+                                                        $('.ffvc').slideUp(500);
+                                                else
+                                                        $('.ffvc').slideDown(500);
+                                        })
+                                        $('.btn-collapse').on('click', function(){
+                                                $('.ffvc').slideUp(500);
+                                        })
+                                }
+                                $(".scrollbar").customScrollbar({
+                                        updateOnWindowResize: "false"
+                                });
+                                //      blocks clicking while the animation is playing
+                                var ivAnimating = false;
+                                $('#img-left, #img-right, #vid-left, #vid-right').on("click", function(){
+                                        //      if not already animating
+                                        if (ivAnimating == false)
+                                        {
+                                                //      lock the buttons
+                                                ivAnimating = true;
+                                                //      get the id
+                                                var id = $(this).attr("id");
+                                                //      figure out if it is images or videos
+                                                if (id == "img-left" || id == "img-right")
+                                                        el = "images"
+                                                else
+                                                        el = "videos"
+                                                //      get the wrapper info
+                                                var wrap = $('.'+el+'list')
+                                                var wrapwidth = wrap.css("width").replace("px", "");
+                                                //      figure out which way the slides need to move
+                                                if (id == "img-left" || id == "vid-left")
+                                                        dir = "1"
+                                                else
+                                                        dir = "-1"
+                                                //      set the element that is scrolling
+                                                var toScroll = $('.'+el);
+                                                //      get the left margin of the element.  this is what is adjusted to slide the list around
+                                                var left = toScroll.css("margin-left").replace("px","");
+                                                //      the width of the scroll element
+                                                var max = toScroll.css("width").replace("px", "")
+                                                //      handles the left moves
+                                                if ((left <=0 )&& (parseInt((-1 * wrapwidth) + parseInt(left)) >= parseInt(-1 * max)) && dir == "-1")
+                                                        toScroll.animate({"margin-left" : parseInt(left) + parseInt(dir * (200)) }, 500, function(){ivAnimating = false;})
+                                                //      handles the right moves
+                                                if (left < 0 && dir == "1")
+                                                        toScroll.animate({"margin-left" : parseInt(left) + parseInt(dir * (200)) }, 500, function(){ivAnimating = false;})
+                                        }
+                                })
+
+                                //$("a.iframe").fancybox();
+
+                                $('.icon-navicon').on('click', function(){
+
+                                        $('.menu-wrap').toggleClass("vis");
+
+                                })
+                                if ($(".hide-timer").length>0)
+                                        setTimeout(function(){$(".hide-timer").slideUp(400)}, 5000)
+                        });
+
+                        /*$(window).load(function(){*/
+      $( document ).ready(function() {
+                                if ($('.tabs'))
+                                {
+                                        $('.tabs-sidebar a').on('click', function(){
+                                                $('.tabs-sidebar a').removeClass("on");
+                                                $(this).addClass("on")
+                                                tab = $(this).data('tab');
+                                                $('.tab').removeClass('on');
+                                                $('.tab-'+tab).addClass('on');
+                                                $('.tabs').animate({height:$('.tab-'+tab).outerHeight(true)}, 500)
+
+                                        })
+                                        //console.log($('.tab.on').outerHeight(true))
+                                        $('.tabs').animate({height:$('.tab.on').outerHeight(true)}, 500)
+
+                                }
+
+                                $('.top-menu').on('touchstart touchmove', function (e) {
+                                        e.stopPropagation();
+                                });
+
+                                executeSizeFunction();
+                        });
+
+                        $(window).resize(function(){
+                                console.log("resize")
+                                setMenuHeight();
+                                resizeElements();
+                                executeSizeFunction();
+                        })
+  </script> 
+  <script type='text/javascript'>
+
+
+  /* <![CDATA[ */
+  var nm_load_more = {"url":"https:\/\/ai-solutions.com\/wp-admin\/admin-ajax.php"};
+  /* ]]> */
+  </script> 
+  <script type='text/javascript' src='/js/nm_load_more.js'></script> 
+  <script type='text/javascript' src='/wp-includes/js/wp-embed.min.js?ver=4.9.9'></script> 
+  <script>
+
+
+        $(document).ready(function(){
+                $(".learnmore").addClass("content-button");
+
+                $(".content-button").each(function(){
+
+                        if ($(this).children("span").length == 0)
+                        {
+                                var txt = $(this).html();
+                                $(this).html("");
+                                $(this).append("<span>"+txt+"</span>")
+                        }
+
+                })
+
+        })
+  </script>
+</body>
+</html>

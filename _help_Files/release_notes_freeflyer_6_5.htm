@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Release Notes for FreeFlyer 6.5</title>
+  <meta name="keywords" content="">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link type="text/css" href="default.css" rel="stylesheet">
+  <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+  </style>
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="helpman_settings.js"></script>
+  <script type="text/javascript" src="helpman_topicinit.js"></script>
+  <script type="text/javascript">
+     HMSyncTOC("index.html", "release_notes_freeflyer_6_5.htm");
+  </script>
+  <script type="text/javascript" src="highlight.js"></script>
+  <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+  </script>
+</head>
+<body>
+  <table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#808080">
+    <tr style="vertical-align:middle">
+      <td style="text-align:left">
+        <h1 class="p_Heading1"><span class="f_Heading1">Release Notes for FreeFlyer 6.5</span></h1>
+      </td>
+      <td style="text-align:right">
+        <a href="welcome.htm">Top</a>&nbsp; <a href="release_notes_freeflyer_6_6.htm">Previous</a>&nbsp; <a href="release_notes_freeflyer_6_0.htm">Next</a>
+      </td>
+    </tr>
+  </table>
+  <table style="width:100%;border:none;border-spacing:0px">
+    <tr style="vertical-align:top">
+      <td style="text-align:left;padding:5px">
+        <h2 class="p_Heading2"><span class="f_Heading2">New Features in FreeFlyer 6.5</span></h2>
+        <hr style="height:1px; color:#808080; border-width:0px; background-color:#808080;">
+        <h3 class="p_Heading3"><span class="f_Heading3">Integrated Debugger</span></h3>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Breakpoints</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Step in/out/over</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Inspector</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Debugger Log</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <h3 class="p_Heading3"><span class="f_Heading3">Extensions</span></h3>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Provides the ability to call into compiled code from FreeFlyer script</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Call into existing code / libraries</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Define custom objects</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Define custom forces</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>For more information, see <a href="freeflyer_extensions_sdk.htm" class="topiclink">FreeFlyer Extensions</a></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <h3 class="p_Heading3"><span class="f_Heading3">Help File Enhancements</span></h3>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>New <a href="guides.htm" class="topiclink">Guides</a> on fundamental FreeFlyer topics</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>In-depth discussion of the <a href="the_spacecraft_object.htm" class="topiclink">Spacecraft</a> object</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Completely rewritten help for each FreeFlyer <a href="scriptelements.htm" class="topiclink">command</a></p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Color-coded syntax examples throughout</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal" style="margin: 0px 0px 2px 48px;">&nbsp;</p>
+        <h3 class="p_Heading3"><span class="f_Heading3">Visualization Enhancements</span></h3>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Night Lights texture</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Specular Reflection</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Optional display of Sun terminator on 2D map</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Optional enforcement of 2:1 aspect ratio in 2D map</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Ability to display a 2D Map for any CelestialObject</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Ability to generate bitmap-based movies (WMV &amp; AVI)</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Screen capture of Mission View windows</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Improved 3ds support</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal"><span class="f_Heading3">Workspace Management</span></p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Create workspaces on demand</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Move windows between workspaces</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Use the same workspace for multiple runs (ie. legacy FreeFlyer 5.6 style)</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <h3 class="p_Heading3"><span class="f_Heading3">&nbsp;</span></h3>
+        <h3 class="p_Heading3"><span class="f_Heading3">Object Lists</span></h3>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Support for Lists of any object type<br>
+                &nbsp;</p>
+                <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 0px;">
+                  <table style="border:solid thin #c0c0c0; border-spacing:0px;">
+                    <tr style="text-align:left;vertical-align:top;">
+                      <td style="vertical-align:top; padding:8px; border:none">
+                        <p style="line-height: 1.0; white-space: nowrap; page-break-inside: avoid; margin: 0px 0px 0px 0px;"><span style="font-family: 'Courier New'; color: #ff0000;">List</span><span style="font-family: 'Courier New';">&lt;</span><span style="font-family: 'Courier New'; color: #5f9ea0;">Spacecraft</span><span style="font-family: 'Courier New';">&gt;&nbsp;leoAssets;&nbsp;</span><br>
+                        <span style="font-family: 'Courier New'; color: #ff0000;">List</span><span style="font-family: 'Courier New';">&lt;</span><span style="font-family: 'Courier New'; color: #5f9ea0;">GroundStation</span><span style="font-family: 'Courier New';">&gt;&nbsp;dsnNetwork;</span></p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <p class="p_Normal">&nbsp;</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Indexing into / iteration over elements of a list of objects<br>
+                &nbsp;</p>
+                <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 0px;">
+                  <table style="border:solid thin #c0c0c0; border-spacing:0px;">
+                    <tr style="text-align:left;vertical-align:top;">
+                      <td style="vertical-align:top; padding:8px; border:none">
+                        <p class="p_Normal"><span style="font-family: 'Courier New'; color: #0000ff;">For</span> <span style="font-family: 'Courier New';">i = 0</span> <span style="font-family: 'Courier New'; color: #ff0000;">to</span> <span style="font-family: 'Courier New';">leoAssets.Count - 1</span> <span style="font-family: 'Courier New'; color: #ff0000;">step</span> <span style="font-family: 'Courier New';">1;</span><br>
+                        <span style="font-family: 'Courier New'; color: #0000ff;">&nbsp; &nbsp; &nbsp;Step</span> <span style="font-family: 'Courier New';">leoAssests[i];</span><br>
+                        <span style="font-family: 'Courier New'; color: #0000ff;">End</span><span style="font-family: 'Courier New';">;</span></p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <p class="p_Normal">&nbsp;</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Dynamic resizing of objects lists<br>
+                &nbsp;</p>
+                <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 0px;">
+                  <table style="border:solid thin #c0c0c0; border-spacing:0px;">
+                    <tr style="text-align:left;vertical-align:top;">
+                      <td style="vertical-align:top; padding:8px; border:none">
+                        <p class="p_Normal"><span style="font-family: 'Courier New';">leoAssets.Count = GetNumberOfNoradState(</span><span style="font-family: 'Courier New'; color: #8b0000;">&quot;myTLE.tle&quot;</span><span style="font-family: 'Courier New';">);</span></p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <p class="p_Normal">&nbsp;</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><a href="formation_millisecond.htm" class="topiclink">Formation</a> object as a special case of List&lt;Spacecraft&gt;</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Additional properties / methods for initializing and displaying a Formation</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal" style="margin: 0px 0px 2px 48px;">&nbsp;</p>
+        <h3 class="p_Heading3"><span class="f_Heading3">New Script Parsing Engine</span></h3>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Generalized string/numeric/object expression evaluation.</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span>Anywhere a numeric value is used, any valid numeric expression can be used.<br>
+                &nbsp;</p>
+                <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+                  <table style="border:solid thin #c0c0c0; border-spacing:0px;">
+                    <tr style="text-align:left;vertical-align:top;">
+                      <td style="vertical-align:top; padding:8px; border:none">
+                        <p class="p_Normal"><span style="font-family: 'Courier New'; color: #0000ff;">For</span> <span style="font-family: 'Courier New';">i = 0</span> <span style="font-family: 'Courier New'; color: #ff0000;">to</span> <span style="font-family: 'Courier New';">myArray.Dimension - 1</span> <span style="font-family: 'Courier New'; color: #ff0000;">step</span> <span style="font-family: 'Courier New';">1;</span></p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <p class="p_Normal" style="margin: 0px 0px 2px 24px;">&nbsp;</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span>Anywhere a string value is used, any valid string expression can be used.<br>
+                &nbsp;</p>
+                <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+                  <table style="border:solid thin #c0c0c0; border-spacing:0px;">
+                    <tr style="text-align:left;vertical-align:top;">
+                      <td style="vertical-align:top; padding:8px; border:none">
+                        <p class="p_Normal"><span style="font-family: 'Courier New'; color: #0000ff;">Watch</span> <span style="font-family: 'Courier New';"></span><span style="font-family: 'Courier New'; color: #8b0000;">&quot;The Spacecraft's Epoch is: &quot;</span> <span style="font-family: 'Courier New';">+ mySpacecraft.Epoch.ToString();</span></p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <p class="p_Normal" style="margin: 0px 0px 2px 24px;">&nbsp;</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span>Anywhere an object is used, any valid object expression can be used.<br>
+                &nbsp;</p>
+                <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+                  <table style="border:solid thin #c0c0c0; border-spacing:0px;">
+                    <tr style="text-align:left;vertical-align:top;">
+                      <td style="vertical-align:top; padding:8px; border:none">
+                        <p class="p_Normal"><span style="font-family: 'Courier New'; color: #0000ff;">Step</span> <span style="font-family: 'Courier New';">mySpacecraftList[i]</span> <span style="font-family: 'Courier New'; color: #ff0000;">to</span> <span style="font-family: 'Courier New';">( mySpacecraftList[i].Epoch == 21434 );</span><br>
+                        <span style="font-family: 'Courier New';">mySpacecraft.Propagator.StepSize = 60;</span></p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <p class="p_Normal" style="margin: 0px 0px 2px 24px;">&nbsp;</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Object Constructor syntax<br>
+                &nbsp;</p>
+                <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+                  <table style="border:solid thin #c0c0c0; border-spacing:0px;">
+                    <tr style="text-align:left;vertical-align:top;">
+                      <td style="vertical-align:top; padding:8px; border:none">
+                        <p class="p_Normal"><span style="font-family: 'Courier New'; color: #5f9ea0;">ReportInterface</span> <span style="font-family: 'Courier New';">myReportInterface(</span><span style="font-family: 'Courier New'; color: #8b0000;">&quot;myReportFilename.txt&quot;</span><span style="font-family: 'Courier New';">);</span></p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <p class="p_Normal" style="margin: 0px 0px 2px 24px;">&nbsp;</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>'Create' optional when defining object types<br>
+                &nbsp;</p>
+                <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+                  <table style="border:solid thin #c0c0c0; border-spacing:0px;">
+                    <tr style="text-align:left;vertical-align:top;">
+                      <td style="vertical-align:top; padding:8px; border:none">
+                        <p style="margin: 0px 0px 0px 0px;"><span style="font-family: 'Courier New'; color: #5f9ea0;">Variable</span> <span style="font-family: 'Courier New';">myVariable;</span><br>
+                        <span style="font-family: 'Courier New'; color: #5f9ea0;">Array</span> <span style="font-family: 'Courier New';">myArray[5];</span></p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <p class="p_Normal" style="margin: 0px 0px 2px 24px;">&nbsp;</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Shorter Spacecraft creation syntax option - creates default ForceModel and Propagator automatically<br>
+                &nbsp;</p>
+                <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+                  <table style="border:solid thin #c0c0c0; border-spacing:0px;">
+                    <tr style="text-align:left;vertical-align:top;">
+                      <td style="vertical-align:top; padding:8px; border:none">
+                        <p class="p_Normal"><span style="font-family: 'Courier New'; color: #5f9ea0;">Spacecraft</span> <span style="font-family: 'Courier New';">Spacecraft1;</span></p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <p class="p_Normal" style="margin: 0px 0px 2px 24px;">&nbsp;</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Improved syntax error messages</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Object and Object Array properties</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Access to child objects through the parent object<br>
+                &nbsp;</p>
+                <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+                  <table style="border:solid thin #c0c0c0; border-spacing:0px;">
+                    <tr style="text-align:left;vertical-align:top;">
+                      <td style="vertical-align:top; padding:8px; border:none">
+                        <p style="line-height: 1.0; white-space: nowrap; page-break-inside: avoid; margin: 0px 0px 0px 0px;"><span style="font-family: 'Courier New';">mySpacecraft.Propagator.StepSize&nbsp;=&nbsp;60;&nbsp;</span></p>
+                        <p style="line-height: 1.0; white-space: nowrap; page-break-inside: avoid; margin: 0px 0px 0px 0px;"><span style="font-family: 'Courier New';">mySpacecraft.Tanks[2].TankMass&nbsp;=&nbsp;2000;</span></p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <p class="p_Normal" style="margin: 0px 0px 2px 24px;">&nbsp;</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>String concatenation using the plus operator<br>
+                &nbsp;</p>
+                <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+                  <table style="border:solid thin #c0c0c0; border-spacing:0px;">
+                    <tr style="text-align:left;vertical-align:top;">
+                      <td style="vertical-align:top; padding:8px; border:none">
+                        <p class="p_Normal"><span style="font-family: 'Courier New';">myString = myOtherString +</span> <span style="font-family: 'Courier New'; color: #8b0000;">&quot;blah&quot;</span> <span style="font-family: 'Courier New';">+ sc1.Name +</span> <span style="font-family: 'Courier New'; color: #8b0000;">&quot; &quot;</span> <span style="font-family: 'Courier New';">+ variable.ToString();</span></p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <p class="p_Normal" style="margin: 0px 0px 2px 24px;">&nbsp;</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>ToString available on properties / numeric expressions<br>
+                &nbsp;</p>
+                <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+                  <table style="border:solid thin #c0c0c0; border-spacing:0px;">
+                    <tr style="text-align:left;vertical-align:top;">
+                      <td style="vertical-align:top; padding:8px; border:none">
+                        <p class="p_Normal"><span style="font-family: 'Courier New';">myString = sc1.A.ToString();</span><br>
+                        <span style="font-family: 'Courier New';">myString = array1[0].ToString();</span><br>
+                        <span style="font-family: 'Courier New';">myString = (sc1.TotalMass - 100).ToString();</span></p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <p class="p_Normal" style="margin: 0px 0px 2px 24px;">&nbsp;</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Stricter handling of potentially invalid syntax</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <h3 class="p_Heading3"><span class="f_Heading3">&nbsp;</span></h3>
+        <h3 class="p_Heading3"><span class="f_Heading3">Exposed Object Hierarchy</span></h3>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Object type inheritance is accessible from FreeFlyer script</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>The ability to pass any generic Propagator type to a procedure.<br>
+                &nbsp;</p>
+                <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+                  <table style="border:solid thin #c0c0c0; border-spacing:0px;">
+                    <tr style="text-align:left;vertical-align:top;">
+                      <td style="vertical-align:top; padding:8px; border:none">
+                        <p style="line-height: 1.0; white-space: nowrap; page-break-inside: avoid; margin: 0px 0px 0px 0px;"><span style="font-family: 'Courier New'; color: #0000ff;">Define</span><span style="font-family: 'Courier New';">&nbsp;</span><span style="font-family: 'Courier New'; color: #0000ff;">Procedure</span><span style="font-family: 'Courier New';">&nbsp;SetStepSize(Propagator&nbsp;prop,&nbsp;</span><span style="font-family: 'Courier New'; color: #5f9ea0;">Variable</span><span style="font-family: 'Courier New';">&nbsp;val);&nbsp;</span><br>
+                        <span style="font-family: 'Courier New'; color: #0000ff;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family: 'Courier New';">prop.StepSize&nbsp;=&nbsp;val;&nbsp;</span><br>
+                        <span style="font-family: 'Courier New'; color: #0000ff;">EndProcedure</span><span style="font-family: 'Courier New';">;</span></p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <p class="p_Normal" style="margin: 0px 0px 2px 24px;">&nbsp;</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>IsType operator to check an object type</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>AsType operator for casting to higher object types.<br>
+                &nbsp;</p>
+                <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+                  <table style="border:solid thin #c0c0c0; border-spacing:0px;">
+                    <tr style="text-align:left;vertical-align:top;">
+                      <td style="vertical-align:top; padding:8px; border:none">
+                        <p style="line-height: 1.0; white-space: nowrap; page-break-inside: avoid; margin: 0px 0px 0px 0px;"><span style="font-family: 'Courier New'; color: #0000ff;">If</span><span style="font-family: 'Courier New';">&nbsp;(prop&nbsp;</span><span style="font-family: 'Courier New'; color: #ff0000;">IsType</span><span style="font-family: 'Courier New';">&nbsp;</span><span style="font-family: 'Courier New'; color: #5f9ea0;">RK89</span><span style="font-family: 'Courier New';">)&nbsp;</span><span style="font-family: 'Courier New'; color: #ff0000;">then</span><span style="font-family: 'Courier New';">;&nbsp;</span><br>
+                        <span style="font-family: 'Courier New'; color: #0000ff;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family: 'Courier New';">(prop&nbsp;</span><span style="font-family: 'Courier New'; color: #ff0000;">AsType</span><span style="font-family: 'Courier New';">&nbsp;</span><span style="font-family: 'Courier New'; color: #5f9ea0;">RK89</span><span style="font-family: 'Courier New';">).Tolerance&nbsp;=&nbsp;1e-9;&nbsp;</span><br>
+                        <span style="font-family: 'Courier New'; color: #0000ff;">End</span><span style="font-family: 'Courier New';">;</span></p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <h3 class="p_Heading3"><span class="f_Heading3">&nbsp;</span></h3>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <h3 class="p_Heading3"><span class="f_Heading3">&nbsp;</span></h3>
+        <h3 class="p_Heading3"><span class="f_Heading3">Miscellaneous Enhancements</span></h3>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>MatlabInterface Enhancements</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span>Ability to pass Variables</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span>Ability to pass Strings</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span>Ability to pass the same expression as input and output</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Ability to model Solid Earth Tides in Force Model</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Ability to read DE418 and DE421</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Improved interpolation when stepping between vectors of an Ephemeris</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>TrackingDataEditor</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span>Ability to view and manually filter Tracking Data prior to processing it in the Orbit Determination process</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>A command line option for passing data into an executing MissionPlan</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Probability of Collision (Pc) method</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Ability to load canned Objects Presets from existing object files</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">&nbsp;</p>
+        <h2 class="p_Heading2"><span class="f_Heading2">Migrating to FreeFlyer 6.5</span></h2>
+        <hr style="height:1px; color:#999999; border-width:0px; background-color:#999999;">
+        <p class="p_Normal">While we always strive to maintain 100% backwards compatibility in our new releases, our efforts to make FreeFlyer scripting more flexible and consistent in FreeFlyer 6.5 and higher have necessitated a few changes which may require user intervention when migrating your existing Mission Plans. These changes are outlined below.</p>
+        <p class="p_Normal">&nbsp;</p>
+        <h3 class="p_Heading3"><span class="f_Heading3">Variable to String assignments are no longer supported</span></h3>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">In FreeFlyer 6.0 and earlier, the following syntax was allowed:</p>
+        <p class="p_Normal">&nbsp;</p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table class="Script Example Table" style="border:none; border-spacing:0px; border-collapse:collapse;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:8px; border:solid thin #c0c0c0;">
+                <p class="p_Normal"><span style="font-family: 'Courier New'; color: #0000ff;">Create</span> <span style="font-family: 'Courier New';"></span><span style="font-family: 'Courier New'; color: #5f9ea0;">Variable</span> <span style="font-family: 'Courier New';">myVariable;</span></p>
+                <p class="p_Normal"><span style="font-family: 'Courier New'; color: #0000ff;">Create</span> <span style="font-family: 'Courier New';"></span><span style="font-family: 'Courier New'; color: #5f9ea0;">String</span> <span style="font-family: 'Courier New';">myString;</span></p>
+                <p class="p_Normal">&nbsp;</p>
+                <p class="p_Normal"><span style="font-family: 'Courier New';">myVariable = 5;</span></p>
+                <p class="p_Normal"><span style="font-family: 'Courier New';">myString = myVariable;</span></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">The behavior would result in myString containing the value &quot;5&quot;. In 6.5 and higher, this script would result in a syntax error. The way to accomplish the same result in 6.5 is to use the <span style="font-weight: bold;">ToString</span> method:</p>
+        <p class="p_Normal">&nbsp;</p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table class="Script Example Table" style="border:none; border-spacing:0px; border-collapse:collapse;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:8px; border:solid thin #c0c0c0;">
+                <p class="p_Normal"><span style="font-family: 'Courier New'; color: #0000ff;">Create</span> <span style="font-family: 'Courier New';"></span><span style="font-family: 'Courier New'; color: #5f9ea0;">Variable</span> <span style="font-family: 'Courier New';">myVariable;</span></p>
+                <p class="p_Normal"><span style="font-family: 'Courier New'; color: #0000ff;">Create</span> <span style="font-family: 'Courier New';"></span><span style="font-family: 'Courier New'; color: #5f9ea0;">String</span> <span style="font-family: 'Courier New';">myString;</span></p>
+                <p class="p_Normal">&nbsp;</p>
+                <p class="p_Normal"><span style="font-family: 'Courier New';">myVariable = 5;</span></p>
+                <p class="p_Normal"><span style="font-family: 'Courier New';">myString = myVariable.ToString();</span></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">&nbsp;</p>
+        <h3 class="p_Heading3"><span class="f_Heading3">The use of parentheses to index array properties is deprecated</span></h3>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">In FreeFlyer 6.0 and earlier, the following syntax was standard:</p>
+        <p class="p_Normal">&nbsp;</p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table class="Script Example Table" style="border:none; border-spacing:0px; border-collapse:collapse;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:8px; border:solid thin #c0c0c0;">
+                <p class="p_Normal"><span style="font-family: 'Courier New'; color: #0000ff;">Create</span> <span style="font-family: 'Courier New';"></span><span style="font-family: 'Courier New'; color: #5f9ea0;">Array</span> <span style="font-family: 'Courier New';">myArray[5];</span></p>
+                <p class="p_Normal">&nbsp;</p>
+                <p class="p_Normal"><span style="font-family: 'Courier New';">myArray.Element(0) = 1;</span></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">While this parenthetical syntax still works, it is deprecated and will generate a warning. The preferred syntax in 6.5 and higher is as follows:</p>
+        <p class="p_Normal">&nbsp;</p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table class="Script Example Table" style="border:none; border-spacing:0px; border-collapse:collapse;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:8px; border:solid thin #c0c0c0;">
+                <p class="p_Normal"><span style="font-family: 'Courier New'; color: #0000ff;">Create</span> <span style="font-family: 'Courier New';"></span><span style="font-family: 'Courier New'; color: #5f9ea0;">Array</span> <span style="font-family: 'Courier New';">myArray[5];</span></p>
+                <p class="p_Normal">&nbsp;</p>
+                <p class="p_Normal"><span style="font-family: 'Courier New';">myArray.Element[0] = 1;</span></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">&nbsp;</p>
+        <h3 class="p_Heading3"><span class="f_Heading3">Object declarations inside of block statements are no longer valid</span></h3>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">In FreeFlyer 6.0 and earlier, the following script was valid:</p>
+        <p class="p_Normal">&nbsp;</p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table class="Script Example Table" style="border:none; border-spacing:0px; border-collapse:collapse;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:8px; border:solid thin #c0c0c0;">
+                <p class="p_Normal"><span style="font-family: 'Courier New'; color: #0000ff;">Create</span> <span style="font-family: 'Courier New';"></span><span style="font-family: 'Courier New'; color: #5f9ea0;">Variable</span> <span style="font-family: 'Courier New';">v1;</span></p>
+                <p class="p_Normal">&nbsp;</p>
+                <p class="p_Normal"><span style="font-family: 'Courier New'; color: #0000ff;">If</span><span style="font-family: 'Courier New';">(v1 == 0);</span></p>
+                <p class="p_Normal"><span style="font-family: 'Courier New'; color: #0000ff;">&nbsp; Create</span> <span style="font-family: 'Courier New';"></span><span style="font-family: 'Courier New'; color: #5f9ea0;">Variable</span> <span style="font-family: 'Courier New';">v2;</span></p>
+                <p class="p_Normal"><span style="font-family: 'Courier New';">&nbsp; v2 = 5;</span></p>
+                <p class="p_Normal"><span style="font-family: 'Courier New'; color: #0000ff;">End</span><span style="font-family: 'Courier New';">;</span></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">In 6.5 and higher this will generate an error. You can fix the error by changing the script to the following:</p>
+        <p class="p_Normal">&nbsp;</p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table class="Script Example Table" style="border:none; border-spacing:0px; border-collapse:collapse;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:8px; border:solid thin #c0c0c0;">
+                <p class="p_Normal"><span style="font-family: 'Courier New'; color: #0000ff;">Create</span> <span style="font-family: 'Courier New';"></span><span style="font-family: 'Courier New'; color: #5f9ea0;">Variable</span> <span style="font-family: 'Courier New';">v1;</span></p>
+                <p class="p_Normal"><span style="font-family: 'Courier New'; color: #0000ff;">Create</span> <span style="font-family: 'Courier New';"></span><span style="font-family: 'Courier New'; color: #5f9ea0;">Variable</span> <span style="font-family: 'Courier New';">v2;</span></p>
+                <p class="p_Normal">&nbsp;</p>
+                <p class="p_Normal"><span style="font-family: 'Courier New'; color: #0000ff;">If</span><span style="font-family: 'Courier New';">(v1 == 0);</span></p>
+                <p class="p_Normal"><span style="font-family: 'Courier New';">&nbsp; &nbsp;v2 = 5;</span></p>
+                <p class="p_Normal"><span style="font-family: 'Courier New'; color: #0000ff;">End</span><span style="font-family: 'Courier New';">;</span></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">&nbsp;</p>
+        <h3 class="p_Heading3"><span class="f_Heading3">Boolean expressions now follow standard order of operations</span></h3>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">Consider the following script:</p>
+        <p class="p_Normal">&nbsp;</p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table class="Script Example Table" style="border:none; border-spacing:0px; border-collapse:collapse;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:8px; border:solid thin #c0c0c0;">
+                <p class="p_Normal"><span style="font-family: 'Courier New'; color: #0000ff;">Create</span> <span style="font-family: 'Courier New';"></span><span style="font-family: 'Courier New'; color: #5f9ea0;">Variable</span> <span style="font-family: 'Courier New';">v = 0;</span></p>
+                <p class="p_Normal">&nbsp;</p>
+                <p class="p_Normal"><span style="font-family: 'Courier New'; color: #0000ff;">If</span><span style="font-family: 'Courier New';">(v == 0</span> <span style="font-family: 'Courier New'; color: #ff0000;">or</span> <span style="font-family: 'Courier New';">v == 0</span> <span style="font-family: 'Courier New'; color: #ff0000;">and</span> <span style="font-family: 'Courier New';">v == 1)</span> <span style="font-family: 'Courier New'; color: #ff0000;">then</span><span style="font-family: 'Courier New';">;</span></p>
+                <p class="p_Normal"><span style="font-family: 'Courier New'; color: #0000ff;">&nbsp; Watch</span> <span style="font-family: 'Courier New';">v;</span></p>
+                <p class="p_Normal"><span style="font-family: 'Courier New'; color: #0000ff;">End</span><span style="font-family: 'Courier New';">;</span></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">In FreeFlyer 6.0 and earlier, Boolean expressions evaluated left to right. In the script above, this leads to a grouping like:</p>
+        <p class="p_Normal">&nbsp;</p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table class="Script Example Table" style="border:none; border-spacing:0px; border-collapse:collapse;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:8px; border:solid thin #c0c0c0;">
+                <p class="p_Normal">(<span style="font-family: 'Courier New';">v == 0</span> <span style="font-family: 'Courier New'; color: #ff0000;">or</span> <span style="font-family: 'Courier New';">v == 0)</span> <span style="font-family: 'Courier New'; color: #ff0000;">and</span> <span style="font-family: 'Courier New';">v == 1</span></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">In 6.5 and higher, the and operator takes precedence over the or operator leading to a grouping like:</p>
+        <p class="p_Normal">&nbsp;</p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table class="Script Example Table" style="border:none; border-spacing:0px; border-collapse:collapse;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:8px; border:solid thin #c0c0c0;">
+                <p class="p_Normal"><span style="font-family: 'Courier New';">v == 0</span> <span style="font-family: 'Courier New'; color: #ff0000;">or</span> <span style="font-family: 'Courier New';">(v == 0</span> <span style="font-family: 'Courier New'; color: #ff0000;">and</span> <span style="font-family: 'Courier New';">v == 1)</span></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">In the example given, the expression evaluates to true in 6.5, but false in previous versions. In 6.5 and higher, you can also use parentheses to group expressions and explicitly specify the order of evaluation you desire.</p>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">&nbsp;</p>
+        <h3 class="p_Heading3"><span class="f_Heading3">The TrackDataMonitor declaration syntax has changed</span></h3>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">Assuming the existence of a Spacecraft named sc1, the previous syntax was:</p>
+        <p class="p_Normal">&nbsp;</p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table class="Script Example Table" style="border:none; border-spacing:0px; border-collapse:collapse;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:8px; border:solid thin #c0c0c0;">
+                <p class="p_Normal"><span style="font-family: 'Courier New'; color: #0000ff;">Create</span> <span style="font-family: 'Courier New';"></span><span style="font-family: 'Courier New'; color: #5f9ea0;">GroundStation</span> <span style="font-family: 'Courier New';">g;</span></p>
+                <p class="p_Normal">&nbsp;</p>
+                <p class="p_Normal"><span style="font-family: 'Courier New'; color: #0000ff;">Create</span> <span style="font-family: 'Courier New';"></span><span style="font-family: 'Courier New'; color: #5f9ea0;">TrackDataMonitor</span> <span style="font-family: 'Courier New';">tdm</span> <span style="font-family: 'Courier New'; color: #ff0000;">using</span> <span style="font-family: 'Courier New';">sc1</span> <span style="font-family: 'Courier New'; color: #ff0000;">from</span> <span style="font-family: 'Courier New';">g(</span><span style="font-family: 'Courier New'; color: #8b0000;">&quot;track1.data&quot;</span><span style="font-family: 'Courier New';">);</span></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">The new syntax is:</p>
+        <p class="p_Normal">&nbsp;</p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table class="Script Example Table" style="border:none; border-spacing:0px; border-collapse:collapse;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:8px; border:solid thin #c0c0c0;">
+                <p class="p_Normal"><span style="font-family: 'Courier New'; color: #0000ff;">Create</span> <span style="font-family: 'Courier New';"></span><span style="font-family: 'Courier New'; color: #5f9ea0;">GroundStation</span> <span style="font-family: 'Courier New';">g;</span></p>
+                <p class="p_Normal">&nbsp;</p>
+                <p class="p_Normal"><span style="font-family: 'Courier New'; color: #0000ff;">Create</span> <span style="font-family: 'Courier New';"></span><span style="font-family: 'Courier New'; color: #5f9ea0;">TrackDataMonitor</span> <span style="font-family: 'Courier New';">tdm</span> <span style="font-family: 'Courier New'; color: #ff0000;">using</span> <span style="font-family: 'Courier New';">sc1</span> <span style="font-family: 'Courier New'; color: #ff0000;">from</span> <span style="font-family: 'Courier New';">g&lt;</span><span style="font-family: 'Courier New'; color: #8b0000;">&quot;track1.data&quot;</span><span style="font-family: 'Courier New';">&gt;;</span></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">In other words, when specifying the tracking data files associated with a GroundStation object, use angle brackets instead of parentheses.</p>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">&nbsp;</p>
+        <h3 class="p_Heading3"><span class="f_Heading3">Some forms of the Close command are no longer available</span></h3>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">The following permutations of the Close command are no longer valid:</p>
+        <p class="p_Normal">&nbsp;</p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table class="Script Example Table" style="border:none; border-spacing:0px; border-collapse:collapse;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:8px; border:solid thin #c0c0c0;">
+                <p class="p_Normal"><span style="font-family: 'Courier New'; color: #0000ff;">Close</span> <span style="font-family: 'Courier New';">myString;</span></p>
+                <p class="p_Normal"><span style="font-family: 'Courier New'; color: #0000ff;">Close</span> <span style="font-family: 'Courier New';"></span><span style="font-family: 'Courier New'; color: #8b0000;">&quot;aFile.txt&quot;</span><span style="font-family: 'Courier New';">;</span></p>
+                <p class="p_Normal"><span style="font-family: 'Courier New'; color: #0000ff;">Close</span> <span style="font-family: 'Courier New';">aFile.txt;</span></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">Instead of closing the file name, close the object with which the file is associated (for example, a ReportInterface object).</p>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">&nbsp;</p>
+        <h3 class="p_Heading3"><span class="f_Heading3">The Report command now requires quotes around literal file names</span></h3>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">In FreeFlyer 6.0 and earlier, the following syntax was valid:</p>
+        <p class="p_Normal">&nbsp;</p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table class="Script Example Table" style="border:none; border-spacing:0px; border-collapse:collapse;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:8px; border:solid thin #c0c0c0;">
+                <p class="p_Normal"><span style="font-family: 'Courier New'; color: #0000ff;">Create</span> <span style="font-family: 'Courier New';"></span><span style="font-family: 'Courier New'; color: #5f9ea0;">Variable</span> <span style="font-family: 'Courier New';">v;</span></p>
+                <p class="p_Normal">&nbsp;</p>
+                <p class="p_Normal"><span style="font-family: 'Courier New'; color: #0000ff;">Report</span> <span style="font-family: 'Courier New';">v</span> <span style="font-family: 'Courier New'; color: #ff0000;">to</span> <span style="font-family: 'Courier New';">abc.txt;</span></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">Now, quotes around the file name are required:</p>
+        <p class="p_Normal">&nbsp;</p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table class="Script Example Table" style="border:none; border-spacing:0px; border-collapse:collapse;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:8px; border:solid thin #c0c0c0;">
+                <p class="p_Normal"><span style="font-family: 'Courier New'; color: #0000ff;">Create</span> <span style="font-family: 'Courier New';"></span><span style="font-family: 'Courier New'; color: #5f9ea0;">Variable</span> <span style="font-family: 'Courier New';">v;</span></p>
+                <p class="p_Normal">&nbsp;</p>
+                <p class="p_Normal"><span style="font-family: 'Courier New'; color: #0000ff;">Report</span> <span style="font-family: 'Courier New';">v</span> <span style="font-family: 'Courier New'; color: #ff0000;">to</span> <span style="font-family: 'Courier New';"></span><span style="font-family: 'Courier New'; color: #8b0000;">&quot;abc.txt&quot;</span><span style="font-family: 'Courier New';">;</span></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">&nbsp;</p>
+        <h3 class="p_Heading3"><span class="f_Heading3">The Report command &quot;as XML&quot; option has been removed</span></h3>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">The following syntax for the Report command is no longer valid:</p>
+        <p class="p_Normal">&nbsp;</p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table class="Script Example Table" style="border:none; border-spacing:0px; border-collapse:collapse;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:8px; border:solid thin #c0c0c0;">
+                <p class="p_Normal"><span style="font-family: 'Courier New'; color: #0000ff;">Report</span> <span style="font-family: 'Courier New';"></span><span style="font-family: 'Courier New'; color: #ff0000;">as</span> <span style="font-family: 'Courier New';"></span><span style="font-family: 'Courier New'; color: #ff0000;">XML</span> <span style="font-family: 'Courier New';">Spacecraft1.A</span> <span style="font-family: 'Courier New'; color: #ff0000;">to</span> <span style="font-family: 'Courier New';"></span><span style="font-family: 'Courier New'; color: #8b0000;">&quot;report.txt&quot;</span><span style="font-family: 'Courier New';">;</span></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">&nbsp;</p>
+        <h3 class="p_Heading3"><span class="f_Heading3">ThreeDModel Group names must be accessed with their fully qualified name</span></h3>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">In FreeFlyer 6.0 and earlier, the following was valid:</p>
+        <p class="p_Normal">&nbsp;</p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table class="Script Example Table" style="border:none; border-spacing:0px; border-collapse:collapse;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:8px; border:solid thin #c0c0c0;">
+                <p class="p_Normal"><span style="font-family: 'Courier New'; color: #0000ff;">Create</span> <span style="font-family: 'Courier New';"></span><span style="font-family: 'Courier New'; color: #5f9ea0;">ThreeDModel</span> <span style="font-family: 'Courier New';">myModel;</span></p>
+                <p class="p_Normal">&nbsp;</p>
+                <p class="p_Normal"><span style="font-family: 'Courier New';">myModel.CreateGroup(</span><span style="font-family: 'Courier New'; color: #8b0000;">&quot;KuAntenna&quot;</span><span style="font-family: 'Courier New';">);</span></p>
+                <p class="p_Normal"><span style="font-family: 'Courier New';">myModel.CreateGroup(</span><span style="font-family: 'Courier New'; color: #8b0000;">&quot;KuAntenna&quot;</span><span style="font-family: 'Courier New';">,</span> <span style="font-family: 'Courier New'; color: #8b0000;">&quot;KuBoom&quot;</span><span style="font-family: 'Courier New';">);</span></p>
+                <p class="p_Normal"><span style="font-family: 'Courier New';">myModel.CreateGroup(</span><span style="font-family: 'Courier New'; color: #8b0000;">&quot;KuBoom&quot;</span><span style="font-family: 'Courier New';">, &nbsp;</span> <span style="font-family: 'Courier New'; color: #8b0000;">&quot;KuDish&quot;</span><span style="font-family: 'Courier New';">);</span></p>
+                <p class="p_Normal">&nbsp;</p>
+                <p class="p_Normal"><span style="font-family: 'Courier New';">myModel.SetGroupOrientation(</span><span style="font-family: 'Courier New'; color: #8b0000;">&quot;KuDish&quot;</span><span style="font-family: 'Courier New';">, quatArray);</span></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">In 6.5 and higher, Node/Group/Object hierarchy contained in the file is preserved, so the above form may be ambiguous. Therefore, the Group paths must be fully qualified as:</p>
+        <p class="p_Normal">&nbsp;</p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table class="Script Example Table" style="border:none; border-spacing:0px; border-collapse:collapse;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:8px; border:solid thin #c0c0c0;">
+                <p class="p_Normal"><span style="font-family: 'Courier New'; color: #0000ff;">Create</span> <span style="font-family: 'Courier New';"></span><span style="font-family: 'Courier New'; color: #5f9ea0;">ThreeDModel</span> <span style="font-family: 'Courier New';">myModel;</span></p>
+                <p class="p_Normal">&nbsp;</p>
+                <p class="p_Normal"><span style="font-family: 'Courier New';">myModel.CreateGroup(</span><span style="font-family: 'Courier New'; color: #8b0000;">&quot;KuAntenna&quot;</span><span style="font-family: 'Courier New';">);</span></p>
+                <p class="p_Normal"><span style="font-family: 'Courier New';">myModel.CreateGroup(</span><span style="font-family: 'Courier New'; color: #8b0000;">&quot;KuAntenna&quot;</span><span style="font-family: 'Courier New';">,</span> <span style="font-family: 'Courier New'; color: #8b0000;">&quot;KuBoom&quot;</span><span style="font-family: 'Courier New';">);</span></p>
+                <p class="p_Normal"><span style="font-family: 'Courier New';">myModel.CreateGroup(</span><span style="font-family: 'Courier New'; color: #8b0000;">&quot;KuAntenna/KuBoom&quot;</span><span style="font-family: 'Courier New';">, &nbsp;</span> <span style="font-family: 'Courier New'; color: #8b0000;">&quot;KuDish&quot;</span><span style="font-family: 'Courier New';">);</span></p>
+                <p class="p_Normal">&nbsp;</p>
+                <p class="p_Normal"><span style="font-family: 'Courier New';">myModel.SetGroupOrientation(</span><span style="font-family: 'Courier New'; color: #8b0000;">&quot;/KuAntenna/KuBoom/KuDish&quot;</span><span style="font-family: 'Courier New';">, quatArray);</span></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">&nbsp;</p>
+        <h3 class="p_Heading3"><span class="f_Heading3">The syntax for accessing properties of the NoradSGP4 propagator has changed</span></h3>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Notes"><span class="f_Notes">Note: In all previous and current versions of FreeFlyer, the NoradSGP4 DLLs must be installed in order to gain access to the NoradSGP4 propagator.</span></p>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">Assuming the existence of a Spacecraft named mySpacecraft, in FreeFlyer 6.0 and earlier, you accessed properties of the NoradSGP4 propagator in the following way:</p>
+        <p class="p_Normal">&nbsp;</p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table class="Script Example Table" style="border:none; border-spacing:0px; border-collapse:collapse;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:8px; border:solid thin #c0c0c0;">
+                <p class="p_Normal"><span style="font-family: 'Courier New';">mySpacecraft.NoradSGP4_MeanMotion = 1;</span></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">Where MeanMotion is the name of the property you are trying to access. In 6.5 and higher, the syntax is as follows:</p>
+        <p class="p_Normal">&nbsp;</p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table class="Script Example Table" style="border:none; border-spacing:0px; border-collapse:collapse;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:8px; border:solid thin #c0c0c0;">
+                <p class="p_Normal"><span style="font-family: 'Courier New';">mySpacecraft.NoradSGP4State.MeanMotion = 1;</span></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">&nbsp;</p>
+        <h2 class="p_Heading2"><span class="f_Heading2">See Also</span></h2>
+        <hr style="height:1px; color:#c0c0c0; border-width:0px; background-color:#c0c0c0;">
+        <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><a href="release_history.htm" class="topiclink">Release History</a></p>
+        <p class="p_Normal">&nbsp;</p>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

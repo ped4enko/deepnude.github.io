@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Release Notes for FreeFlyer 7.4.1</title>
+  <meta name="keywords" content="">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link type="text/css" href="default.css" rel="stylesheet">
+  <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+  </style>
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="helpman_settings.js"></script>
+  <script type="text/javascript" src="helpman_topicinit.js"></script>
+  <script type="text/javascript">
+     HMSyncTOC("index.html", "release_notes_freeflyer_7_4_1.htm");
+  </script>
+  <script type="text/javascript" src="highlight.js"></script>
+  <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+  </script>
+</head>
+<body>
+  <table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#808080">
+    <tr style="vertical-align:middle">
+      <td style="text-align:left">
+        <h1 class="p_Heading1"><span class="f_Heading1">Release Notes for FreeFlyer 7.4.1</span></h1>
+      </td>
+      <td style="text-align:right">
+        <a href="welcome.htm">Top</a>&nbsp; <a href="release_notes_freeflyer_7_5.htm">Previous</a>&nbsp; <a href="release_notes_freeflyer_7_4.htm">Next</a>
+      </td>
+    </tr>
+  </table>
+  <table style="width:100%;border:none;border-spacing:0px">
+    <tr style="vertical-align:top">
+      <td style="text-align:left;padding:5px">
+        <h2 class="p_Heading2"><span class="f_Heading2">Issues Addressed in FreeFlyer 7.4.1</span></h2>
+        <hr style="height:1px; color:#808080; border-width:0px; background-color:#808080;">
+        <h3 class="p_Heading3"><span class="f_Heading3">Performance</span></h3>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Significantly improved the performance of FreeFlyer while executing Mission Plans</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span>For a representative set of test Mission Plans spanning <a href="guides.htm" class="topiclink">the breadth of FreeFlyer's capabilities</a> comparing FreeFlyer 7.4.1 to FreeFlyer 7.3.1...</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 39px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#9642;</span>...<span style="font-weight: bold;">25%</span> were at least <span style="font-weight: bold;">10%</span> faster without graphics</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 39px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#9642;</span>...<span style="font-weight: bold;">67%</span> were at least <span style="font-weight: bold;">5%</span> faster without graphics</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 39px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#9642;</span>...<span style="font-weight: bold;">40%</span> were at least <span style="font-weight: bold;">10%</span> faster with graphics</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 39px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#9642;</span>...<span style="font-weight: bold;">66%</span> were at least <span style="font-weight: bold;">5%</span> faster with graphics</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Significantly reduced the overhead time required to start and clean up FreeFlyer for both console and GUI applications</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span>Overhead tests performed comparing FreeFlyer 7.4.1 to FreeFlyer 7.3.1...</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 39px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#9642;</span>...on <a href="ff_exe.htm" class="topiclink">FF.exe</a> without visualizations now benchmark at least <span style="font-weight: bold;">70%</span> faster</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 39px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#9642;</span>...on FF.exe <a href="-wom1.htm" class="topiclink">with visualizations</a> now benchmark at least <span style="font-weight: bold;">25%</span> faster</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 39px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#9642;</span>...on <a href="freeflyer_exe.htm" class="topiclink">FreeFlyer.exe</a> now benchmark at least <span style="font-weight: bold;">15%</span> faster</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Corrected an issue with the &quot;Lock to Refresh Rate&quot; <a href="user_preferences.htm" class="topiclink">user preference</a> that always acted as though it was enabled, lowering performance for output visualization</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Updated the <a href="creatingediting_objects.htm#object_presets" class="topiclink">object presets</a> provided with FreeFlyer to load more quickly</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <h3 class="p_Heading3"><span class="f_Heading3">Behavior Improvements</span></h3>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Objects created in the object browser are now available in <a href="syntax.htm#achr_autocompletelogic" class="topiclink">autocomplete</a> drop-down menus in <a href="screen_layout.htm#achr_externals" class="topiclink">Externals</a></p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Top-level objects, <a href="structs.htm" class="topiclink">Structs</a>, and <a href="using_procedures.htm" class="topiclink">Procedures</a> declared in Externals will now be available in the autocomplete drop-down menus in the main Mission Plan scope</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Algorithms used to compute Kp and Ap, used in the atmospheric density calculations for <a href="jacchia_roberts_drag_file.htm" class="topiclink">Jacchia Roberts drag modeling</a>, have had their accuracy improved</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Changed the behavior of the <a href="for.htm" class="topiclink">For</a> loop in the case where the end value is smaller than the start value and no step increment is provided to always assume a step increment of 1</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span>This behavior change causes loops defined in this way to immediately exit whereas they would step backwards with a decrement of 1 in <a href="release_notes_freeflyer_7_4.htm" class="topiclink">FreeFlyer 7.4.0</a></p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span>As an example, this change would affect the following For loop behavior:</p>
+                <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 14px;">
+                  <table class="Script Example Table" style="border:none; border-spacing:0px; border-collapse:collapse;">
+                    <tr style="text-align:left;vertical-align:top;">
+                      <td style="vertical-align:top; padding:8px; border:solid thin #c0c0c0;">
+                        <p style="margin: 0px 0px 0px 0px;"><span style="font-family: 'Courier New'; color: #0000ff; background-color: #ffffff;">For</span><span style="font-family: 'Courier New'; background-color: #ffffff;">&nbsp;i = 0&nbsp;</span><span style="font-family: 'Courier New'; color: #ff0000; background-color: #ffffff;">to</span><span style="font-family: 'Courier New'; background-color: #ffffff;">&nbsp;-1;</span></p>
+                        <p style="margin: 0px 0px 0px 0px;"><span style="width:48px;display:inline-block">&nbsp;</span><span style="font-family: 'Courier New'; color: #008000; background-color: #ffffff;">// This loop will now never be entered!</span></p>
+                        <p style="margin: 0px 0px 0px 0px;"><span style="font-family: 'Courier New'; color: #0000ff; background-color: #ffffff;">End</span><span style="font-family: 'Courier New'; background-color: #ffffff;">;</span></p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>The FreeFlyer <a href="installing_freeflyer.htm" class="topiclink">installer</a> will now prompt users to install the .NET 4.7.2 framework if required</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <h3 class="p_Heading3"><span class="f_Heading3">Error Cases</span></h3>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Fixed an issue that crashed FreeFlyer on initialization for users with older graphics cards that don't support certain GPU capabilities</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Fixed an issue where <a href="plotwindow_saveplotdata_nanosecond.htm" class="topiclink">PlotWindow.SavePlotData</a> was not writing the full time stamp for an epoch on the x-axis of the plot</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Fixed an issue that was causing <a href="maneuvering.htm" class="topiclink">Maneuver</a> reports generated via the <a href="maneuver.htm" class="topiclink">Maneuver command</a> to append to the output file instead of overwriting the file as expected</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Fixed an issue causing the <a href="orbit_determination.htm" class="topiclink">orbit determination</a> <a href="observations_and_measurements.htm" class="topiclink">ionospheric correction</a> factor to be incorrect when the height of ray path was less than zero based on the spherical Earth</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Fixed an issue that prevented object-level properties and methods from displaying in the autocomplete drop-down list for <a href="structs.htm" class="topiclink">Structs</a></p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Fixed an issue in the error messaging with Structs to more effectively communicate the nature of the issue on a Struct <a href="assignment.htm" class="topiclink">assignment</a> error</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Fixed an issue resulting in <a href="error_handling.htm" class="topiclink">RuntimeApiException</a> messages being empty in the Python interface to the <a href="application_program_interface.htm" class="topiclink">runtime API</a></p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Fixed an issue that rarely could result in a crash on start-up due to a licensing race condition</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Fixed an issue so that <a href="pointgroups.htm" class="topiclink">PointGroup</a> objects defined in the object browser will now have the correct default PointGroup.PointDefinition value</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Fixed an issue that made FreeFlyer unresponsive when an initialized <a href="matrix_array_and_variable_math.htm" class="topiclink">Matrix</a> object calls the FillRandom method with invalid arguments</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Fixed an issue which crashed FreeFlyer if the <a href="screen_layout.htm#achr_controlscrn" class="topiclink">object browser</a> was made completely empty with a combination of removing and hiding objects</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Fixed an issue with the All Output Properties button in the <a href="plotwindows.htm" class="topiclink">PlotWindow</a> object dialog that prevented it from opening</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Fixed an issue present in the &quot;<a href="-cnvt1.htm" class="topiclink">--convert</a>&quot; console command to now properly update the FreeFlyer version in the Mission Plan's XML</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Fixed an issue in the <a href="finiteburnodproperties_estimatedthrust_nanosecond.htm" class="topiclink">FiniteBurnODProperties.EstimatedThrust</a> property where the property showed its reported units incorrectly</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Fixed an issue that prevented selecting multiple cells within a <a href="datatablewindows.htm" class="topiclink">DataTableWindow</a> at once</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Fixed an issue that blocked arrow keys from navigating between cells in a DataTableWindow</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <h2 class="p_Heading2"><span class="f_Heading2">See Also</span></h2>
+        <hr style="height:1px; color:#c0c0c0; border-width:0px; background-color:#c0c0c0;">
+        <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><a href="release_history.htm" class="topiclink">Release History</a></p>
+        <p class="p_Normal">&nbsp;</p>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

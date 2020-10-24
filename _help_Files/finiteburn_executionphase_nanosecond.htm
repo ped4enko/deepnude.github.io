@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FiniteBurn.ExecutionPhase Property</title>
+  <meta name="keywords" content="FiniteBurn Object,FiniteBurn Object ExecutionPhase,ExecutionPhase">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link type="text/css" href="default.css" rel="stylesheet">
+  <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+  </style>
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="helpman_settings.js"></script>
+  <script type="text/javascript" src="helpman_topicinit.js"></script>
+  <script type="text/javascript">
+     HMSyncTOC("index.html", "finiteburn_executionphase_nanosecond.htm");
+  </script>
+  <script type="text/javascript" src="highlight.js"></script>
+  <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+  </script>
+</head>
+<body>
+  <table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#808080">
+    <tr style="vertical-align:middle">
+      <td style="text-align:left">
+        <h1 class="p_Heading1"><span class="f_Heading1">FiniteBurn.ExecutionPhase Property</span></h1>
+      </td>
+      <td style="text-align:right">
+        <a href="welcome.htm">Top</a>&nbsp;
+      </td>
+    </tr>
+  </table>
+  <table style="width:100%;border:none;border-spacing:0px">
+    <tr style="vertical-align:top">
+      <td style="text-align:left;padding:5px">
+        <h2 class="p_Heading2"><span class="f_Heading2">Description</span></h2>
+        <p class="p_Normal">Reveals which portion of the event sequence is currently executing.</p>
+        <p class="p_Normal">&nbsp;</p>
+        <p style="margin: 0px 0px 0px 0px;"><span class="f_Heading2">Timing Precision Mode</span></p>
+        <p class="p_Normal">This page describes functionality in <a href="timing_precision_modes.htm" class="topiclink">nanosecond timing precision mode.</a></p>
+        <p class="p_Normal">&nbsp;</p>
+        <h2 class="p_Heading2"><span class="f_Heading2">Attributes</span></h2>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 0px;">
+          <table style="border:none; border-spacing:2px;">
+            <tr style="text-align:left;vertical-align:bottom;">
+              <td style="vertical-align:bottom; width:110px; padding:2px;">
+                <p class="p_Normal"><span style="text-decoration: underline;">Type:</span></p>
+              </td>
+              <td style="vertical-align:bottom; width:748px; padding:2px;">
+                <p class="p_Normal">integer</p>
+              </td>
+            </tr>
+            <tr style="text-align:left;vertical-align:bottom;">
+              <td style="vertical-align:bottom; width:110px; padding:2px;">
+                <p class="p_Normal"><span style="text-decoration: underline;">Access:</span></p>
+              </td>
+              <td style="vertical-align:bottom; width:748px; padding:2px;">
+                <p class="p_Normal">read</p>
+              </td>
+            </tr>
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; width:110px; padding:2px;">
+                <p class="p_Normal"><span style="text-decoration: underline;">Valid Values:</span></p>
+              </td>
+              <td style="vertical-align:top; width:748px; padding:2px;">
+                <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 0px;">
+                  <table style="border:none; border-spacing:0px; border-collapse:collapse;">
+                    <tr style="text-align:left;vertical-align:top;">
+                      <td style="vertical-align:top; background-color:#c0c0c0; padding:5px; border:solid thin #c0c0c0;">
+                        <p class="p_Normal"><span style="font-weight: bold;">Value</span></p>
+                      </td>
+                      <td style="vertical-align:top; background-color:#c0c0c0; padding:5px; border:solid thin #c0c0c0;">
+                        <p class="p_Normal"><span style="font-weight: bold;">Label</span></p>
+                      </td>
+                    </tr>
+                    <tr style="text-align:left;vertical-align:top;">
+                      <td style="vertical-align:top; background-color:#ffffff; padding:5px; border:solid thin #c0c0c0;">
+                        <p class="p_Normal">0</p>
+                      </td>
+                      <td style="vertical-align:top; background-color:#ffffff; padding:5px; border:solid thin #c0c0c0;">
+                        <p class="p_Normal">Inactive</p>
+                      </td>
+                    </tr>
+                    <tr style="text-align:left;vertical-align:top;">
+                      <td style="vertical-align:top; background-color:#ffffff; padding:5px; border:solid thin #c0c0c0;">
+                        <p class="p_Normal">1</p>
+                      </td>
+                      <td style="vertical-align:top; background-color:#ffffff; padding:5px; border:solid thin #c0c0c0;">
+                        <p class="p_Normal">Propagating to start time.</p>
+                      </td>
+                    </tr>
+                    <tr style="text-align:left;vertical-align:top;">
+                      <td style="vertical-align:top; background-color:#ffffff; padding:5px; border:solid thin #c0c0c0;">
+                        <p class="p_Normal">2</p>
+                      </td>
+                      <td style="vertical-align:top; background-color:#ffffff; padding:5px; border:solid thin #c0c0c0;">
+                        <p class="p_Normal">Propagating through burn.</p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <h2 class="p_Heading2"><span class="f_Heading2">Syntax</span></h2>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 0px;">
+          <table style="border:none; border-spacing:2px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:8px; border:solid thin #c0c0c0;">
+                <p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">myVariable1 = myFiniteBurn1.ExecutionPhase;</span></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal"><span class="f_Heading2">See also</span></p>
+        <p class="p_Normal"><a href="finiteburn_nanosecond.htm" class="topiclink">FiniteBurn Object</a></p>
+        <p class="p_Normal"><a href="finite_burns.htm" class="topiclink">Finite Burns Guide</a></p>
+        <p class="p_Normal">&nbsp;</p>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

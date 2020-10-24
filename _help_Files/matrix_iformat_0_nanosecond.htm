@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Matrix.IFormat(String) Method</title>
+  <meta name="keywords" content="">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link type="text/css" href="default.css" rel="stylesheet">
+  <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+  </style>
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="helpman_settings.js"></script>
+  <script type="text/javascript" src="helpman_topicinit.js"></script>
+  <script type="text/javascript">
+     HMSyncTOC("index.html", "matrix_iformat_0_nanosecond.htm");
+  </script>
+  <script type="text/javascript" src="highlight.js"></script>
+  <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+  </script>
+</head>
+<body>
+  <table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#808080">
+    <tr style="vertical-align:middle">
+      <td style="text-align:left">
+        <h1 class="p_Heading1"><span class="f_Heading1">Matrix.IFormat(String) Method</span></h1>
+      </td>
+      <td style="text-align:right">
+        <a href="welcome.htm">Top</a>&nbsp;
+      </td>
+    </tr>
+  </table>
+  <table style="width:100%;border:none;border-spacing:0px">
+    <tr style="vertical-align:top">
+      <td style="text-align:left;padding:5px">
+        <h2 class="p_Heading2"><span class="f_Heading2">Description</span></h2>
+        <p class="p_Normal">Converts the integer values contained within the calling Matrix into a string based on the format specifiers given by formatString. If values in the calling Matrix are not integers, only the integer parts of the values will be used. Matrix columns will be delimited using a space, and rows will be delimited with a newline.</p>
+        <p class="p_Normal">&nbsp;</p>
+        <p style="margin: 0px 0px 0px 0px;"><span class="f_Heading2">Timing Precision Mode</span></p>
+        <p class="p_Normal">This page describes functionality in <a href="timing_precision_modes.htm" class="topiclink">nanosecond timing precision mode.</a></p>
+        <p class="p_Normal">&nbsp;</p>
+        <h2 class="p_Heading2"><span class="f_Heading2">Method Signature</span></h2>
+        <div style="text-align: left; text-indent: 0px; page-break-inside: avoid; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p class="p_CodeExample" style="line-height: 1.0; white-space: nowrap; page-break-inside: avoid;"><span class="f_CodeExample">Matrix.IFormat(</span></p>
+              </td>
+              <td style="vertical-align:top; width:100%; padding:0px;">
+                <p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample"><a href="string_nanosecond.htm" class="topiclink">String</a> formatString)</span></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <h2 class="p_Heading2"><span class="f_Heading2">Arguments</span></h2>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 0px;">
+          <table style="border:none; border-spacing:2px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; width:110px; padding:2px;">
+                <p class="p_Normal"><span style="font-style: italic;">formatString</span></p>
+              </td>
+              <td style="vertical-align:top; width:748px; padding:2px;"><br></td>
+            </tr>
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; width:110px; padding:2px;">
+                <p class="p_Normal"><span style="text-decoration: underline;">Description:</span></p>
+              </td>
+              <td style="vertical-align:top; width:748px; padding:2px;">
+                <p class="p_Normal">Format specifier to use when converting the calling Matrix into a String. The format specifiers are standard C/C++ specifiers as used with the sprintf function.</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">&nbsp;</p>
+        <h2 class="p_Heading2"><span class="f_Heading2">Return Value</span></h2>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 0px;">
+          <table style="border:none; border-spacing:2px;">
+            <tr style="text-align:left;vertical-align:bottom;">
+              <td style="vertical-align:bottom; padding:2px;">
+                <p class="p_Normal"><span style="text-decoration: underline;">Type:</span></p>
+              </td>
+              <td style="vertical-align:bottom; padding:2px;">
+                <p class="p_Normal">string</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">Returns a String containing the converted version of the calling Matrix.</p>
+        <p class="p_Normal">&nbsp;</p>
+        <h2 class="p_Heading2"><span class="f_Heading2">Syntax</span></h2>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 0px;">
+          <table style="border:none; border-spacing:2px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:8px; border:solid thin #c0c0c0;">
+                <p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">myString1 = myMatrix1.IFormat(myString2);</span></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 0px;">
+          <table style="border:none;border-spacing:0px;padding:0;line-height: normal;">
+            <tr style="vertical-align:baseline">
+              <td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"></td>
+              <td style="border:none;padding:0"><span class="f_Heading2"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #c10000; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Example 1</a></span></td>
+            </tr>
+          </table>
+        </div>
+        <div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 0px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p class="p_Normal" style="margin: 0px 0px 2px 24px;">The following example converts the numbers held by the Matrix into a string based on the specified format specifiers.<br>
+                &nbsp;</p>
+                <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+                  <table style="border:solid thin #c0c0c0; border-spacing:0px;">
+                    <tr style="text-align:left;vertical-align:top;">
+                      <td style="vertical-align:top; padding:8px; border:none">
+                        <p class="p_Normal"><span style="font-family: 'Courier New'; color: #5f9ea0; background-color: #ffffff;">String</span><span style="font-family: 'Courier New'; background-color: #ffffff;">&nbsp;str1;</span></p>
+                        <p class="p_Normal">&nbsp;</p>
+                        <p class="p_Normal"><span style="font-family: 'Courier New'; color: #5f9ea0; background-color: #ffffff;">Matrix</span><span style="font-family: 'Courier New'; background-color: #ffffff;">&nbsp;matrix1 =&nbsp;</span></p>
+                        <p class="p_Normal"><span style="font-family: 'Courier New'; background-color: #ffffff;">&nbsp;&nbsp;[1.5, 2.6, 3.5; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+                        <p class="p_Normal"><span style="font-family: 'Courier New'; background-color: #ffffff;">&nbsp;&nbsp; 4.7, 5.1, 6.4; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+                        <p class="p_Normal"><span style="font-family: 'Courier New'; background-color: #ffffff;">&nbsp;&nbsp; 7.9, 8.4, 9.7];&nbsp;</span></p>
+                        <p class="p_Normal">&nbsp;</p>
+                        <p class="p_Normal"><span style="font-family: 'Courier New'; background-color: #ffffff;">str1 = matrix1.IFormat(</span><span style="font-family: 'Courier New'; color: #8b0000; background-color: #ffffff;">&quot;%i&quot;</span><span style="font-family: 'Courier New'; background-color: #ffffff;">);</span></p>
+                        <p class="p_Normal">&nbsp;</p>
+                        <p class="p_Normal"><span style="font-family: 'Courier New'; color: #5f9ea0; background-color: #ffffff;">ReportInterface</span><span style="font-family: 'Courier New'; background-color: #ffffff;">&nbsp;ri;</span></p>
+                        <p class="p_Normal"><span style="font-family: 'Courier New'; background-color: #ffffff;">ri.AutoPadding = 1;</span></p>
+                        <p class="p_Normal"><span style="font-family: 'Courier New'; background-color: #ffffff;">ri.HeaderType &nbsp;= 0;</span></p>
+                        <p class="p_Normal">&nbsp;</p>
+                        <p class="p_Normal"><span style="font-family: 'Courier New'; color: #0000ff; background-color: #ffffff;">Report</span><span style="font-family: 'Courier New'; background-color: #ffffff;">&nbsp;str1&nbsp;</span><span style="font-family: 'Courier New'; color: #ff0000; background-color: #ffffff;">to</span><span style="font-family: 'Courier New'; background-color: #ffffff;">&nbsp;ri;</span></p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <p style="margin: 0px 0px 2px 24px;"><span style="font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+                <p class="p_Normal" style="margin: 0px 0px 2px 24px;"><span style="font-weight: bold;">Output Report:</span></p>
+                <p class="p_Normal">&nbsp;</p>
+                <div style="text-align: left; text-indent: 0px; page-break-inside: avoid; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 24px;">
+                  <table style="border:solid thin #c0c0c0; border-spacing:0px;">
+                    <tr style="text-align:left;vertical-align:top;">
+                      <td style="vertical-align:top; padding:8px; border:none">
+                        <p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">1 2 3</span></p>
+                        <p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">4 5 6</span></p>
+                        <p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">7 8 9</span></p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal"><span class="f_Heading2">See also</span></p>
+        <p class="p_Normal"><a href="matrix_nanosecond.htm" class="topiclink">Matrix Object</a></p>
+        <p class="p_Normal"><a href="matrix_iformat_nanosecond.htm" class="topiclink">Matrix.IFormat</a></p>
+        <p class="p_Normal"><a href="matrix_array_and_variable_math.htm" class="topiclink">Matrix, Array, and Variable Math Guide</a></p>
+        <p class="p_Normal">&nbsp;</p>
+      </td>
+    </tr>
+  </table>
+  <script type="text/javascript">
+  HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','1','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+  HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','1');
+  </script>
+</body>
+</html>

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Attitude Reference Frames</title>
+  <meta name="keywords" content="attitude,custom CoordinateSystem,Geodetic,LVLH,Reference Frames,VNB">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link type="text/css" href="default.css" rel="stylesheet">
+  <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+  </style>
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="helpman_settings.js"></script>
+  <script type="text/javascript" src="helpman_topicinit.js"></script>
+  <script type="text/javascript">
+     HMSyncTOC("index.html", "attitude_reference_frames.htm");
+  </script>
+  <script type="text/javascript" src="highlight.js"></script>
+  <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+  </script>
+</head>
+<body>
+  <table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#808080">
+    <tr style="vertical-align:middle">
+      <td style="text-align:left">
+        <h1 class="p_Heading1"><span class="f_Heading1">Attitude Reference Frames</span></h1>
+      </td>
+      <td style="text-align:right">
+        <a href="welcome.htm">Top</a>&nbsp; <a href="attitude_system.htm">Previous</a>&nbsp; <a href="working_with_integrators.htm">Next</a>
+      </td>
+    </tr>
+  </table>
+  <table style="width:100%;border:none;border-spacing:0px">
+    <tr style="vertical-align:top">
+      <td style="text-align:left;padding:5px">
+        <p class="p_Normal">The attitude reference frame defines the coordinate system to which the Spacecraft's attitude is referenced. The <a href="function_attitudeconvert_nanosecond.htm" class="topiclink">AttitudeConvert</a> function can be used to convert attitudes between any of the supported systems, which are as follows. To find information about the non-attitude orbital reference frames available in FreeFlyer, that can be found in the <a href="orbit_reference_frames.htm" class="topiclink">Orbit Reference Frames</a> guide.</p>
+        <p class="p_Normal">&nbsp;</p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><a href="attitude_reference_frames.htm#achr_lvlhearthpointing" class="topiclink">LVLH - Earth Pointing</a></p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><a href="attitude_reference_frames.htm#achr_mj2000earthequator" class="topiclink">MJ2000 Earth Equator</a></p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><a href="attitude_reference_frames.htm#achr_geodetic" class="topiclink">Geodetic</a></p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><a href="attitude_reference_frames.htm#achr_vnb" class="topiclink">VNB</a></p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><a href="attitude_reference_frames.htm#achr_uvw" class="topiclink">UVW</a></p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><a href="attitude_reference_frames.htm#achr_ric" class="topiclink">RIC</a></p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><a href="attitude_reference_frames.htm#achr_customcs" class="topiclink">Custom CoordinateSystem</a> object</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">&nbsp;</p>
+        <h2 class="p_Heading2"><a id="achr_lvlhearthpointing" class="hmanchor"></a><span class="f_Heading2">LVLH - Earth Pointing</span></h2>
+        <hr style="height:1px; color:#c0c0c0; border-width:0px; background-color:#c0c0c0;">
+        <p class="p_Normal"><span style="font-weight: bold;">Description:</span></p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Z-axis: Vector pointing in the opposite direction to the position vector (points to center of Earth)</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Y-axis: Vector pointing in the opposite direction to the orbit normal (the orbit normal is the cross product of position and velocity)</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>X-axis: Vector perpendicular to the y- and z-axes, forming a right-handed coordinate system</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Origin: Center of the Spacecraft</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal" style="text-align: center;"><img width="556" height="356" style="margin:0px auto 0px auto;width:556px;height:356px;border:none" src="lvlhdiagram.jpg"></p>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">Prior to setting the Spacecraft's attitude state, its attitude reference frame must be set:</p>
+        <p class="p_Normal">&nbsp;</p>
+        <div style="text-align: center; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 24px;">
+          <table class="Script Example Table" style="margin:0 auto; border:none; border-spacing:0px; border-collapse:collapse;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:8px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: 'Courier New';">Spacecraft1.AttitudeRefFrame =</span> <span style="font-family: 'Courier New'; color: #8b0000;">&quot;LVLH&quot;</span><span style="font-family: 'Courier New';">;</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span class="f_CodeComment">// or</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: 'Courier New';">Spacecraft1.SetAttitudeRefFrame(0);</span></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p style="margin: 0px 0px 0px 0px;">The EulerAnglesLVLH property can be used to display the Euler Angles that define the orientation of the Spacecraft BCS with respect to its LVLH frame:</p>
+        <p class="p_Normal">&nbsp;</p>
+        <div style="text-align: center; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 24px;">
+          <table class="Script Example Table" style="margin:0 auto; border:none; border-spacing:0px; border-collapse:collapse;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:8px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: 'Courier New'; color: #0000ff;">Report</span> <span style="font-family: 'Courier New';">Spacecraft1.EulerAnglesLVLH;</span></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">&nbsp;</p>
+        <h2 class="p_Heading2"><a id="achr_mj2000earthequator" class="hmanchor"></a><span class="f_Heading2">MJ2000 Earth Equator</span></h2>
+        <hr style="height:1px; color:#c0c0c0; border-width:0px; background-color:#c0c0c0;">
+        <p class="p_Normal"><span style="font-weight: bold;">Description:</span></p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Z-axis: Vector normal to the mean equatorial plane at Julian year 2000.0, pointing towards the Northern Hemisphere</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>X-axis: Vector pointing from the center of the Earth to the mean vernal equinox at Julian year 2000.0</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Y-axis: Vector perpendicular to the x- and z-axes, forming a right-handed coordinate system</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Origin: Center of the Earth</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal"><span style="font-weight: bold;">Notes:</span></p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>This is the principal coordinate system used for computations in FreeFlyer</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Commonly referred to as Mean of J2000, J2000, ECI, or GCI</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>This is the only frame available when working with the <a href="attitude_system.htm#achr_spinner" class="topiclink">Spinner Attitude System</a></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p style="text-align: center; margin: 0px 0px 0px 0px;"><img width="550" height="410" style="margin:0px auto 0px auto;width:550px;height:410px;border:none" src="mj2000diagram.jpg"></p>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">Prior to setting the Spacecraft's attitude state, its attitude reference frame must be set:</p>
+        <p class="p_Normal">&nbsp;</p>
+        <div style="text-align: center; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 24px;">
+          <table class="Script Example Table" style="margin:0 auto; border:none; border-spacing:0px; border-collapse:collapse;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:8px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: 'Courier New';">Spacecraft1.AttitudeRefFrame =</span> <span style="font-family: 'Courier New'; color: #8b0000;">&quot;MJ2000&quot;</span><span style="font-family: 'Courier New';">;</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span class="f_CodeComment">// or</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: 'Courier New';">Spacecraft1.SetAttitudeRefFrame(1);</span></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p style="margin: 0px 0px 0px 0px;">The EulerAnglesMJ2000 property can be used to display the Euler Angles that define the orientation of the Spacecraft BCS with respect to the MJ2000 frame:</p>
+        <p class="p_Normal">&nbsp;</p>
+        <div style="text-align: center; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 24px;">
+          <table class="Script Example Table" style="margin:0 auto; border:none; border-spacing:0px; border-collapse:collapse;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:8px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: 'Courier New'; color: #0000ff;">Report</span> <span style="font-family: 'Courier New';">Spacecraft1.EulerAnglesMJ2000;</span></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">&nbsp;</p>
+        <h2 class="p_Heading2"><a id="achr_geodetic" class="hmanchor"></a><span class="f_Heading2">Geodetic</span></h2>
+        <hr style="height:1px; color:#c0c0c0; border-width:0px; background-color:#c0c0c0;">
+        <p class="p_Normal"><span style="font-weight: bold;">Description:</span></p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Z-axis: Vector pointing toward Earth which is normal to the Earth's surface at intersection with Earth's surface</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Y-axis: Vector pointing the opposite direction of the orbit normal</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>X-axis: Vector perpendicular to the y- and z- axes, forming a right-handed coordinate system</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Origin: Center of the Spacecraft</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p style="text-align: center; margin: 0px 0px 0px 0px;"><img width="556" height="356" style="margin:0px auto 0px auto;width:556px;height:356px;border:none" src="geodeticdiagram.jpg"></p>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">Prior to setting the Spacecraft's attitude state, its attitude reference frame must be set:</p>
+        <p class="p_Normal">&nbsp;</p>
+        <div style="text-align: center; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 24px;">
+          <table class="Script Example Table" style="margin:0 auto; border:none; border-spacing:0px; border-collapse:collapse;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:8px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: 'Courier New';">Spacecraft1.AttitudeRefFrame =</span> <span style="font-family: 'Courier New'; color: #8b0000;">&quot;GEODETIC&quot;</span><span style="font-family: 'Courier New';">;</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span class="f_CodeComment">// or</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: 'Courier New';">Spacecraft1.SetAttitudeRefFrame(2);</span></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">The EulerAngles property can be used to display the Euler Angles that define the orientation of the Spacecraft BCS with respect to its current attitude reference frame:</p>
+        <p class="p_Normal">&nbsp;</p>
+        <div style="text-align: center; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 24px;">
+          <table class="Script Example Table" style="margin:0 auto; border:none; border-spacing:0px; border-collapse:collapse;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:8px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: 'Courier New'; color: #0000ff;">Report</span> <span style="font-family: 'Courier New';">Spacecraft1.EulerAngles;</span></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">&nbsp;</p>
+        <h2 class="p_Heading2"><a id="achr_vnb" class="hmanchor"></a><span class="f_Heading2">VNB</span></h2>
+        <hr style="height:1px; color:#c0c0c0; border-width:0px; background-color:#c0c0c0;">
+        <p class="p_Normal"><span style="font-weight: bold;">Description:</span></p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>X-axis: Vector pointing in the direction of the Spacecraft's velocity</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Y-axis: Vector pointing in the direction normal to the orbit</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Z-axis: Vector perpendicular to the x- and y-axes, forming a right-handed coordinate system</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Origin: Center of the Spacecraft</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p style="text-align: center; margin: 0px 0px 0px 0px;"><img width="555" height="377" style="margin:0px auto 0px auto;width:555px;height:377px;border:none" src="vnb_attitudedefinition.png"></p>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">Prior to setting the Spacecraft's attitude state, its attitude reference frame must be set:</p>
+        <p class="p_Normal">&nbsp;</p>
+        <div style="text-align: center; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 24px;">
+          <table class="Script Example Table" style="margin:0 auto; border:none; border-spacing:0px; border-collapse:collapse;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:8px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: 'Courier New';">Spacecraft1.AttitudeRefFrame =</span> <span style="font-family: 'Courier New'; color: #8b0000;">&quot;VNB&quot;</span><span style="font-family: 'Courier New';">;</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span class="f_CodeComment">// or</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: 'Courier New';">Spacecraft1.SetAttitudeRefFrame(3);</span></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">The EulerAngles property can be used to display the Euler Angles that define the orientation of the Spacecraft BCS with respect to its current attitude reference frame:</p>
+        <p class="p_Normal">&nbsp;</p>
+        <div style="text-align: center; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 24px;">
+          <table class="Script Example Table" style="margin:0 auto; border:none; border-spacing:0px; border-collapse:collapse;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:8px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: 'Courier New'; color: #0000ff;">Report</span> <span style="font-family: 'Courier New';">Spacecraft1.EulerAngles;</span></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">&nbsp;</p>
+        <h2 class="p_Heading2"><a id="achr_uvw" class="hmanchor"></a><span class="f_Heading2">UVW</span></h2>
+        <hr style="height:1px; color:#c0c0c0; border-width:0px; background-color:#c0c0c0;">
+        <p class="p_Normal"><span style="font-weight: bold;">Description:</span></p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Z-axis: Vector pointing in the direction normal to the orbit (along the angular momentum vector)</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>X-axis: Vector pointing in the direction of the Spacecraft's position vector</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Y-axis: Vector perpendicular to the x- and z-axes, forming a right-handed coordinate system</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Origin: Center of the Spacecraft</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal"><span style="font-weight: bold;">Notes:</span></p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>The UVW coordinate system is quasi-inertial, in the sense that it is treated as an inertial coordinate system (for example, for the purpose of velocity conversions), but it is redefined at each point of interest.</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p style="text-align: center; margin: 0px 0px 0px 0px;"><img width="547" height="265" style="margin:0px auto 0px auto;width:547px;height:265px;border:none" src="uvwdiagram.png"></p>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">Prior to setting the Spacecraft's attitude state, its attitude reference frame must be set:</p>
+        <p class="p_Normal">&nbsp;</p>
+        <div style="text-align: center; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 24px;">
+          <table class="Script Example Table" style="margin:0 auto; border:none; border-spacing:0px; border-collapse:collapse;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:8px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: 'Courier New';">Spacecraft1.AttitudeRefFrame =</span> <span style="font-family: 'Courier New'; color: #8b0000;">&quot;UVW&quot;</span><span style="font-family: 'Courier New';">;</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span class="f_CodeComment">// or</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: 'Courier New';">Spacecraft1.SetAttitudeRefFrame(4);</span></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">The EulerAnglesUVW property can be used to display the Euler Angles that define the orientation of the Spacecraft BCS with respect to the UVW frame:</p>
+        <p class="p_Normal">&nbsp;</p>
+        <div style="text-align: center; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 24px;">
+          <table class="Script Example Table" style="margin:0 auto; border:none; border-spacing:0px; border-collapse:collapse;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:8px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: 'Courier New'; color: #0000ff;">Report</span> <span style="font-family: 'Courier New';">Spacecraft1.EulerAnglesUVW;</span></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">&nbsp;</p>
+        <h2 class="p_Heading2"><a id="achr_ric" class="hmanchor"></a><span class="f_Heading2">RIC</span></h2>
+        <hr style="height:1px; color:#c0c0c0; border-width:0px; background-color:#c0c0c0;">
+        <p class="p_Normal"><span style="font-weight: bold;">Description:</span></p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Z-axis: Vector pointing in the direction normal to the orbit plane (along the angular momentum vector, also commonly called &quot;cross-track&quot;)</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>X-axis: Vector pointing in the direction of the Spacecraft's position vector (&quot;radial&quot;)</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Y-axis: Vector perpendicular to the x- and z-axes, forming a right-handed coordinate system (also commonly called &quot;in-track&quot;)</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Origin: Center of the Spacecraft</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal"><span style="font-weight: bold;">Notes:</span></p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>The RIC coordinate system is aligned with the UVW coordinate system, but is not considered quasi-inertial (it is not treated as an inertial coordinate system for the purposes of velocity vector conversions).</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p style="text-align: center; margin: 0px 0px 0px 0px;"><img width="529" height="308" style="margin:0px auto 0px auto;width:529px;height:308px;border:none" src="ricdiagram.png"></p>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">Prior to setting the Spacecraft's attitude state, its attitude reference frame must be set:</p>
+        <p class="p_Normal">&nbsp;</p>
+        <div style="text-align: center; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 24px;">
+          <table class="Script Example Table" style="margin:0 auto; border:none; border-spacing:0px; border-collapse:collapse;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:8px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: 'Courier New';">Spacecraft1.AttitudeRefFrame =</span> <span style="font-family: 'Courier New'; color: #8b0000;">&quot;RIC&quot;</span><span style="font-family: 'Courier New';">;</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span class="f_CodeComment">// or</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: 'Courier New';">Spacecraft1.SetAttitudeRefFrame(5);</span></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">The EulerAnglesRIC property can be used to display the Euler Angles that define the orientation of the Spacecraft BCS with respect to the RIC frame:</p>
+        <p class="p_Normal">&nbsp;</p>
+        <div style="text-align: center; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 24px;">
+          <table class="Script Example Table" style="margin:0 auto; border:none; border-spacing:0px; border-collapse:collapse;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:8px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: 'Courier New'; color: #0000ff;">Report</span> <span style="font-family: 'Courier New';">Spacecraft1.EulerAnglesRIC;</span></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">&nbsp;</p>
+        <h2 class="p_Heading2"><a id="achr_customcs" class="hmanchor"></a><span class="f_Heading2">Custom CoordinateSystem Objects</span></h2>
+        <hr style="height:1px; color:#c0c0c0; border-width:0px; background-color:#c0c0c0;">
+        <p class="p_Normal"><span style="font-weight: bold;">Description:</span></p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>You can also reference your Spacecraft's attitude to a custom <a href="vectors_and_coordinate_systems.htm" class="topiclink">CoordinateSystem</a> object</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>FreeFlyer will maintain the Spacecraft's attitude with respect to that CoordinateSystem as the Spacecraft is propagated or maneuvered, maintaining the attitude during each integration step</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>CoordinateSystems can be built using two Vectors as the axes, or by specifying a direction cosine matrix, Euler angles, quaternions, or the body coordinate system of a Spacecraft/CelestialObject/Star, or by chaining together multiple existing CoordinateSystems</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">The screenshot below shows how to configure a Spacecraft to reference its attitude to a custom CoordinateSystem object through the Spacecraft object editor. The attitude can then be entered in any of the available attitude systems (Euler Angles, Quaternions, or Attitude Matrix).</p>
+        <p class="p_Normal">&nbsp;</p>
+        <div class="p_Normal" style="text-align: center;">
+          <div style="margin:0px auto 0px auto;width:810px">
+            <img alt="Spacecraft configured to reference its attitude using Euler Angles with respect to a custom CoordinateSystem" title="Spacecraft configured to reference its attitude using Euler Angles with respect to a custom CoordinateSystem" width="810" height="554" style="width:810px;height:554px;border:none" src="customcoordinatesystemattitude.png">
+            <p style="text-align:center"><span class="f_ImageCaption">Spacecraft configured to reference its attitude using Euler Angles with respect to a custom CoordinateSystem</span></p>
+          </div>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">In order to set the Spacecraft's attitude to use a custom CoordinateSystem in a FreeForm script editor, the attitude reference frame is set:</p>
+        <p class="p_Normal">&nbsp;</p>
+        <div style="text-align: center; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 24px;">
+          <table class="Script Example Table" style="margin:0 auto; border:none; border-spacing:0px; border-collapse:collapse;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:8px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: 'Courier New';">Spacecraft1.SetAttitudeRefFrame(CoordinateSystem1);</span></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">The following properties can be used to display the Euler Angles, Quaternion, or Attitude Matrix that define the orientation of the Spacecraft BCS with respect to its Attitude Reference Frame:</p>
+        <p class="p_Normal">&nbsp;</p>
+        <div style="text-align: center; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 24px;">
+          <table class="Script Example Table" style="margin:0 auto; border:none; border-spacing:0px; border-collapse:collapse;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:8px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: 'Courier New'; color: #0000ff;">Report</span> <span style="font-family: 'Courier New';">Spacecraft1.EulerAngles, Spacecraft1.Quaternion, Spacecraft1.AttitudeMatrix;</span></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">&nbsp;</p>
+        <p style="margin: 0px 0px 0px 0px;"><span class="f_Heading2">See Also</span></p>
+        <hr style="height:1px; color:#c0c0c0; border-width:0px; background-color:#c0c0c0;">
+        <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><a href="attitude_system.htm" class="topiclink">Attitude Systems</a></p>
+        <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><a href="orbit_reference_frames.htm" class="topiclink">Orbit Reference Frames</a></p>
+        <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><a href="function_attitudeconvert_nanosecond.htm" class="topiclink">AttitudeConvert</a></p>
+        <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><a href="vectors_and_coordinate_systems.htm" class="topiclink">Vectors and CoordinateSystems</a></p>
+        <p class="p_Normal">&nbsp;</p>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

@@ -1,0 +1,77 @@
+
+.header-bannerTitle{
+width: 95% !important;
+}
+
+.header-banner{
+padding-left:5%;
+padding-right:5%;
+padding-top:20px !important;
+}
+
+.content-wrapper{
+padding-left:5%;
+padding-right:5%;
+}
+
+/* header buttons */
+.bannerBTNs a{
+    white-space: nowrap !important;
+    display:inline-block !important;
+    margin-bottom:10px !important;
+}
+
+/* header text sized */
+@media all and (max-width:768px){
+
+.header-bannerTitle{
+margin-top:20px !important;
+}
+
+.header-bannerTitle h3{
+font-size:22px;
+text-align: center !important;
+text-align-last: center !important;
+}
+
+.header-bannerTitle h1{
+font-size: 32px;
+text-align: center !important;
+text-align-last: center !important;
+}
+
+.bannerBTNs{
+text-align: center !important;
+text-align-last: center !important;
+}
+
+.header-bannerContainer p{
+font-size: 18px !important;
+text-align: center !important;
+text-align-last: center !important;
+}
+
+}
+
+
+
+/* space software page, adjusted to work in boostrap rows */
+.ffText, .ffImage, .dsteText, .dsteImage{
+width:100%;
+max-width: 100% !important;}
+
+.ffImage img, .ffText img, .dsteImage img{
+display:block;
+margin:0px auto;}
+
+.dsteImage img{margin-bottom:20px;}
+
+.cotsIntro h1, .customIntro h1 {
+text-align: center !important;}
+
+.atlas, .meridian, .obssim {float:none !important;
+margin:0px auto !important;
+width:100% !important;
+max-width: 595px !important;
+display:block;
+margin-bottom:20px !important;}

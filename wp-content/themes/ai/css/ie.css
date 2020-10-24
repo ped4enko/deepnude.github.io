@@ -1,0 +1,133 @@
+.menu {width: 100%;  margin-left: auto; margin-right: auto; display: inline-block;/*border: 1px solid red*/}
+
+.menu .menu-item {border-right:1px solid #ddd;/*#666*/; padding: 0px; position: relative; display: inline-block; height: 40px; transition:all .3s ease; z-index: 10;min-width: 150px}
+.menu .menu-item li {list-style: none;}
+.menu .menu-item > a {transition:all .3s ease; padding: 4px;}
+.menu .menu-item a {color: #fff; text-decoration: none; text-transform: uppercase; font-size: 10px; font-weight: 300; display: block; padding-bottom: 5px; padding-top: 5px; }
+.menu .menu-item:hover {background-color: #fff; transition:all .5s ease}
+.menu .menu-item:hover>a {color: #ed2024;}
+.menu .menu-item div {background-color:#ffffff;position: absolute;left: 0;top:29px;height:auto;display:none;transition:all .3s ease; margin-top:0px; overflow: hidden; z-index: -1}
+.menu ul {padding-left: 0;}
+.menu .menu-item:hover div {display: block}
+.menu .menu-item ul li {background-color: #cccccc; color: #000000;padding: 5px;padding-bottom: 5px; padding-top: 5px; text-align: left}
+.menu .menu-item:hover ul li a {color: #000;}
+.menu .menu-item:hover ul li:hover {background-color: #ff0000;}
+.menu .menu-item:hover ul li:hover a {color: #fff;}
+
+
+
+.bg {background-size: cover; background-position: center center; height:600px;min-height: 600px; width: 100%;width:100%;position: absolute;top:0; bottom:0; left:0;right:0; opacity: 0;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; transition:all 1s ease;z-index: -10; background-size: 100%;}
+.bg.current {opacity: 1;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; z-index: -1}
+.banner-dots {position: absolute;top:0; bottom:30%; left:0; right:0; margin: auto; opacity: 0;height: 250px; margin-left: -100px; margin-top: -5%; height: 200px; width: auto; display: none}
+.banner-white {position: absolute;top:0; bottom:30%; left:0; right:0; margin: auto; opacity: 0; height: 250px; margin-left: -23px; margin-top: 23px;display: none}
+.banner-caption {position: absolute;top:0; bottom:0; left:0; right:0; margin: auto; opacity: 0; transition:all 1.3s ease; text-align: center; min-height: 250px; height: 250px;  width: 800px}
+.banner-caption:before, .banner-caption:after { background-repeat: no-repeat;background-size: contain; content: "";  display: block; position: absolute;  z-index: -1; display: none}
+.banner-caption:before {background-image: url(/img/homepage/circles.png);height: 200px; width: 150px; opacity: .5;margin-left: -60px;}
+.banner-caption:after {background-image: url(/img/homepage/small-circle.png);height: 40px; width: 30px; opacity: 1; margin-top: -205px; margin-left: -10px;}
+.banner-caption h5 {display: none}
+.bannerCaption {-webkit-margin-after: 0; -webkit-margin-before: 0; font-size: 5em; color: #fff;width: 60%; font-weight: 100; line-height: 80px; text-transform: uppercase;  width: auto; min-height: 200px; margin-bottom: 0; margin-top: 0;}
+.banner-caption h5 {color: #fff; text-transform: uppercase; font-size: 2em;-webkit-margin-after: 0; -webkit-margin-before: 0;}
+.bg .banner-caption {opacity: 1;}
+.bg .banner-dots {opacity: .3;}
+.bg .banner-white {opacity: .9;}
+.hp-content {height: 600px; min-height: 475px;}
+.bg:before {position: absolute; top:0; bottom: 0; left: 0; right: 0; margin: auto;content: '';}
+.banner-caption p {font-size: 2em;}
+.banner-caption {width: 350px;}
+
+.pad500 {margin-top:0px}
+#mapwrap {display: none;}
+.ie8-map {display: block; width: 100%;}
+
+
+
+
+.flag {background-size: cover; background-position: center center; height:200px; width:200px; border-radius: 50%; overflow: hidden; display: inline-block; position: relative;-webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+}
+.flag .flagoverlay {position: absolute;top: 0; bottom: 0; left:0; right: 0; margin: auto; background-color: rgba(0,0,0,.2);height: 200px; width: 200px; min-height: 200px; min-width: 200px; transition:all .5s ease;}
+.flagcontent {-webkit-margin-after: 0; -webkit-margin-before: 0; font-size: 1em; color: #fff; font-weight: 100; text-transform: uppercase; position: absolute;top:0; bottom:20%;left:0; right:0; margin: auto; height: 30px; font-size: 1.5em; transition:all .5s ease; text-align: center}
+.flagcontent.two-line {height: 60px}
+.flagcontent.three-line {height: 90px}
+.hovertext {opacity: 0;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; transition:all .5s ease; position: absolute; left:0; right:0;color:#fff; height: 100px; bottom: 15px; transform: translateY(100px); text-align: center} 
+.flag:hover .hovertext {opacity: 1;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; transform: translateY(0px)}
+.flag:hover .flagcontent {bottom:100px}
+.flag:hover .flagoverlay {background-color: rgba(255,0,0,.5);}
+.hovertext span {display: none; width: 200px; padding-bottom: 10px; padding-top: 10px;background-color:#282828 ;  color: #fff; transition:all .3s ease;text-align: center}
+.hovertext span:hover {background-color: #ff0000;}
+
+
+
+
+
+
+.tabs {width: 100%;box-shadow: 3px 1px 34px #ccc; }
+.tabs-sidebar, .tabs-content {display: inline-block; float: left; vertical-align: top;}
+.tabs-sidebar {width: 20%;background-color: #f0f0f0; height: 100%;}
+.tabs-sidebar a {background-color: #f0f0f0; display: block; vertical-align: middle; color: #656565; height: 75px; position: relative; width: 100%; cursor: pointer;font-size: .75em;}
+.tabs-sidebar a:nth-of-type(even) {background-color: #e8e8e8;}
+
+.tabs-sidebar a span {display: block;position: relative;
+  top: 50%;
+  transform: translateY(-50%);padding-left: 10px; padding-right: 10px; }
+
+.tabs-sidebar a:hover {background-color: #ff0000; color: #fff;}
+.tabs-sidebar a.on {background-color: #ff0000; color: #fff;}
+.tabs-content {width: 80%; position: relative; text-align: left;}
+.tabs-content .tab {margin-bottom: 50px;}
+.tabs-content img {width: 100%; margin-bottom: 50px;}
+.tabs-content h5 {font-size: 14px; color: #ff0000; text-transform: uppercase; width: 70%; margin-left: 15%;}
+.tabs-content ul li { padding-bottom: 10px; width: 70%; margin-left: 15%;}
+.tabs-content p {width: 100%; font-size: 10px; width: 70%; margin-left: 15%;}
+.tabs-content .tab  {position: absolute; top:0; left:0;opacity: 0;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+ transition:all .5s ease;z-index: 1}
+.tabs-content .tab.on {opacity: 1;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+z-index: 100;}
+
+
+@media all and (max-width:500px)
+{
+	.tabs-sidebar {width: 40%}
+	.tabs-content {width: 60%; font-size: .75em}
+	.tabs-content h5 , .tabs-content ul li , .tabs-content p {width: 90%; margin-left: 5%;}
+}
+@media all and (min-width:501px) and (max-width:800px)
+{
+	.tabs-sidebar {width: 30%}
+	.tabs-content {width: 70%}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+	footer	
+*/
+.footer {font-size: 12px; color: #878787 ; transition:all .5s ease; margin-top: -5px;z-index: 1000;width:100%; } 
+/*.mainp .footer {position: absolute;top:calc(100% - 8px); left:0; right:0; font-size: 12px; color: #878787 ;  transition:all .5s ease; margin-top: 0px;}*/
+.mainp .footer {font-size: 12px; color: #878787 ; background-color: #ffffff; transition:all .5s ease; margin-top: 0px;z-index: 1000;width:100%;} 
+.footer-cell {display: inline-block;width:200px; vertical-align: middle; text-align: center;padding-bottom: 30px; padding-top: 30px; }
+
+.footer-cell:nth-of-type(1) { }
+
+.footer-cell>div {text-align: left; width:50%; margin-left: 25%}
+.footer-cell:nth-of-type(3)>div, .footer-cell:nth-of-type(4)>div {text-align: right;}
+
+.footer .footer-bar {border-top: 4px solid #ff0000; cursor: pointer;}
+/*.mainp .footer .footer-bar {border-top: 8px solid #ff0000; cursor: pointer;}*/
+.footer .icon {font-size: 24px; color: #878787; transition:all .3s ease;}
+.footer .icon:hover {color: #ff0000;}
+.footer img {width: 100px; padding-right: 5px; border: 0px; outline: 0px;}
+.footer a {color:#878787}
+.footer .links a {margin-left: 5px; margin-right: 5px; display: block}
+.footer a:hover {color: #ff0000;}
+
+.f-sm i {display: block;font-size: 12px;}

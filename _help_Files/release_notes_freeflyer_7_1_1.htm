@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Release Notes for FreeFlyer 7.1.1</title>
+  <meta name="keywords" content="">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link type="text/css" href="default.css" rel="stylesheet">
+  <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+  </style>
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="helpman_settings.js"></script>
+  <script type="text/javascript" src="helpman_topicinit.js"></script>
+  <script type="text/javascript">
+     HMSyncTOC("index.html", "release_notes_freeflyer_7_1_1.htm");
+  </script>
+  <script type="text/javascript" src="highlight.js"></script>
+  <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+  </script>
+</head>
+<body>
+  <table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#808080">
+    <tr style="vertical-align:middle">
+      <td style="text-align:left">
+        <h1 class="p_Heading1"><span class="f_Heading1">Release Notes for FreeFlyer 7.1.1</span></h1>
+      </td>
+      <td style="text-align:right">
+        <a href="welcome.htm">Top</a>&nbsp; <a href="release_notes_freeflyer_7_2.htm">Previous</a>&nbsp; <a href="release_notes_freeflyer_7_1.htm">Next</a>
+      </td>
+    </tr>
+  </table>
+  <table style="width:100%;border:none;border-spacing:0px">
+    <tr style="vertical-align:top">
+      <td style="text-align:left;padding:5px">
+        <h2 class="p_Heading2"><span class="f_Heading2">Issues Addressed in FreeFlyer 7.1.1</span></h2>
+        <hr style="height:1px; color:#808080; border-width:0px; background-color:#808080;">
+        <h3 class="p_Heading3"><span class="f_Heading3">Ephemerides</span></h3>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Addressed an issue where certain <a href="ephemerides_and_ahf.htm" class="topiclink">Ephemeris</a> sizes could cause the Ephemeris object to have invalid data stored for some vectors</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Fixed an issue where mapping a time-based column to a <a href="freeflyer_ephemeris_file.htm" class="topiclink">FreeFlyer v2 or v3 Ephemeris</a> and then using the <a href="put.htm" class="topiclink">Put</a> command with that Ephemeris would cause an error</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Corrected an issue where there was no time-checking for the <a href="accessing_data_in_an_ephemeris.htm#achr_ephemerisvector" class="topiclink">EphemerisVector</a> object's GetTimeSpanValue method</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <h3 class="p_Heading3"><span class="f_Heading3">Application Program Interface</span></h3>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Fixed a bug where the <a href="application_program_interface.htm" class="topiclink">runtime API</a> would not initialize if the Windows event log lacked a specific boot time event</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Implemented a fix for an issue preventing the reuse of a runtime API engine after cleaning it up when <a href="-wom1.htm" class="topiclink">generating output windows</a></p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>The runtime API's language reference files had their version updated</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <h3 class="p_Heading3"><span class="f_Heading3">Generating Output</span></h3>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Optimized performance for <a href="viewwindows.htm" class="topiclink">ViewWindow</a> object output windows</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Improved performance of the computations associated with <a href="vehicle_3d_models.htm" class="topiclink">ThreeDModel</a> objects</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>When using ThreeDModel objects, calling the AddGroup method prior to the LoadModel method will no longer throw a runtime error</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>For a <a href="star_map.htm" class="topiclink">Star Map</a> Viewpoint, it will now use a Spacecraft from the ViewWindow constructor as the base object where applicable</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Fixed a crash that occurred when using the Star Map Viewpoint with a Sensor object inside of the orbiting CelestialObject</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Fixed a crash that occurred when using the graphics card after closing all <a href="workspaces.htm" class="topiclink">Workspaces</a></p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Fixed a crash that occurred when closing a ViewWindow with a <a href="graphics_overlays.htm" class="topiclink">GraphicsOverlay</a> in it</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <h3 class="p_Heading3"><span class="f_Heading3">&nbsp;</span></h3>
+        <h3 class="p_Heading3"><span class="f_Heading3">VisibilitySegments</span></h3>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Azimuth and Elevation <a href="sensor_setup.htm" class="topiclink">Sensor</a> masks now correctly filter out duplicate points and will load correctly if they contain duplicate points</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>The <a href="lineofsightcalculators.htm" class="topiclink">VisibilitySegment</a> object will now properly use linear fit for its line of sight calculations when the source is a sensor set to use linear fit</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <h3 class="p_Heading3"><span class="f_Heading3">&nbsp;</span></h3>
+        <h3 class="p_Heading3"><span class="f_Heading3">Miscellaneous</span></h3>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Addressed a number of cases where FreeFlyer was showing unexpected memory growth for repeated runs of a Mission Plan</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Fixed a crash that occurred when clicking the &quot;Stop Script&quot; button on the <a href="user_interfaces.htm" class="topiclink">UserInterface</a> object preview in its object dialog</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>The <a href="jacchia_roberts_drag_file.htm" class="topiclink">Jacchia-Roberts file</a> will now be shared among Spacecraft instead of reloaded for each Spacecraft, meaning that large <a href="formations.htm" class="topiclink">Formations</a> of Spacecraft using this drag model will work as expected</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>The <a href="timespans.htm" class="topiclink">TimeSpanArray</a> declaration syntax whereby you specify the size of the array inside of square brackets will now syntax check as expected</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Covariance calculations no longer break down when there is a long-duration <a href="finite_burns.htm" class="topiclink">FiniteBurn</a> present in the <a href="orbit_determination.htm" class="topiclink">orbit determination</a> algorithms</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Corrected a case where bad AVI codecs could cause FreeFlyer to crash when attempting to <a href="generating_movies.htm" class="topiclink">generate a movie</a></p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Some cases where <a href="matrix_array_and_variable_math.htm" class="topiclink">Array and Matrix</a> properties wouldn't show up in GUI editors have been fixed</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>FreeFlyer will now run properly on the System account even without a My Documents folder</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <h3 class="p_Heading3"><span class="f_Heading3">&nbsp;</span></h3>
+        <h3 class="p_Heading3"><span class="f_Heading3">&nbsp;</span></h3>
+        <h2 class="p_Heading2"><span class="f_Heading2">See Also</span></h2>
+        <hr style="height:1px; color:#c0c0c0; border-width:0px; background-color:#c0c0c0;">
+        <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><a href="release_history.htm" class="topiclink">Release History</a></p>
+        <p class="p_Normal">&nbsp;</p>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

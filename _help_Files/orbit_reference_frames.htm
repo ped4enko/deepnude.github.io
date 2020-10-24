@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Orbit Reference Frames</title>
+  <meta name="keywords" content="Earth Fixed,Local Coordinates,Mean of J2000 Earth Ecliptic,Mean of J2000 Earth Equator,MJ2000 Earth Ecliptic,MJ2000 Earth Equator,Orbit,Reference Frames,True Equator Mean Equinox,True of Date Earth Equator">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link type="text/css" href="default.css" rel="stylesheet">
+  <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+  </style>
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="helpman_settings.js"></script>
+  <script type="text/javascript" src="helpman_topicinit.js"></script>
+  <script type="text/javascript">
+     HMSyncTOC("index.html", "orbit_reference_frames.htm");
+  </script>
+  <script type="text/javascript" src="highlight.js"></script>
+  <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+  </script>
+</head>
+<body>
+  <table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#808080">
+    <tr style="vertical-align:middle">
+      <td style="text-align:left">
+        <h1 class="p_Heading1"><span class="f_Heading1">Orbit Reference Frames</span></h1>
+      </td>
+      <td style="text-align:right">
+        <a href="welcome.htm">Top</a>&nbsp; <a href="orbit_element_types.htm">Previous</a>&nbsp; <a href="orbit_wizard.htm">Next</a>
+      </td>
+    </tr>
+  </table>
+  <table style="width:100%;border:none;border-spacing:0px">
+    <tr style="vertical-align:top">
+      <td style="text-align:left;padding:5px">
+        <p class="p_Normal">The orbit reference frame defines the orientation of the orbital elements with respect to the central body. The reference frames available in FreeFlyer are described below. The <a href="function_positionconvert_nanosecond.htm" class="topiclink">PositionConvert</a>, <a href="function_velocityconvert_nanosecond.htm" class="topiclink">VelocityConvert</a>, and <a href="function_positionvelocityconvert_nanosecond.htm" class="topiclink">PositionVelocityConvert</a> functions can be used to convert spacecraft position and velocity vectors between the different frames. These reference frames can also be used when setting or getting a Spacecraft or CelestialObject's Keplerian or Cartesian state, using methods like <a href="spacecraft_setkeplerianstate_nanosecond.htm" class="topiclink">Spacecraft.SetKeplerianState()</a> and <a href="celestialobject_getcartesianstateatepoch_nanosecond.htm" class="topiclink">CelestialObject.GetCartesianStateAtEpoch()</a>.</p>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">FreeFlyer supports the following orbit reference frames, described on this page:</p>
+        <p class="p_Normal">&nbsp;</p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 26px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Earth Frames:</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span><a href="orbit_reference_frames.htm#achr_mj2000earthequator" class="topiclink">Mean of J2000 Earth Equator</a></p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span><a href="orbit_reference_frames.htm#achr_mj2000earthecliptic" class="topiclink">Mean of J2000 Earth Ecliptic</a></p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span><a href="orbit_reference_frames.htm#achr_earthfixed" class="topiclink">Earth Fixed</a></p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span><a href="orbit_reference_frames.htm#achr_todearthequator" class="topiclink">True of Date Earth Equator</a></p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span><a href="orbit_reference_frames.htm#achr_trueequatormeanequinox" class="topiclink">True Equator Mean Equinox</a></p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span><a href="orbit_reference_frames.htm#achr_launchcoordinates" class="topiclink">Local Coordinates - Longitude</a></p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span><a href="orbit_reference_frames.htm#achr_launchcoordinateslonglat" class="topiclink">Local Coordinates - Longitude/Latitude</a></p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span><a href="orbit_reference_frames.htm#achr_meanofdateearthequator" class="topiclink">Mean of Date Earth Equator</a></p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span><a href="orbit_reference_frames.htm#achr_meanof1950earthequator" class="topiclink">Mean of 1950 Earth Equator</a></p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span><a href="orbit_reference_frames.htm#achr_trueofdaterotating" class="topiclink">True of Date Rotating</a></p>
+                <p class="p_Normal">&nbsp;</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Moon Frames:</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span><a href="orbit_reference_frames.htm#achr_moonfixed" class="topiclink">Moon Fixed</a> (Principal Axis Rotating)</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span><a href="orbit_reference_frames.htm#achr_moonpaj2000" class="topiclink">Moon Principle Axis - Inertial at J2000</a></p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span><a href="orbit_reference_frames.htm#achr_moonpa_atepoch" class="topiclink">Moon Principle Axis - Inertial at Epoch</a></p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span><a href="orbit_reference_frames.htm#achr_moonmerotating" class="topiclink">Moon Mean Earth - Rotating</a></p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span><a href="orbit_reference_frames.htm#achr_moonmej2000" class="topiclink">Moon Mean Earth - Inertial at J2000</a></p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span><a href="orbit_reference_frames.htm#achr_moonme_atepoch" class="topiclink">Moon Mean Earth - Inertial at Epoch</a></p>
+                <p class="p_Normal">&nbsp;</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Generic <a href="celestial_objects.htm" class="topiclink">CelestialObject</a> Frames:</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span><a href="orbit_reference_frames.htm#achr_cofixed" class="topiclink">Body Fixed</a></p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span><a href="orbit_reference_frames.htm#achr_coinertialj2000" class="topiclink">Inertial Equatorial J2000</a></p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span><a href="orbit_reference_frames.htm#achr_coinertial_atepoch" class="topiclink">Inertial Equatorial At Epoch</a></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">For Spacecraft-referenced frames, see the <a href="attitude_reference_frames.htm" class="topiclink">Attitude Reference Frames</a> page.</p>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal"><a id="achr_mj2000earthequator" class="hmanchor"></a><span class="f_Heading2">Mean of J2000 Earth Equator</span></p>
+        <hr style="height:1px; color:#c0c0c0; border-width:0px; background-color:#c0c0c0;">
+        <p class="p_Normal"><span style="font-weight: bold;">Description:</span></p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Z-axis: Vector normal to the mean equatorial plane at Julian year 2000.0, pointing towards the Northern Hemisphere</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>X-axis: Vector pointing from the center of the Earth to the mean vernal equinox at Julian year 2000.0</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Y-axis: Vector perpendicular to the x- and z-axes, forming a right-handed coordinate system</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Origin: Center of the Earth</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <h2 class="p_Heading2"><span class="f_Heading2">&nbsp;</span></h2>
+        <p class="p_Normal"><span style="font-weight: bold;">Notes:</span></p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Inertial frame.</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>This is the principal coordinate system used for computations in FreeFlyer.</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Commonly referred to as Mean of J2000, ECI, or GCI.</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+        <p style="text-align: center; margin: 0px 0px 0px 0px;"><img width="550" height="410" style="margin:0px auto 0px auto;width:550px;height:410px;border:none" src="mj2000diagram.jpg"></p>
+        <h2 class="p_Heading2"><span class="f_Heading2">&nbsp;</span></h2>
+        <h2 class="p_Heading2"><a id="achr_mj2000earthecliptic" class="hmanchor"></a><span class="f_Heading2">Mean of J2000 Earth Ecliptic</span></h2>
+        <hr style="height:1px; color:#c0c0c0; border-width:0px; background-color:#c0c0c0;">
+        <p class="p_Normal"><span style="font-weight: bold;">Description:</span></p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Z-axis: Vector normal to the ecliptic plane at Julian year 2000.0, pointing toward the Northern Hemisphere</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>X-axis: Vector pointing from the center of the Earth to the mean vernal equinox at Julian year 2000.0</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Y-axis: Vector perpendicular to the x- and z- axes, forming a right-handed coordinate system</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Origin: Center of the Earth</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+        <p class="p_Normal"><span style="font-weight: bold;">Notes:</span></p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Inertial frame.</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal" style="margin: 0px 0px 2px 24px;">&nbsp;</p>
+        <p style="text-align: center; margin: 0px 0px 0px 0px;"><img width="574" height="414" style="margin:0px auto 0px auto;width:574px;height:414px;border:none" src="mj2000ecliptic.jpg"></p>
+        <h2 class="p_Heading2"><span class="f_Heading2">&nbsp;</span></h2>
+        <h2 class="p_Heading2"><a id="achr_earthfixed" class="hmanchor"></a><span class="f_Heading2">Earth Fixed</span></h2>
+        <hr style="height:1px; color:#c0c0c0; border-width:0px; background-color:#c0c0c0;">
+        <p class="p_Normal"><span style="font-weight: bold;">Description:</span></p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Z-axis: Points toward the true rotation axis at the current epoch</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>X-axis: Vector from the center of the Earth to the intersection of the prime meridian with the true equatorial plane</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Y-axis: Vector perpendicular to the x- and z- axes, forming a right-handed coordinate system</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Origin: Center of the Earth</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+        <p class="p_Normal"><span style="font-weight: bold;">Notes:</span></p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Rotating frame.</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>The Earth Fixed reference frame will also include polar motion effects if enabled:</p>
+                <p class="p_Normal">&nbsp;</p>
+                <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+                  <table class="Script Example Table" style="border:none; border-spacing:0px; border-collapse:collapse;">
+                    <tr style="text-align:left;vertical-align:top;">
+                      <td style="vertical-align:top; padding:8px; border:solid thin #c0c0c0;">
+                        <p style="margin: 0px 0px 0px 0px;"><span style="font-family: 'Courier New'; color: #008000;">// Turn on polar motion modeling</span></p>
+                        <p style="margin: 0px 0px 0px 0px;"><span style="font-family: 'Courier New';">FF_SolarSystem.ComputePolarMotion = 1;</span></p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <p class="p_Normal" style="margin: 0px 0px 2px 24px;">&nbsp;</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>If polar motion modeling is not enabled, the Earth Fixed reference frame is equivalent to the <a href="orbit_reference_frames.htm#achr_trueofdaterotating" class="topiclink">True of Date Rotating</a> reference frame.</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <h2 class="p_Heading2"><span class="f_Heading2">&nbsp;</span></h2>
+        <p style="text-align: center; margin: 0px 0px 0px 0px;"><img width="552" height="418" style="margin:0px auto 0px auto;width:552px;height:418px;border:none" src="earthfixeddiagram.jpg"></p>
+        <p style="text-align: center; margin: 0px 0px 0px 0px;"><span style="font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+        <h2 class="p_Heading2"><a id="achr_todearthequator" class="hmanchor"></a><span class="f_Heading2">True of Date Earth Equator</span></h2>
+        <hr style="height:1px; color:#c0c0c0; border-width:0px; background-color:#c0c0c0;">
+        <p class="p_Normal"><span style="font-weight: bold;">Description:</span></p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Z-axis: Points toward the true rotation axis at the current epoch</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>X-axis: Points toward the true vernal equinox at the current epoch</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Y-axis: Vector perpendicular to the x- and z- axes, forming a right-handed coordinate system</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Origin: Center of the Earth</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <h2 class="p_Heading2" style="margin: 0px 0px 2px 24px;"><span class="f_Heading2">&nbsp;</span></h2>
+        <p class="p_Normal"><span style="font-weight: bold;">Notes:</span></p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Directions of the coordinate system axes are time dependent</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>The &quot;true&quot; reference frames include nutation and precession effects. The user can control when the nutation and precession matrices are updated:</p>
+                <p class="p_Normal">&nbsp;</p>
+                <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+                  <table class="Script Example Table" style="border:none; border-spacing:0px; border-collapse:collapse;">
+                    <tr style="text-align:left;vertical-align:top;">
+                      <td style="vertical-align:top; padding:8px; border:solid thin #c0c0c0;">
+                        <p style="margin: 0px 0px 0px 0px;"><span style="font-family: 'Courier New'; color: #008000;">// Set to zero to update matrices with full available accuracy</span></p>
+                        <p style="margin: 0px 0px 0px 0px;"><span style="font-family: 'Courier New'; color: #008000;">// Default value for update is every 1800 seconds</span></p>
+                        <p style="margin: 0px 0px 0px 0px;"><span style="font-family: 'Courier New';">FF_SolarSystem.NPUpdateInterval = 0;</span></p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+        <p style="text-align: center; margin: 0px 0px 0px 0px;"><img width="550" height="410" style="margin:0px auto 0px auto;width:550px;height:410px;border:none" src="toddiagram.jpg"></p>
+        <h2 class="p_Heading2"><span class="f_Heading2">&nbsp;</span></h2>
+        <h2 class="p_Heading2"><a id="achr_trueequatormeanequinox" class="hmanchor"></a><span class="f_Heading2">True Equator Mean Equinox</span></h2>
+        <hr style="height:1px; color:#c0c0c0; border-width:0px; background-color:#c0c0c0;">
+        <p class="p_Normal"><span style="font-weight: bold;">Description:</span></p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Z-axis: Points toward the true rotation axis at the current epoch</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>X-axis: Points toward the mean vernal equinox at the current epoch</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Y-axis: Vector perpendicular to the x- and z-axes, forming a right-handed coordinate system</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Origin: Center of the Earth</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <h2 class="p_Heading2"><span class="f_Heading2">&nbsp;</span></h2>
+        <h2 class="p_Heading2" style="text-align: center;"><img width="550" height="410" style="margin:0px auto 0px auto;width:550px;height:410px;border:none" src="temediagram.jpg"></h2>
+        <h2 class="p_Heading2"><span class="f_Heading2">&nbsp;</span></h2>
+        <h2 class="p_Heading2"><a id="achr_launchcoordinates" class="hmanchor"></a><span class="f_Heading2">Local Coordinates - Longitude</span></h2>
+        <hr style="height:1px; color:#999999; border-width:0px; background-color:#999999;">
+        <p class="p_Normal"><span style="font-weight: bold;">Description:</span></p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Z-axis: Points toward the true rotation axis at the reference epoch</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>X-axis: Lies in the true equatorial plane at the reference epoch, pointing from the center of the Earth to the reference longitude (usually the longitude of the launch site)</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Y-axis: Vector perpendicular to the x- and z- axes, forming a right-handed coordinate system</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Origin: Center of the Earth</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <h2 class="p_Heading2"><span class="f_Heading2">&nbsp;</span></h2>
+        <p class="p_Normal"><span style="font-weight: bold;">Notes:</span></p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Launch vehicle trajectory can be designed without regard to launch time and date</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>In FreeFlyer 6.6 and earlier, this reference frame was referred to as &quot;Launch Coordinates&quot;</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal" style="margin: 0px 0px 2px 24px;">&nbsp;</p>
+        <p style="text-align: center; margin: 0px 0px 0px 0px;"><img width="547" height="432" style="margin:0px auto 0px auto;width:547px;height:432px;border:none" src="launchdiagram.jpg"></p>
+        <p style="text-align: center; margin: 0px 0px 0px 0px;"><span style="font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+        <div style="text-align: center; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 24px;">
+          <table class="Script Example Table" style="margin:0 auto; border:none; border-spacing:0px; border-collapse:collapse;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:8px; border:solid thin #c0c0c0;">
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: 'Courier New'; color: #008000;">// Set the reference Epoch and Location of Launch Site</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: 'Courier New';">Spacecraft1.LCSEpoch =</span> <span style="font-family: 'Courier New'; color: #8b0000;">&quot;Jan 01 2020 00:00:00.000&quot;</span><span style="font-family: 'Courier New';">.</span><span style="font-family: 'Courier New'; background-color: #ffffff;">ParseCalendarDate</span><span style="font-family: 'Courier New';">();</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: 'Courier New';">Spacecraft1.LCSLongitude = GroundStation1.Longitude;</span></p>
+                <p style="margin: 0px 0px 0px 0px;"><span style="font-family: 'Courier New';">Spacecraft1.LCSLatitude = GroundStation1.Latitude;</span></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p style="text-align: center; margin: 0px 0px 0px 24px;"><span style="font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+        <p style="text-align: center; margin: 0px 0px 0px 0px;"><span style="font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+        <h2 class="p_Heading2"><a id="achr_launchcoordinateslonglat" class="hmanchor"></a><span class="f_Heading2">Local Coordinates - Longitude/Latitude</span></h2>
+        <hr style="height:1px; color:#999999; border-width:0px; background-color:#999999;">
+        <p class="p_Normal"><span style="font-weight: bold;">Description:</span></p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Z-axis: Points from the center of the Earth to the reference longitude and geodetic latitude</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>X-axis: Lies in the true equatorial plane at the reference epoch</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Y-axis: Vector perpendicular to the x- and z- axes, forming a right-handed coordinate system</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Origin: Center of the Earth</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <h2 class="p_Heading2"><span class="f_Heading2">&nbsp;</span></h2>
+        <p class="p_Normal"><span style="font-weight: bold;">Notes:</span></p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Launch vehicle trajectory can be designed without regard to launch time and date</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>In FreeFlyer 6.6 and earlier, this reference frame was referred to as &quot;UVW Coordinates&quot;</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal" style="margin: 0px 0px 2px 24px;">&nbsp;</p>
+        <p style="text-align: center; margin: 0px 0px 0px 0px;"><img width="576" height="406" style="margin:0px auto 0px auto;width:576px;height:406px;border:none" src="locallatlondiagram.png"></p>
+        <p style="text-align: center; margin: 0px 0px 0px 0px;"><span style="font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+        <h2 class="p_Heading2"><a id="achr_meanofdateearthequator" class="hmanchor"></a><span class="f_Heading2">Mean of Date Earth Equator</span></h2>
+        <hr style="height:1px; color:#999999; border-width:0px; background-color:#999999;">
+        <p class="p_Normal"><span style="font-weight: bold;">Description:</span></p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Z-axis: Vector normal to the mean equatorial plane at the current epoch</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>X-axis: Vector pointing from the center of the Earth to the mean vernal equinox at the current epoch</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Y-axis: Vector perpendicular to the x- and z-axes, forming a right-handed coordinate system</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Origin: Center of the Earth</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <h2 class="p_Heading2"><span class="f_Heading2">&nbsp;</span></h2>
+        <h2 class="p_Heading2" style="text-align: center;"><img width="550" height="410" style="margin:0px auto 0px auto;width:550px;height:410px;border:none" src="modearthequatordiagram.png"></h2>
+        <h2 class="p_Heading2" style="text-align: center;"><span class="f_Heading2">&nbsp;</span></h2>
+        <h2 class="p_Heading2"><a id="achr_meanof1950earthequator" class="hmanchor"></a><span class="f_Heading2">Mean of 1950 Earth Equator</span></h2>
+        <hr style="height:1px; color:#999999; border-width:0px; background-color:#999999;">
+        <p class="p_Normal"><span style="font-weight: bold;">Description:</span></p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Z-axis: Vector normal to the mean equatorial plane at 12:00:00 on January 1, 1950</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>X-axis: Vector pointing from the center of the Earth to the mean vernal equinox at 12:00:00 on January 1, 1950</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Y-axis: Vector perpendicular to the x- and z-axes, forming a right-handed coordinate system</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Origin: Center of the Earth</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <h2 class="p_Heading2"><span class="f_Heading2">&nbsp;</span></h2>
+        <h2 class="p_Heading2" style="text-align: center;"><img width="550" height="410" style="margin:0px auto 0px auto;width:550px;height:410px;border:none" src="mo1950earthequatordiagram.png"></h2>
+        <h2 class="p_Heading2" style="text-align: center;"><span class="f_Heading2">&nbsp;</span></h2>
+        <h2 class="p_Heading2"><a id="achr_trueofdaterotating" class="hmanchor"></a><span class="f_Heading2">True of Date Rotating</span></h2>
+        <hr style="height:1px; color:#999999; border-width:0px; background-color:#999999;">
+        <p class="p_Normal"><span style="font-weight: bold;">Description:</span></p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Z-axis: Points toward the true rotation axis at the current epoch</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>X-axis: Vector from the center of the Earth to the intersection of the prime meridian with the true equatorial plane</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Y-axis: Vector perpendicular to the x- and z- axes, forming a right-handed coordinate system</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Origin: Center of the Earth</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal"><span style="font-weight: bold;">Notes:</span></p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Rotating frame.</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>This is nearly equivalent to the <a href="orbit_reference_frames.htm#achr_earthfixed" class="topiclink">Earth Fixed</a> reference frame, but does not include polar motion effects</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <h2 class="p_Heading2"><span class="f_Heading2">&nbsp;</span></h2>
+        <p style="text-align: center; margin: 0px 0px 0px 0px;"><img width="552" height="418" style="margin:0px auto 0px auto;width:552px;height:418px;border:none" src="earthfixeddiagram.jpg"></p>
+        <h2 class="p_Heading2"><span class="f_Heading2">&nbsp;</span></h2>
+        <h2 class="p_Heading2"><a id="achr_moonfixed" class="hmanchor"></a><span class="f_Heading2">Moon Fixed (Principal Axis Rotating)</span></h2>
+        <hr style="height:1px; color:#999999; border-width:0px; background-color:#999999;">
+        <p class="p_Normal"><span style="font-weight: bold;">Description:</span></p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>The rotating Moon PA (Principal Axis) frame, as defined by the JPL <a href="planetary_forces_files.htm" class="topiclink">planetary ephemeris</a>.</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Origin: Center of the Moon</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal"><span style="font-weight: bold;">Notes:</span></p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Rotating frame.</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>The <a href="orbit_reference_frames.htm#achr_moonmerotating" class="topiclink">Moon ME</a> frame has a constant rotational offset with respect to the Moon PA frame. The rotational offset is defined in the JPL <a href="planetary_forces_files.htm" class="topiclink">planetary ephemeris</a>.</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>This frame is based on the lunar principal axes, and differs from the <a href="orbit_reference_frames.htm#achr_moonmerotating" class="topiclink">Moon ME</a> frame by about 1 km at the lunar surface.</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <h2 class="p_Heading2"><span class="f_Heading2">&nbsp;</span></h2>
+        <h2 class="p_Heading2" style="text-align: center;"><img width="548" height="416" style="margin:0px auto 0px auto;width:548px;height:416px;border:none" src="moonfixeddiagram.png"></h2>
+        <p class="p_Normal">&nbsp;</p>
+        <h2 class="p_Heading2"><a id="achr_moonpaj2000" class="hmanchor"></a><span class="f_Heading2">Moon Principle Axis - Inertial at J2000</span></h2>
+        <hr style="height:1px; color:#c0c0c0; border-width:0px; background-color:#c0c0c0;">
+        <p class="p_Normal"><span style="font-weight: bold;">Description:</span></p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>The <a href="orbit_reference_frames.htm#achr_moonfixed" class="topiclink">Moon PA</a> frame evaluated at the J2000 epoch (Jan 01 2000 00:00:00.000). The frame is treated as stationary at the J2000 epoch and is not rotating.</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Origin: Center of the Moon</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal"><span style="font-weight: bold;">Notes:</span></p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Inertial frame.</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal" style="margin: 0px 0px 2px 24px;">&nbsp;</p>
+        <p class="p_Normal">&nbsp;</p>
+        <h2 class="p_Heading2"><a id="achr_moonpa_atepoch" class="hmanchor"></a><span class="f_Heading2">Moon Principle Axis - Inertial at Epoch</span></h2>
+        <hr style="height:1px; color:#c0c0c0; border-width:0px; background-color:#c0c0c0;">
+        <p class="p_Normal"><span style="font-weight: bold;">Description:</span></p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>The <a href="orbit_reference_frames.htm#achr_moonfixed" class="topiclink">Moon PA</a> frame evaluated at a user-specified epoch. The frame is treated as stationary at the specified epoch and is not rotating.</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Origin: Center of the Moon</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal"><span style="font-weight: bold;">Notes:</span></p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Inertial frame.</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal" style="margin: 0px 0px 2px 24px;">&nbsp;</p>
+        <p class="p_Normal">&nbsp;</p>
+        <h2 class="p_Heading2"><a id="achr_moonmerotating" class="hmanchor"></a><span class="f_Heading2">Moon Mean Earth - Rotating</span></h2>
+        <hr style="height:1px; color:#c0c0c0; border-width:0px; background-color:#c0c0c0;">
+        <p class="p_Normal"><span style="font-weight: bold;">Description:</span></p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>The rotating Moon ME (Mean Earth) frame, as defined by the JPL <a href="planetary_forces_files.htm" class="topiclink">planetary ephemeris</a>.</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Origin: Center of the Moon</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal"><span style="font-weight: bold;">Notes:</span></p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Rotating frame.</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>The Moon ME frame has a constant rotational offset with respect to the <a href="orbit_reference_frames.htm#achr_moonfixed" class="topiclink">Moon PA</a> frame. The rotational offset is defined in the JPL <a href="planetary_forces_files.htm" class="topiclink">planetary ephemeris</a>.</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>The Moon ME frame differs from the <a href="orbit_reference_frames.htm#achr_moonfixed" class="topiclink">Moon PA</a> frame by about 1 km at the lunar surface.</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal" style="margin: 0px 0px 2px 24px;">&nbsp;</p>
+        <p class="p_Normal" style="margin: 0px 0px 2px 24px;">&nbsp;</p>
+        <h2 class="p_Heading2"><a id="achr_moonmej2000" class="hmanchor"></a><span class="f_Heading2">Moon Mean Earth - Inertial at J2000</span></h2>
+        <hr style="height:1px; color:#c0c0c0; border-width:0px; background-color:#c0c0c0;">
+        <p class="p_Normal"><span style="font-weight: bold;">Description:</span></p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>The <a href="orbit_reference_frames.htm#achr_moonmerotating" class="topiclink">Moon ME</a> frame evaluated at the J2000 epoch (Jan 01 2000 00:00:00.000). The frame is treated as stationary at the J2000 epoch and is not rotating.</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Origin: Center of the Moon</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal"><span style="font-weight: bold;">Notes:</span></p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Inertial frame.</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal" style="margin: 0px 0px 2px 24px;">&nbsp;</p>
+        <p class="p_Normal">&nbsp;</p>
+        <h2 class="p_Heading2"><a id="achr_moonme_atepoch" class="hmanchor"></a><span class="f_Heading2">Moon Mean Earth - Inertial at Epoch</span></h2>
+        <hr style="height:1px; color:#c0c0c0; border-width:0px; background-color:#c0c0c0;">
+        <p class="p_Normal"><span style="font-weight: bold;">Description:</span></p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>The <a href="orbit_reference_frames.htm#achr_moonmerotating" class="topiclink">Moon ME</a> frame evaluated at a user-specified epoch. The frame is treated as stationary at the specified epoch and is not rotating.</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Origin: Center of the Moon</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal"><span style="font-weight: bold;">Notes:</span></p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Inertial frame.</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal" style="margin: 0px 0px 2px 24px;">&nbsp;</p>
+        <p class="p_Normal">&nbsp;</p>
+        <h2 class="p_Heading2"><a id="achr_cofixed" class="hmanchor"></a><span class="f_Heading2">CelestialObject Body Fixed</span></h2>
+        <hr style="height:1px; color:#c0c0c0; border-width:0px; background-color:#c0c0c0;">
+        <p class="p_Normal"><span style="font-weight: bold;">Description:</span></p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>The rotating CelestialObject body-fixed frame for the specified <a href="celestial_objects.htm" class="topiclink">CelestialObject</a>.</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span>For the Earth, this maps to the <a href="orbit_reference_frames.htm#achr_earthfixed" class="topiclink">Earth-Fixed</a> frame.</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span>For the Moon, this maps to the <a href="orbit_reference_frames.htm#achr_moonfixed" class="topiclink">Moon-Fixed (Principal Axis rotating)</a> frame.</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span>For other CelestialObjects, this is defined based on the IAU/IAG Attitude model for that body. See the <a href="solar_system.htm#achr_modelingsolarsystemobjects" class="topiclink">Modeling Solar System Objects</a> section of the <a href="solar_system.htm" class="topiclink">Solar System</a> page for more information.</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Origin: Center of the CelestialObject</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal"><span style="font-weight: bold;">Notes:</span></p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Rotating frame.</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>The identifier for this frame can be accessed using the syntax shown below. See the <a href="celestial_objects.htm#achr_corefframeids" class="topiclink">Celestial Object Reference Frame IDs</a> summary for more information.</p>
+                <p class="p_Normal">&nbsp;</p>
+                <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+                  <table class="Script Example Table" style="border:none; border-spacing:0px; border-collapse:collapse;">
+                    <tr style="text-align:left;vertical-align:top;">
+                      <td style="vertical-align:top; padding:8px; border:solid thin #c0c0c0;">
+                        <p class="p_Normal" style="margin: 0px 0px 0px 0px;"><span style="font-family: 'Courier New'; background-color: #ffffff;">Mars.ReferenceFrameIDs.BodyFixed</span></p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal" style="margin: 0px 0px 2px 24px;">&nbsp;</p>
+        <p class="p_Normal">&nbsp;</p>
+        <h2 class="p_Heading2"><a id="achr_coinertialj2000" class="hmanchor"></a><span class="f_Heading2">CelestialObject Inertial Equatorial J2000</span></h2>
+        <hr style="height:1px; color:#c0c0c0; border-width:0px; background-color:#c0c0c0;">
+        <p class="p_Normal"><span style="font-weight: bold;">Description:</span></p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>The <a href="celestial_objects.htm" class="topiclink">CelestialObject</a> body frame evaluated at the J2000 epoch (Jan 01 2000 00:00:00.000). The frame is treated as stationary at the J2000 epoch and is not rotating.</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span>For the Earth, this maps to the <a href="orbit_reference_frames.htm#achr_mj2000earthequator" class="topiclink">MJ2000 Earth Equator</a> frame.</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span>For the Moon, this maps to the <a href="orbit_reference_frames.htm#achr_moonpaj2000" class="topiclink">Moon PA - Inertial at J2000</a> frame.</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span>For other CelestialObjects, this is defined based on the IAU/IAG Attitude model for that body.</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Origin: Center of the CelestialObject</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal"><span style="font-weight: bold;">Notes:</span></p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Inertial frame.</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>The identifier for this frame can be accessed using the syntax shown below. See the <a href="celestial_objects.htm#achr_corefframeids" class="topiclink">Celestial Object Reference Frame IDs</a> summary for more information.</p>
+                <p class="p_Normal">&nbsp;</p>
+                <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+                  <table class="Script Example Table" style="border:none; border-spacing:0px; border-collapse:collapse;">
+                    <tr style="text-align:left;vertical-align:top;">
+                      <td style="vertical-align:top; padding:8px; border:solid thin #c0c0c0;">
+                        <p class="p_Normal" style="margin: 0px 0px 0px 0px;"><span style="font-family: 'Courier New'; background-color: #ffffff;">Mars.ReferenceFrameIDs.InertialEquatorialJ2000</span></p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal" style="margin: 0px 0px 2px 24px;">&nbsp;</p>
+        <p class="p_Normal">&nbsp;</p>
+        <h2 class="p_Heading2"><a id="achr_coinertial_atepoch" class="hmanchor"></a><span class="f_Heading2">CelestialObject Inertial Equatorial At Epoch</span></h2>
+        <hr style="height:1px; color:#c0c0c0; border-width:0px; background-color:#c0c0c0;">
+        <p class="p_Normal"><span style="font-weight: bold;">Description:</span></p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>The <a href="celestial_objects.htm" class="topiclink">CelestialObject</a> body frame evaluated at a user-specified epoch. The frame is treated as stationary at the specified epoch and is not rotating.</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span>For the Earth, this frame is defined based on the <a href="orbit_reference_frames.htm#achr_earthfixed" class="topiclink">Earth-Fixed</a> frame, &quot;inertialized&quot; (not rotating) at the specified epoch.</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span>For the Moon, this maps to the <a href="orbit_reference_frames.htm#achr_moonpa_atepoch" class="topiclink">Moon PA - Inertial at Epoch</a> frame.</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span>For other CelestialObjects, this is defined based on the IAU/IAG Attitude model for that body.</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Origin: Center of the CelestialObject</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal"><span style="font-weight: bold;">Notes:</span></p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Inertial frame.</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>The identifier for this frame can be accessed using the syntax shown below. See the <a href="celestial_objects.htm#achr_corefframeids" class="topiclink">Celestial Object Reference Frame IDs</a> summary for more information.</p>
+                <p class="p_Normal">&nbsp;</p>
+                <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+                  <table class="Script Example Table" style="border:none; border-spacing:0px; border-collapse:collapse;">
+                    <tr style="text-align:left;vertical-align:top;">
+                      <td style="vertical-align:top; padding:8px; border:solid thin #c0c0c0;">
+                        <p class="p_Normal" style="margin: 0px 0px 0px 0px;"><span style="font-family: 'Courier New'; background-color: #ffffff;">Mars.ReferenceFrameIDs.InertialEquatorialAtEpoch</span></p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal" style="margin: 0px 0px 2px 24px;">&nbsp;</p>
+        <p class="p_Normal">&nbsp;</p>
+        <h2 class="p_Heading2"><span class="f_Heading2">See Also</span></h2>
+        <hr style="height:1px; color:#c0c0c0; border-width:0px; background-color:#c0c0c0;">
+        <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><a href="orbit_element_types.htm" class="topiclink">Orbit Element Types</a></p>
+        <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><a href="attitude_reference_frames.htm" class="topiclink">Attitude Reference Frames</a></p>
+        <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><a href="central_body.htm" class="topiclink">Central Body</a></p>
+        <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><a href="celestial_objects.htm" class="topiclink">CelestialObjects</a></p>
+        <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span><a href="celestial_objects.htm#achr_corefframeids" class="topiclink">Celestial Object Reference Frame IDs</a></p>
+        <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><a href="solar_system.htm" class="topiclink">Solar System</a> Modeling</p>
+        <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><a href="planetary_forces_files.htm" class="topiclink">Planetary Ephemerides</a></p>
+        <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><a href="function_positionconvert_nanosecond.htm" class="topiclink">PositionConvert</a></p>
+        <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><a href="function_velocityconvert_nanosecond.htm" class="topiclink">VelocityConvert</a></p>
+        <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><a href="function_positionvelocityconvert_nanosecond.htm" class="topiclink">PositionVelocityConvert</a></p>
+        <p class="p_Normal">&nbsp;</p>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

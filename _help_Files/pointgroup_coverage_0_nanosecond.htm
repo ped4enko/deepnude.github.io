@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PointGroup.Coverage(Formation, Array) Method</title>
+  <meta name="keywords" content="">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link type="text/css" href="default.css" rel="stylesheet">
+  <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+  </style>
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="helpman_settings.js"></script>
+  <script type="text/javascript" src="helpman_topicinit.js"></script>
+  <script type="text/javascript">
+     HMSyncTOC("index.html", "pointgroup_coverage_0_nanosecond.htm");
+  </script>
+  <script type="text/javascript" src="highlight.js"></script>
+  <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+  </script>
+</head>
+<body>
+  <table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#808080">
+    <tr style="vertical-align:middle">
+      <td style="text-align:left">
+        <h1 class="p_Heading1"><span class="f_Heading1">PointGroup.Coverage(Formation, Array) Method</span></h1>
+      </td>
+      <td style="text-align:right">
+        <a href="welcome.htm">Top</a>&nbsp;
+      </td>
+    </tr>
+  </table>
+  <table style="width:100%;border:none;border-spacing:0px">
+    <tr style="vertical-align:top">
+      <td style="text-align:left;padding:5px">
+        <h2 class="p_Heading2"><span class="f_Heading2">Description</span></h2>
+        <p class="p_Normal">This method provides sensor coverage analysis for the set of points defined by a PointGroup. This can be used to determine what parts of the central body can be seen by a given sensor at some point in time, using the current epoch of the specified Spacecraft. The coverage analysis can be extended over a period of time by calling this method inside a propagation loop. When specifying Spacecraft arguments, up to 50 Spacecraft can be included in the analysis. The active Sensors on each Spacecraft will be used to determine coverage.</p>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">Array output arguments are used to capture the statistics of the coverage analysis. Do not use these arrays as output arguments for more than one method. Note that the dimensions of the argument arrays are set when the Coverage method is first called; the dimension is not reset by subsequent calls. The Coverage method returns a flag indicating whether the coverage has changed since the last method call. This can be used to increase performance by indicating that further analysis is not necessary if the coverage statistics have not changed.</p>
+        <p class="p_Normal">&nbsp;</p>
+        <p style="margin: 0px 0px 0px 0px;"><span class="f_Heading2">Timing Precision Mode</span></p>
+        <p class="p_Normal">This page describes functionality in <a href="timing_precision_modes.htm" class="topiclink">nanosecond timing precision mode.</a></p>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Notes"><span class="f_Notes">Note: This method has a state. See the <a href="methods_and_properties_with_state.htm" class="topiclink">Methods and Properties with State</a> page for more information.</span></p>
+        <p class="p_Normal">&nbsp;</p>
+        <h2 class="p_Heading2"><span class="f_Heading2">Method Signature</span></h2>
+        <div style="text-align: left; text-indent: 0px; page-break-inside: avoid; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p class="p_CodeExample" style="line-height: 1.0; white-space: nowrap; page-break-inside: avoid;"><span class="f_CodeExample">PointGroup.Coverage(</span></p>
+              </td>
+              <td style="vertical-align:top; width:100%; padding:0px;">
+                <p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample"><a href="formation_nanosecond.htm" class="topiclink">Formation</a> formation,</span></p>
+              </td>
+            </tr>
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;"><br></td>
+              <td style="vertical-align:top; width:100%; padding:0px;">
+                <p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample"><a href="array_nanosecond.htm" class="topiclink">Array</a> coverageArray)</span></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <h2 class="p_Heading2"><span class="f_Heading2">Arguments</span></h2>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 0px;">
+          <table style="border:none; border-spacing:2px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; width:110px; padding:2px;">
+                <p class="p_Normal"><span style="font-style: italic;">formation</span></p>
+              </td>
+              <td style="vertical-align:top; width:748px; padding:2px;"><br></td>
+            </tr>
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; width:110px; padding:2px;">
+                <p class="p_Normal"><span style="text-decoration: underline;">Description:</span></p>
+              </td>
+              <td style="vertical-align:top; width:748px; padding:2px;">
+                <p class="p_Normal">Formation containing Spacecraft whose Sensors will be used for the coverage analysis.</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 0px;">
+          <table style="border:none; border-spacing:2px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; width:110px; padding:2px;">
+                <p class="p_Normal"><span style="font-style: italic;">coverageArray</span></p>
+              </td>
+              <td style="vertical-align:top; width:748px; padding:2px;"><br></td>
+            </tr>
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; width:110px; padding:2px;">
+                <p class="p_Normal"><span style="text-decoration: underline;">Description:</span></p>
+              </td>
+              <td style="vertical-align:top; width:748px; padding:2px;">
+                <p class="p_Normal">This array holds the coverage for the entire set of Sensors. A zero indicates the point has never been in view of any Sensor of the set. A one indicates the point has been in view of at least one Sensor of the set.</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">&nbsp;</p>
+        <h2 class="p_Heading2"><span class="f_Heading2">Return Value</span></h2>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 0px;">
+          <table style="border:none; border-spacing:2px;">
+            <tr style="text-align:left;vertical-align:bottom;">
+              <td style="vertical-align:bottom; padding:2px;">
+                <p class="p_Normal"><span style="text-decoration: underline;">Type:</span></p>
+              </td>
+              <td style="vertical-align:bottom; padding:2px;">
+                <p class="p_Normal">number</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">Returns a 1 if the coverage has changed since the last method call, and a 0 if coverage has not changed.</p>
+        <p class="p_Normal">&nbsp;</p>
+        <h2 class="p_Heading2"><span class="f_Heading2">Syntax</span></h2>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 0px;">
+          <table style="border:none; border-spacing:2px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:8px; border:solid thin #c0c0c0;">
+                <p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">myVariable1 = myPointGroup1.Coverage(myFormation1, myArray1);</span></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal"><span class="f_Heading2">See also</span></p>
+        <p class="p_Normal"><a href="pointgroup_nanosecond.htm" class="topiclink">PointGroup Object</a></p>
+        <p class="p_Normal"><a href="pointgroup_coverage_nanosecond.htm" class="topiclink">PointGroup.Coverage</a></p>
+        <p class="p_Normal"><a href="coverage_and_contact_analysis.htm" class="topiclink">Coverage and Contact Analysis Guide</a></p>
+        <p class="p_Normal"><a href="pointgroups.htm" class="topiclink">PointGroups Guide</a></p>
+        <p class="p_Normal">&nbsp;</p>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

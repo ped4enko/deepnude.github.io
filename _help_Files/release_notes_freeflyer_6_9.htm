@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Release Notes for FreeFlyer 6.9</title>
+  <meta name="keywords" content="">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link type="text/css" href="default.css" rel="stylesheet">
+  <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+  </style>
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="helpman_settings.js"></script>
+  <script type="text/javascript" src="helpman_topicinit.js"></script>
+  <script type="text/javascript">
+     HMSyncTOC("index.html", "release_notes_freeflyer_6_9.htm");
+  </script>
+  <script type="text/javascript" src="highlight.js"></script>
+  <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+  </script>
+</head>
+<body>
+  <table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#808080">
+    <tr style="vertical-align:middle">
+      <td style="text-align:left">
+        <h1 class="p_Heading1"><span class="f_Heading1">Release Notes for FreeFlyer 6.9</span></h1>
+      </td>
+      <td style="text-align:right">
+        <a href="welcome.htm">Top</a>&nbsp; <a href="release_notes_freeflyer_6_9_1.htm">Previous</a>&nbsp; <a href="release_notes_freeflyer_6_8_1.htm">Next</a>
+      </td>
+    </tr>
+  </table>
+  <table style="width:100%;border:none;border-spacing:0px">
+    <tr style="vertical-align:top">
+      <td style="text-align:left;padding:5px">
+        <h2 class="p_Heading2"><span class="f_Heading2">New Features in FreeFlyer 6.9</span></h2>
+        <hr style="height:1px; color:#808080; border-width:0px; background-color:#808080;">
+        <h3 class="p_Heading3"><span class="f_Heading3">64-Bit Build of FreeFlyer and FF.exe</span></h3>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Interfaces with 64-bit <a href="matlab.htm" class="topiclink">MATLAB</a>, 64-Bit <a href="databases.htm" class="topiclink">Database</a> Drivers, 64-Bit <a href="freeflyer_extensions_sdk.htm" class="topiclink">Extensions</a></p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Can utilize up to 192 GB of memory</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Includes performance optimizations</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p style="margin: 0px 0px 0px 0px;"><span style="font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+        <h3 class="p_Heading3"><span class="f_Heading3">New Propagation and Modeling Capabilities</span></h3>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Ability to use <a href="groundstations.htm" class="topiclink">GroundStations</a> with the Time of Closest Approach (TCA) and Close Approach Range methods</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Ability to get <a href="setting_up_a_force_model.htm" class="topiclink">Acceleration</a> values instantaneously (without propagation)</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span>All component accelerations are broken out individually</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span>Includes CustomForce <a href="freeflyer_extensions_sdk.htm" class="topiclink">Extensions</a></p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Fixed issue with the Spacecraft.GHA property, see the Migrating to FreeFlyer 6.9 section below for more information</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <h3 class="p_Heading3"><span class="f_Heading3">Ephemeris Improvements</span></h3>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Added version 2 of the <a href="freeflyer_ephemeris_file.htm" class="topiclink">FreeFlyer ephemeris format</a></p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span>Ability to <a href="freeflyer_ephemeris_file.htm#achr_otherfeatures" class="topiclink">add columns</a> of user-defined data</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span>Ability to specify different <a href="importing_an_ephemeris_file.htm#achr_interpolation" class="topiclink">interpolation</a> algorithms for each column of data</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span>Ability to handle discontinuities with <a href="freeflyer_ephemeris_file.htm#achr_discontinuities" class="topiclink">Ephemeris</a> segments</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span>Ability to use custom column delimiters</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span>Ability to <a href="accessing_data_in_an_ephemeris.htm" class="topiclink">step backwards</a> to Ephemeris points</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Automatic reduction of <a href="importing_an_ephemeris_file.htm" class="topiclink">interpolation</a> to handle segments with few points</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <h3 class="p_Heading3"><span class="f_Heading3">Plotting Enhancements</span></h3>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Ability to change ALL <a href="plotwindows.htm" class="topiclink">plot properties</a> via FreeForm scripting</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Ability to create <a href="lists.htm" class="topiclink">Lists</a> of PlotWindows</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Ability to dynamically add/remove data series from <a href="plotwindows.htm" class="topiclink">PlotWindows</a></p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Ability to plot <a href="plot_series.htm#achr_polynomialseries" class="topiclink">polynomials</a> based on coefficients</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Ability to plot independent <a href="plot_series.htm#achr_scatterseries" class="topiclink">X/Y data</a> series on the same Plot</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Ability to <a href="plotting_data.htm" class="topiclink">plot entire datasets</a> at once</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Added <a href="dataculling_and_batchplotting.htm" class="topiclink">batch updating</a> to FreeFlyer PlotWindows, ViewWindows, WatchWindows, and DataTableWindows</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <h3 class="p_Heading3"><span class="f_Heading3">Output Enhancements</span></h3>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Ability to pop <a href="output_layout_control.htm" class="topiclink">Output Windows</a> in/out of the FreeFlyer Workspace</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span>Both through user interaction and through FreeForm script</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <h3 class="p_Heading3"><span class="f_Heading3">FreeForm Script Improvements</span></h3>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Added support for more standard syntax <a href="mathematical_operators.htm" class="topiclink">operators</a></p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span>For example: +=, -=, *=, /=, ++, --, etc.</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span>Boolean operator ! (not operator; e.g. If (!Spacecraft1.Contact(GroundStation1)) )</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Added the ability to use environment variables with the <a href="include.htm" class="topiclink">Include</a> command</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <h3 class="p_Heading3"><span class="f_Heading3">Enhanced User Support</span></h3>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>New <a href="sample_mission_plans.htm" class="topiclink">Sample Mission Plans</a></p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>New syntax examples throughout Help File</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Improved support for <a href="freeflyer_extensions_sdk.htm" class="topiclink">Extensions</a> built with the .NET 4.0 framework</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Ability to return borrowed <a href="network_licensing.htm#achr_borrowlic" class="topiclink">Network licenses</a> early</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <h3 class="p_Heading3"><span class="f_Heading3">Important Notes</span></h3>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>The deprecated Orbit Determination system will not be available in versions of FreeFlyer 6.10 and higher. For the information on the new system available since FreeFlyer 6.6, see the <a href="orbit_determination.htm" class="topiclink">Orbit Determination</a> Guide.</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Microsoft Windows XP, Service Pack 3 (SP3) is a minimum <a href="system_requirements.htm" class="topiclink">system requirement</a> for versions of FreeFlyer 6.9 and higher</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">&nbsp;</p>
+        <h2 class="p_Heading2"><span class="f_Heading2">Migrating to FreeFlyer 6.9</span></h2>
+        <hr style="height:1px; color:#808080; border-width:0px; background-color:#808080;">
+        <p class="p_Normal">While we always strive to maintain 100% backwards compatibility in our new releases, our efforts to make FreeFlyer more flexible and consistent in FreeFlyer 6.9 and higher have necessitated a few changes which may require user intervention when migrating your existing Mission Plans. These changes are outlined below.</p>
+        <p class="p_Normal">&nbsp;</p>
+        <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 2px 24px;">
+          <table style="border:none; border-spacing:0px;">
+            <tr style="text-align:left;vertical-align:top;">
+              <td style="vertical-align:top; padding:0px;">
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Various Objects, Properties, Methods, and Functions have been deprecated</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 26px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Courier New';color:#000000;display:inline-block;width:13px;margin-left:-13px">o</span>Deprecated Objects, Properties, Methods, and Functions are elements of FreeFlyer which are no longer recommended for use. The description of each deprecated element indicates the new recommended way to achieve the functionality of that element. The complete list of affected elements is given on the <a href="deprecated_functionality_millisecond.htm" class="topiclink">Deprecated Objects, Properties, Methods, and Functions</a> page.</p>
+                <p class="p_Normal">&nbsp;</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>With the additional OrbitNumber properties to improve the orbit number calculation of the Spacecraft Object, the <a href="deprecated_functionality_millisecond.htm" class="topiclink">deprecated</a> property ScOrbitNumber was updated to be initialized as 1 in both the Spacecraft GUI and if the Spacecraft object is initialized in FreeForm Script</p>
+                <p class="p_Normal">&nbsp;</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>With the <a href="report.htm" class="topiclink">Report</a> command, the carriage return expression &quot;\n&quot; will only be evaluated as a carriage return if the special @ character is used to scan the string for escape sequences. See the <a href="parsing_arbitrary_string_data.htm#achr_scanning" class="topiclink">Scanning Literal Strings</a> section of the <a href="parsing_arbitrary_string_data.htm" class="topiclink">Parsing Arbitrary String Data</a> page for more information.</p>
+                <p class="p_Normal">&nbsp;</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>The Spacecraft.EVector property generates a vector with respect to the Spacecraft central body. In previous versions, this property was always referenced to the Earth.</p>
+                <p class="p_Normal">&nbsp;</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>The Spacecraft.GHA (Greenwich Hour Angle) property is now calculated with respect to the MJ2000 x-axis. In previous versions, this property was erroneously calculated with respect to the TOD x-axis.<br>
+                &nbsp;</p>
+                <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>With the addition of 64-bit FreeFlyer, it can now only interface with <a href="matlab.htm" class="topiclink">MATLAB</a> version 7.3 or higher.</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="p_Normal">&nbsp;</p>
+        <p class="p_Normal">&nbsp;</p>
+        <h2 class="p_Heading2"><span class="f_Heading2">See Also</span></h2>
+        <hr style="height:1px; color:#c0c0c0; border-width:0px; background-color:#c0c0c0;">
+        <p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 0px 0px 2px 0px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><a href="release_history.htm" class="topiclink">Release History</a></p>
+        <p class="p_Normal">&nbsp;</p>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
