@@ -45,7 +45,6 @@
   <link rel='https://api.w.org/' href='/wp-json/'>
   <link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
   <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml">
-  <link rel='shortlink' href='/?p=7545'>
   <link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fai-solutions.com%2Fspacesoftware%2F">
   <link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fai-solutions.com%2Fspacesoftware%2F&#038;format=xml">
   <style type="text/css" id="wp-custom-css">
